@@ -841,7 +841,7 @@
             "Course Type": "PC",
             "L-T-P (credits)": "3-0-4 (5)",
             "Course Coordinator": "Prof. Suril V shah",
-            "slot": "A\n"
+            "slot": "A"
         },
         {
             "name": "Smart Manufacturing",
@@ -1032,7 +1032,7 @@
             "code": "MEL7990",
             "Course Type": "MC",
             "L-T-P (credits)": "2-0-2 (3)",
-            "Course Coordinator": "Dr. Pratyaksh Karan and\n Dr Srijit Biswas",
+            "Course Coordinator": "Dr. Pratyaksh Karan and Dr Srijit Biswas",
             "slot": "H"
         },
         {
@@ -1176,362 +1176,362 @@
         },
         {
             "code": "PHL1030",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "2–0–2 ",
             "Credit": "3",
             "name": "Physics II",
-            "Instructor(s)\nRead ** as coordinator": "Chandan Datta** + Sagar Kumar Verma",
+            "Instructor(s)Read ** as coordinator": "Chandan Datta** + Sagar Kumar Verma",
             "slot": "N"
         },
         {
             "code": "PHL1010",
-            "Course \nType": "IS",
+            "Course Type": "IS",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Electromagnetism & Optics (Theory)",
-            "Instructor(s)\nRead ** as coordinator": "Sunil Kumar Khijwania",
+            "Instructor(s)Read ** as coordinator": "Sunil Kumar Khijwania",
             "slot": "K"
         },
         {
             "code": "PHP1010",
-            "Course \nType": "IS",
+            "Course Type": "IS",
             "LTP": "0-0-2",
             "Credit": "1",
             "name": "Electromagnetism & Optics (Lab)",
-            "Instructor(s)\nRead ** as coordinator": "Monika Sinha",
+            "Instructor(s)Read ** as coordinator": "Monika Sinha",
             "slot": "M1"
         },
         {
             "code": "PHL2021",
-            "Course \nType": "PL",
+            "Course Type": "PL",
             "LTP": "1-0-0",
             "Credit": "1",
             "name": "Electronic Materials",
-            "Instructor(s)\nRead ** as coordinator": "Durgamadhab Mishra",
+            "Instructor(s)Read ** as coordinator": "Durgamadhab Mishra",
             "slot": "C"
         },
         {
             "code": "PHL2110",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Mathematical Methods for Physicists",
-            "Instructor(s)\nRead ** as coordinator": "Ambesh Dixit",
+            "Instructor(s)Read ** as coordinator": "Ambesh Dixit",
             "slot": "D"
         },
         {
             "code": "PHL2120",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Modern Optics",
-            "Instructor(s)\nRead ** as coordinator": "Sagar Kumar Verma** + Yogeshwar Nath Mishra",
+            "Instructor(s)Read ** as coordinator": "Sagar Kumar Verma** + Yogeshwar Nath Mishra",
             "slot": "A"
         },
         {
             "code": "PHL2130",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "EM Waves and fields",
-            "Instructor(s)\nRead ** as coordinator": "Sunita",
+            "Instructor(s)Read ** as coordinator": "Sunita",
             "slot": "C"
         },
         {
             "code": "PHP2020",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-3",
             "Credit": "1.5",
             "name": "EM Lab",
-            "Instructor(s)\nRead ** as coordinator": "V. Narayanan",
+            "Instructor(s)Read ** as coordinator": "V. Narayanan",
             "slot": "M1"
         },
         {
             "code": "PHL3040",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "2-0-0",
             "Credit": "2",
             "name": "Medical Physics",
-            "Instructor(s)\nRead ** as coordinator": "Durgamadhab Mishra",
+            "Instructor(s)Read ** as coordinator": "Durgamadhab Mishra",
             "slot": "K"
         },
         {
             "code": "PHL3050",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "2-0-0",
             "Credit": "2",
             "name": "Nuclear Radiation and Energy",
-            "Instructor(s)\nRead ** as coordinator": "V. Narayanan",
+            "Instructor(s)Read ** as coordinator": "V. Narayanan",
             "slot": "B"
         },
         {
             "code": "PHL3060",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "2-0-2",
             "Credit": "3",
             "name": "Interaction of Radiation with matter",
-            "Instructor(s)\nRead ** as coordinator": "Jitendra Kumar (HEP) + V. Narayanan (Lab)",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (HEP) + V. Narayanan (Lab)",
             "slot": "C"
         },
         {
             "code": "PHL3070",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-2",
             "Credit": "4",
             "name": "Semiconducting and Optoelectronic Devices",
-            "Instructor(s)\nRead ** as coordinator": "Satyajit Sahu",
+            "Instructor(s)Read ** as coordinator": "Satyajit Sahu",
             "slot": "D"
         },
         {
             "code": "PHL3080",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "2-0-0",
             "Credit": "2",
             "name": "Entrepreneurship for Physicists",
-            "Instructor(s)\nRead ** as coordinator": "Ram Prakash",
+            "Instructor(s)Read ** as coordinator": "Ram Prakash",
             "slot": "E"
         },
         {
             "code": "PHP3040",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-3",
             "Credit": "1.5",
             "name": "Applied Optics Lab",
-            "Instructor(s)\nRead ** as coordinator": "Shahab Ahmad** + BM Krishna",
+            "Instructor(s)Read ** as coordinator": "Shahab Ahmad** + BM Krishna",
             "slot": "M2"
         },
         {
             "code": "PHP3050",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-2",
             "Credit": "1",
             "name": "Modern physics Lab",
-            "Instructor(s)\nRead ** as coordinator": "Ambesh Dixit",
+            "Instructor(s)Read ** as coordinator": "Ambesh Dixit",
             "slot": "M3"
         },
         {
             "code": "PHP3060",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-2",
             "Credit": "1",
             "name": "Radiation and Particle Detection Lab",
-            "Instructor(s)\nRead ** as coordinator": "Jitendra Kumar (HEP)** + Lata Panwar",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (HEP)** + Lata Panwar",
             "slot": "M4"
         },
         {
             "code": "Energy",
-            "Course \nType": "SC",
+            "Course Type": "SC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Electrical Energy Storage Materials and Devices",
-            "Instructor(s)\nRead ** as coordinator": "Due (if floatted)",
+            "Instructor(s)Read ** as coordinator": "Due (if floatted)",
             "slot": ""
         },
         {
             "code": "Plasma",
-            "Course \nType": "SC",
+            "Course Type": "SC",
             "LTP": "2-0-0",
             "Credit": "2",
             "name": "Fundamentals of plasma physics and controlled fusion ",
-            "Instructor(s)\nRead ** as coordinator": "Due (if floatted)",
+            "Instructor(s)Read ** as coordinator": "Due (if floatted)",
             "slot": ""
         },
         {
             "code": "Quantum",
-            "Course \nType": "SC",
+            "Course Type": "SC",
             "LTP": "3-1-0",
             "Credit": "4",
             "name": "Quantum Computing",
-            "Instructor(s)\nRead ** as coordinator": "Chandan Datta",
+            "Instructor(s)Read ** as coordinator": "Chandan Datta",
             "slot": "A"
         },
         {
             "code": "Phtonics",
-            "Course \nType": "SC",
+            "Course Type": "SC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Fundamentals of Photonics",
-            "Instructor(s)\nRead ** as coordinator": "Due (if floatted)",
+            "Instructor(s)Read ** as coordinator": "Due (if floatted)",
             "slot": ""
         },
         {
             "code": "PHL4050",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "EM and Neutrino Astronomy",
-            "Instructor(s)\nRead ** as coordinator": "Reetanjali Moharana** + Lata Panwar",
+            "Instructor(s)Read ** as coordinator": "Reetanjali Moharana** + Lata Panwar",
             "slot": "A"
         },
         {
             "code": "PHL6060",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Electrodynamics",
-            "Instructor(s)\nRead ** as coordinator": "Sunita** + Amit Mukherjee ",
+            "Instructor(s)Read ** as coordinator": "Sunita** + Amit Mukherjee ",
             "slot": "F"
         },
         {
             "code": "PHL6070",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Condensed Matter Physics (as Open Elective)",
-            "Instructor(s)\nRead ** as coordinator": "Dushyant Kumar** + BM Krishna",
+            "Instructor(s)Read ** as coordinator": "Dushyant Kumar** + BM Krishna",
             "slot": "N"
         },
         {
             "code": "PHL6080",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Physics of Atoms and Molecules",
-            "Instructor(s)\nRead ** as coordinator": "Naveen Tailor",
+            "Instructor(s)Read ** as coordinator": "Naveen Tailor",
             "slot": "G"
         },
         {
             "code": "PHL6090",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Nuclear and Particle Physics",
-            "Instructor(s)\nRead ** as coordinator": "Jitendra Kumar (HEP)",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (HEP)",
             "slot": "I"
         },
         {
             "code": "PHP6040",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-3",
             "Credit": "1.5",
             "name": "Atomic and Nuclear Physics Laboratory",
-            "Instructor(s)\nRead ** as coordinator": "V. Narayanan",
+            "Instructor(s)Read ** as coordinator": "V. Narayanan",
             "slot": "L1"
         },
         {
             "code": "PHP6050",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-3",
             "Credit": "1.5",
             "name": "Optics and Lasers Laboratory",
-            "Instructor(s)\nRead ** as coordinator": "BM Krishna** + Shahab Ahmad",
+            "Instructor(s)Read ** as coordinator": "BM Krishna** + Shahab Ahmad",
             "slot": "L2"
         },
         {
             "code": "PHP6060",
-            "Course \nType": "PC",
+            "Course Type": "PC",
             "LTP": "0-0-3",
             "Credit": "1.5",
             "name": "Hands-On II",
-            "Instructor(s)\nRead ** as coordinator": "Reetanjali Moharana** + Dushyant Kumar",
+            "Instructor(s)Read ** as coordinator": "Reetanjali Moharana** + Dushyant Kumar",
             "slot": "L3"
         },
         {
             "code": "PHL6320",
-            "Course \nType": "PE-1",
+            "Course Type": "PE-1",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Relativistic Quantum Mechanics",
-            "Instructor(s)\nRead ** as coordinator": "Lata Panwar",
+            "Instructor(s)Read ** as coordinator": "Lata Panwar",
             "slot": "J"
         },
         {
             "code": "PHL6110",
-            "Course \nType": "PE-1",
+            "Course Type": "PE-1",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Introduction to Soft Matter Physics",
-            "Instructor(s)\nRead ** as coordinator": "Prabhat Jaiswal",
+            "Instructor(s)Read ** as coordinator": "Prabhat Jaiswal",
             "slot": "J"
         },
         {
             "code": "PHL7430",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Computational Materials Science",
-            "Instructor(s)\nRead ** as coordinator": "Ambesh Dixit",
+            "Instructor(s)Read ** as coordinator": "Ambesh Dixit",
             "slot": "I"
         },
         {
             "code": "PHL7350",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Magnetism and Superconductivity ",
-            "Instructor(s)\nRead ** as coordinator": "Dushyant Kumar** + Durgamadhab Mishra",
+            "Instructor(s)Read ** as coordinator": "Dushyant Kumar** + Durgamadhab Mishra",
             "slot": "J"
         },
         {
             "code": "PHL7390",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Physics of Solar Cells",
-            "Instructor(s)\nRead ** as coordinator": "Jitendra Kumar (CMP) + Naveen Tailor",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (CMP) + Naveen Tailor",
             "slot": "N"
         },
         {
             "code": "PHL7480",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Open Quantum Systems",
-            "Instructor(s)\nRead ** as coordinator": "Subhashish Banerjee",
+            "Instructor(s)Read ** as coordinator": "Subhashish Banerjee",
             "slot": "G"
         },
         {
             "code": "QCL7330",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Device Independent Quantum Technologies",
-            "Instructor(s)\nRead ** as coordinator": "Amit Mukherjee",
+            "Instructor(s)Read ** as coordinator": "Amit Mukherjee",
             "slot": "H"
         },
         {
             "code": "PHL7340",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Quantum Field Theory",
-            "Instructor(s)\nRead ** as coordinator": "Monika Sinha",
+            "Instructor(s)Read ** as coordinator": "Monika Sinha",
             "slot": "I"
         },
         {
             "code": "PHL7450",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "General Theory of Relativity",
-            "Instructor(s)\nRead ** as coordinator": "Reetanjali Moharana",
+            "Instructor(s)Read ** as coordinator": "Reetanjali Moharana",
             "slot": "J"
         },
         {
             "code": "PHL7550",
-            "Course \nType": "",
+            "Course Type": "",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Advanced Condensed Matter Physics",
-            "Instructor(s)\nRead ** as coordinator": "V Naryanan",
+            "Instructor(s)Read ** as coordinator": "V Naryanan",
             "slot": "J"
         },
         {
             "code": "PHL7330",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Laser Technologies",
-            "Instructor(s)\nRead ** as coordinator": "Yogeshwar Nath Mishra** + Sagar Verma",
+            "Instructor(s)Read ** as coordinator": "Yogeshwar Nath Mishra** + Sagar Verma",
             "slot": "K"
         },
         {
             "code": "PHL7510",
-            "Course \nType": "PE",
+            "Course Type": "PE",
             "LTP": "3-0-0",
             "Credit": "3",
             "name": "Energy Harvesting",
-            "Instructor(s)\nRead ** as coordinator": "Shahab Ahmad",
+            "Instructor(s)Read ** as coordinator": "Shahab Ahmad",
             "slot": "G"
         },
         {
@@ -1571,7 +1571,7 @@
         },
         {
             "name": "Product Semantics",
-            "code": "DSL7570\n",
+            "code": "DSL7570",
             "Credit (L-T-P)": "1-0-4",
             "Name of Faculty": "Shiv Kumar Verma",
             "slot": ""
@@ -1998,7 +1998,7 @@
         },
         {
             "code": "CHL2023",
-            "name": "Materials Fractals: Polymer, Corrosion,\n Colloids & suspensions",
+            "name": "Materials Fractals: Polymer, Corrosion, Colloids & suspensions",
             "Credit(l-t-p)": "",
             "Instructor": "",
             "slot": ""

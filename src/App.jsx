@@ -41,6 +41,7 @@ const TimetableGenerator = () => {
     J: [{ day: 'Tue', start: '4pm', end: '5pm' }, { day: 'Thu', start: '4pm', end: '5pm' }, { day: 'Fri', start: '4pm', end: '5pm' }],
     K: [{ day: 'Mon', start: '8am', end: '9am' }, { day: 'Wed', start: '8am', end: '9am' }, { day: 'Fri', start: '8am', end: '9am' }],
     N: [{ day: 'Tue', start: '8am', end: '9am' }, { day: 'Thu', start: '8am', end: '9am' }, { day: 'Fri', start: '5pm', end: '6pm' }],
+    U: [{ day: 'Mon', start: '12pm', end: '1pm' }, { day: 'Wed', start: '12pm', end: '1pm' }, { day: 'Fri', start: '12pm', end: '1pm' }],
     M1: [{ day: 'Mon', start: '1pm', end: '3pm' }],
     M2: [{ day: 'Tue', start: '1pm', end: '3pm' }],
     M3: [{ day: 'Wed', start: '1pm', end: '3pm' }],
@@ -64,6 +65,11 @@ const TimetableGenerator = () => {
     NG1: [{ day: 'Mon', start: '5pm', end: '6pm' }],
     NG2: [{ day: 'Tue', start: '5pm', end: '6pm' }],
     NG3: [{ day: 'Wed', start: '5pm', end: '6pm' }],
+    O:[{ day: 'Mon', start: '6pm', end: '7pm' }],
+    P:[{ day: 'Tue', start: '6pm', end: '7pm' }],
+    Q:[{ day: 'Wed', start: '6pm', end: '7pm' }],
+    R:[{ day: 'Thu', start: '6pm', end: '7pm' }],
+    S:[{ day: 'Fri', start: '6pm', end: '7pm' }],
   };
 
   const timeToMinutes = (time) => {
