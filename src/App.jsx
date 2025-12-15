@@ -49,9 +49,9 @@ const TimetableGenerator = () => {
     L8: [{ day: 'Wed', start: '11am', end: '1pm' }],
     L9: [{ day: 'Thu', start: '11am', end: '1pm' }],
     L10: [{ day: 'Fri', start: '11am', end: '1pm' }],
-    NG1:[{ day: 'Mon', start: '5pm', end: '6pm' }],
-    NG2:[{ day: 'Tue', start: '5pm', end: '6pm' }],
-    NG3:[{ day: 'Wed', start: '5pm', end: '6pm' }],
+    NG1: [{ day: 'Mon', start: '5pm', end: '6pm' }],
+    NG2: [{ day: 'Tue', start: '5pm', end: '6pm' }],
+    NG3: [{ day: 'Wed', start: '5pm', end: '6pm' }],
   };
 
   const timeToMinutes = (time) => {
@@ -64,61 +64,61 @@ const TimetableGenerator = () => {
     return hours * 60 + minutes;
   };
 
-const checkOverlap = (newCourse, existingCourses) => {
-  if (!newCourse.schedule) return null;
+  const checkOverlap = (newCourse, existingCourses) => {
+    if (!newCourse.schedule) return null;
 
-  for (const existing of existingCourses) {
-    if (existing.id === newCourse.id) continue;
-    if (!existing.schedule) continue;
+    for (const existing of existingCourses) {
+      if (existing.id === newCourse.id) continue;
+      if (!existing.schedule) continue;
 
-    // Check each day/time combo in new course against existing
-    for (const newSlot of newCourse.schedule) {
-      for (const existSlot of existing.schedule) {
-        // Only check if same day
-        if (newSlot.day !== existSlot.day) continue;
+      // Check each day/time combo in new course against existing
+      for (const newSlot of newCourse.schedule) {
+        for (const existSlot of existing.schedule) {
+          // Only check if same day
+          if (newSlot.day !== existSlot.day) continue;
 
-        const newStart = timeToMinutes(newSlot.start);
-        const newEnd = timeToMinutes(newSlot.end);
-        const existStart = timeToMinutes(existSlot.start);
-        const existEnd = timeToMinutes(existSlot.end);
+          const newStart = timeToMinutes(newSlot.start);
+          const newEnd = timeToMinutes(newSlot.end);
+          const existStart = timeToMinutes(existSlot.start);
+          const existEnd = timeToMinutes(existSlot.end);
 
-        // Check for time overlap
-        if (!(newEnd <= existStart || existEnd <= newStart)) {
-          return existing; // Return the conflicting course
+          // Check for time overlap
+          if (!(newEnd <= existStart || existEnd <= newStart)) {
+            return existing; // Return the conflicting course
+          }
         }
       }
     }
-  }
-  return null;
-};
+    return null;
+  };
 
-useEffect(() => {
-  fetch("/courses.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load courses.json");
-      }
-      return response.json();
-    })
-    .then((sampleCourses) => {
-      const processedCourses = sampleCourses.courses.map((c) => {
-        const schedule = c.slot
-          ? slotTiming[c.slot.toUpperCase()] || []
-          : [];
+  useEffect(() => {
+    fetch("/courses.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load courses.json");
+        }
+        return response.json();
+      })
+      .then((sampleCourses) => {
+        const processedCourses = sampleCourses.courses.map((c) => {
+          const schedule = c.slot
+            ? slotTiming[c.slot.toUpperCase()] || []
+            : [];
 
-        return {
-          ...c,
-          schedule,
-          color: c.color || colors[Math.floor(Math.random() * colors.length)],
-        };
+          return {
+            ...c,
+            schedule,
+            color: c.color || colors[Math.floor(Math.random() * colors.length)],
+          };
+        });
+
+        setCourses(processedCourses);
+      })
+      .catch((error) => {
+        console.error("Error loading courses:", error);
       });
-
-      setCourses(processedCourses);
-    })
-    .catch((error) => {
-      console.error("Error loading courses:", error);
-    });
-}, []);
+  }, []);
 
 
   const addCourseToTimetable = (course) => {
@@ -127,26 +127,26 @@ useEffect(() => {
     if (!schedule && course.slot) {
       schedule = slotTiming[course.slot.toUpperCase()] || [];
     }
-    
+
     const newCourse = {
       ...course,
       id: Date.now() + Math.random(),
       schedule: schedule,
     };
 
-     const conflictingCourse = checkOverlap(newCourse, selectedCourses);
-  if (conflictingCourse) {
-    setClashMessage(`⚠️ Time clash detected! "${newCourse.name}" conflicts with "${conflictingCourse.name}"`);
-    showModalState(true);
-    return;
-  }
-  setSelectedCourses([...selectedCourses, newCourse]);
-  setSearchTerm('');
+    const conflictingCourse = checkOverlap(newCourse, selectedCourses);
+    if (conflictingCourse) {
+      setClashMessage(`⚠️ Time clash detected! "${newCourse.name}" conflicts with "${conflictingCourse.name}"`);
+      showModalState(true);
+      return;
+    }
+    setSelectedCourses([...selectedCourses, newCourse]);
+    setSearchTerm('');
   };
 
   const updateCourse = (id, updates) => {
     const course = selectedCourses.find(c => c.id === id);
-    
+
     // Get schedule from slot if provided
     let schedule = updates.schedule;
     if (!schedule && updates.slot) {
@@ -161,15 +161,15 @@ useEffect(() => {
 
     const otherCourses = selectedCourses.filter(c => c.id !== id);
 
-   const conflictingCourse = checkOverlap(updated, otherCourses);
-  if (conflictingCourse) {
-    setClashMessage(`⚠️ Time clash detected! "${updated.name}" conflicts with "${conflictingCourse.name}"`);
-    showModalState(true);
-    return;
-  }
+    const conflictingCourse = checkOverlap(updated, otherCourses);
+    if (conflictingCourse) {
+      setClashMessage(`⚠️ Time clash detected! "${updated.name}" conflicts with "${conflictingCourse.name}"`);
+      showModalState(true);
+      return;
+    }
 
-  setSelectedCourses(selectedCourses.map(c => (c.id === id ? updated : c)));
-  setEditingId(null);
+    setSelectedCourses(selectedCourses.map(c => (c.id === id ? updated : c)));
+    setEditingId(null);
   };
 
   const removeCourse = (id) => {
@@ -210,118 +210,118 @@ useEffect(() => {
   //   console.log(timetable);
   //   return { days, times, timetable };
   // };
-const generateTimetable = () => {
-  const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+  const generateTimetable = () => {
+    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 
-  // Define slots with real times
-  const times = [
-    { label: '8-9am', start: '8am', end: '9am' },
-    { label: '9-10am', start: '9am', end: '10am' },
-    { label: '10-11am', start: '10am', end: '11am' },
-    { label: '11am-12pm', start: '11am', end: '12pm' },
-    { label: '12-1pm', start: '12pm', end: '1pm' },
-    { label: '1-2pm', start: '1pm', end: '2pm' },
-    { label: '2-3pm', start: '2pm', end: '3pm' },
-    { label: '3-4pm', start: '3pm', end: '4pm' },
-    { label: '4-5pm', start: '4pm', end: '5pm' },
-    { label: '5-6pm', start: '5pm', end: '6pm' }
-  ];
+    // Define slots with real times
+    const times = [
+      { label: '8-9am', start: '8am', end: '9am' },
+      { label: '9-10am', start: '9am', end: '10am' },
+      { label: '10-11am', start: '10am', end: '11am' },
+      { label: '11am-12pm', start: '11am', end: '12pm' },
+      { label: '12-1pm', start: '12pm', end: '1pm' },
+      { label: '1-2pm', start: '1pm', end: '2pm' },
+      { label: '2-3pm', start: '2pm', end: '3pm' },
+      { label: '3-4pm', start: '3pm', end: '4pm' },
+      { label: '4-5pm', start: '4pm', end: '5pm' },
+      { label: '5-6pm', start: '5pm', end: '6pm' }
+    ];
 
-  const timetable = {};
-  days.forEach(day => {
-    times.forEach(t => {
-      timetable[`${day}-${t.label}`] = [];
-    });
-  });
-
-  selectedCourses.forEach(course => {
-    if (!course.schedule) return;
-
-    course.schedule.forEach(({ day, start, end }) => {
-      const startMin = timeToMinutes(start);
-      const endMin = timeToMinutes(end);
-
+    const timetable = {};
+    days.forEach(day => {
       times.forEach(t => {
-        const slotStart = timeToMinutes(t.start);
-        const slotEnd = timeToMinutes(t.end);
-
-        // Proper overlap check
-        if (startMin < slotEnd && endMin > slotStart) {
-          timetable[`${day}-${t.label}`].push(course);
-        }
+        timetable[`${day}-${t.label}`] = [];
       });
     });
-  });
 
-  // console.log(timetable);
-  return { days, times: times.map(t => t.label), timetable };
-};
+    selectedCourses.forEach(course => {
+      if (!course.schedule) return;
 
-const exportToPNG = async () => {
-  const exportRef = timetableRef;
-  if (!exportRef.current) return;
+      course.schedule.forEach(({ day, start, end }) => {
+        const startMin = timeToMinutes(start);
+        const endMin = timeToMinutes(end);
 
-  const SCALE = 2;
-  const LANDSCAPE_WIDTH=1200;
+        times.forEach(t => {
+          const slotStart = timeToMinutes(t.start);
+          const slotEnd = timeToMinutes(t.end);
 
-  // Clone the node
-  const node = exportRef.current.cloneNode(true);
-
-  // 🔑 DO NOT override width/height
-  Object.assign(node.style, {
-    width: `${LANDSCAPE_WIDTH}px`,
-    height: "auto",
-    position: "absolute",
-    top: "0",
-    left: "0",
-    background: "#ffffff",
-    overflow: "visible",
-  });
-
-  // Move off-screen but keep renderable
-  // node.style.transform = "translateX(-300vw)";
-
-  document.body.appendChild(node);
-
-  // Wait for layout + fonts
-  await document.fonts.ready;
-  await new Promise((r) => requestAnimationFrame(r));
-
-  // 🔥 Measure EXACT rendered size
-  const rect = node.getBoundingClientRect();
-  const EXPORT_WIDTH = Math.ceil(rect.width);
-  const EXPORT_HEIGHT = Math.ceil(rect.height);
-
-  // ❗ SAFETY CHECK
-  if (EXPORT_WIDTH === 0 || EXPORT_HEIGHT === 0) {
-    console.error("Export failed: zero size", rect);
-    document.body.removeChild(node);
-    return;
-  }
-
-  try {
-    const dataUrl = await htmlToImage.toPng(node, {
-      width: EXPORT_WIDTH,
-      height: EXPORT_HEIGHT,
-      pixelRatio: SCALE,
-      backgroundColor: "#ffffff",
+          // Proper overlap check
+          if (startMin < slotEnd && endMin > slotStart) {
+            timetable[`${day}-${t.label}`].push(course);
+          }
+        });
+      });
     });
 
-    const link = document.createElement("a");
-    link.download = "timetable.png";
-    link.href = dataUrl;
-    link.click();
-  } catch (err) {
-    console.error("Export failed:", err);
-  } finally {
-    document.body.removeChild(node);
-  }
-};
+    // console.log(timetable);
+    return { days, times: times.map(t => t.label), timetable };
+  };
+
+  const exportToPNG = async () => {
+    const exportRef = timetableRef;
+    if (!exportRef.current) return;
+
+    const SCALE = 2;
+    const LANDSCAPE_WIDTH = 1200;
+
+    // Clone the node
+    const node = exportRef.current.cloneNode(true);
+
+    // 🔑 DO NOT override width/height
+    Object.assign(node.style, {
+      width: `${LANDSCAPE_WIDTH}px`,
+      height: "auto",
+      position: "absolute",
+      top: "0",
+      left: "0",
+      background: "#ffffff",
+      overflow: "visible",
+    });
+
+    // Move off-screen but keep renderable
+    // node.style.transform = "translateX(-300vw)";
+
+    document.body.appendChild(node);
+
+    // Wait for layout + fonts
+    await document.fonts.ready;
+    await new Promise((r) => requestAnimationFrame(r));
+
+    // 🔥 Measure EXACT rendered size
+    const rect = node.getBoundingClientRect();
+    const EXPORT_WIDTH = Math.ceil(rect.width);
+    const EXPORT_HEIGHT = Math.ceil(rect.height);
+
+    // ❗ SAFETY CHECK
+    if (EXPORT_WIDTH === 0 || EXPORT_HEIGHT === 0) {
+      console.error("Export failed: zero size", rect);
+      document.body.removeChild(node);
+      return;
+    }
+
+    try {
+      const dataUrl = await htmlToImage.toPng(node, {
+        width: EXPORT_WIDTH,
+        height: EXPORT_HEIGHT,
+        pixelRatio: SCALE,
+        backgroundColor: "#ffffff",
+      });
+
+      const link = document.createElement("a");
+      link.download = "timetable.png";
+      link.href = dataUrl;
+      link.click();
+    } catch (err) {
+      console.error("Export failed:", err);
+    } finally {
+      document.body.removeChild(node);
+    }
+  };
 
   const { days, times, timetable } = generateTimetable();
 
   const filteredCourses = courses.filter(c =>
-    c.name.toLowerCase().includes(searchTerm.toLowerCase()) 
+    c.name.toLowerCase().includes(searchTerm.toLowerCase())
     // || c.code.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -333,87 +333,25 @@ const exportToPNG = async () => {
           <p className="text-gray-600">Build your perfect schedule from our course database</p>
         </div>
 
-        {/* Timetable Section */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 overflow-x-auto">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-800">Weekly Timetable</h2>
-            {selectedCourses.length > 0 && (
-              <button
-                onClick={exportToPNG}
-                className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
-              >
-                <Download size={20} /> Export as PNG
-              </button>
-            )}
-          </div>
-          <div ref={timetableRef} className="bg-white">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-indigo-100">
-                  <th className="border border-gray-300 p-3 text-gray-800 font-semibold text-center w-24">Time</th>
-                  {days.map(day => (
-                    <th key={day} className="border border-gray-300 p-3 text-gray-800 font-semibold text-center">
-                      {day}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {times.map(time => (
-                  <tr key={time}>
-                    <td className="border border-gray-300 p-3 text-gray-700 font-semibold text-center bg-gray-50">
-                      {time}
-                    </td>
-                    {days.map(day => {
-                      const cellCourses = timetable[`${day}-${time}`] || [];
-
-                      if (cellCourses.length === 0) {
-                        return (
-                          <td key={`${day}-${time}`} className="border border-gray-300 p-2 text-center min-h-16 bg-white">
-                            <div className="text-gray-300">-</div>
-                          </td>
-                        );
-                      }
-
-                      return (
-                        <td key={`${day}-${time}`} className="border border-gray-300 p-0 text-center">
-                          {cellCourses.map(c => (
-                            <div
-                              key={c.id}
-                              className="text-sm font-bold w-full h-16 flex items-center justify-center p-1"
-                              style={{ backgroundColor: c.color }}
-                            >
-                              <span className="text-gray-800">{c.name}</span>
-                            </div>
-                          ))}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
 
         {/* Add Courses Section */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Add Courses</h2>
-        <div className="flex flex-col sm:flex-row gap-2 mb-6">
-  <input
-    type="text"
-    placeholder="Search by course name..."
-    value={searchTerm}
-    onChange={(e) => setSearchTerm(e.target.value)}
-    className="w-full sm:flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none"
-  />
-  <button
-    onClick={() => setShowAddManual(!showAddManual)}
-    className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition flex items-center justify-center gap-2"
-  >
-    <Plus size={20} /> Add Manually
-  </button>
-</div>
+          <div className="flex flex-col sm:flex-row gap-2 mb-6">
+            <input
+              type="text"
+              placeholder="Search by course name..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full sm:flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none"
+            />
+            <button
+              onClick={() => setShowAddManual(!showAddManual)}
+              className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition flex items-center justify-center gap-2"
+            >
+              <Plus size={20} /> Add Manually
+            </button>
+          </div>
 
 
           {courses.length > 0 && (
@@ -423,10 +361,10 @@ const exportToPNG = async () => {
           {searchTerm && filteredCourses.length > 0 && (
             <div className="bg-gray-50 rounded-lg max-h-60 overflow-y-auto">
               {filteredCourses.map(course => {
-                const timeDisplay = course.schedule && course.schedule.length > 0 
-                  ? `${course.schedule[0].start}-${course.schedule[0].end}` 
+                const timeDisplay = course.schedule && course.schedule.length > 0
+                  ? `${course.schedule[0].start}-${course.schedule[0].end}`
                   : 'No schedule';
-                
+
                 return (
                   <div
                     key={course.id}
@@ -482,6 +420,71 @@ const exportToPNG = async () => {
             </div>
           </div>
         )}
+
+    {/* Timetable Section */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 overflow-x-auto">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-gray-800">Weekly Timetable</h2>
+              {selectedCourses.length > 0 && (
+                <button
+                  onClick={exportToPNG}
+                  className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
+                >
+                  <Download size={20} /> Export as PNG
+                </button>
+              )}
+            </div>
+            <div ref={timetableRef} className="bg-white">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-indigo-100">
+                    <th className="border border-gray-300 p-3 text-gray-800 font-semibold text-center w-24">Time</th>
+                    {days.map(day => (
+                      <th key={day} className="border border-gray-300 p-3 text-gray-800 font-semibold text-center">
+                        {day}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {times.map(time => (
+                    <tr key={time}>
+                      <td className="border border-gray-300 p-3 text-gray-700 font-semibold text-center bg-gray-50">
+                        {time}
+                      </td>
+                      {days.map(day => {
+                        const cellCourses = timetable[`${day}-${time}`] || [];
+  
+                        if (cellCourses.length === 0) {
+                          return (
+                            <td key={`${day}-${time}`} className="border border-gray-300 p-2 text-center min-h-16 bg-white">
+                              <div className="text-gray-300">-</div>
+                            </td>
+                          );
+                        }
+  
+                        return (
+                          <td key={`${day}-${time}`} className="border border-gray-300 p-0 text-center">
+                            {cellCourses.map(c => (
+                              <div
+                                key={c.id}
+                                className="text-sm font-bold w-full h-16 flex items-center justify-center p-1"
+                                style={{ backgroundColor: c.color }}
+                              >
+                                <span className="text-gray-800">{c.name}</span>
+                              </div>
+                            ))}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
       </div>
 
       {showModal && (
@@ -515,28 +518,28 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
   const [useSlot, setUseSlot] = useState(!!course.slot);
   // const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
   const [dayTimings, setDayTimings] = useState(() => {
-  const initialTimings = {
-    Mon: { enabled: false, start: '9am', end: '10am' },
-    Tue: { enabled: false, start: '9am', end: '10am' },
-    Wed: { enabled: false, start: '9am', end: '10am' },
-    Thu: { enabled: false, start: '9am', end: '10am' },
-    Fri: { enabled: false, start: '9am', end: '10am' },
-  };
-  
-  if (course.schedule && !course.slot) {
-    course.schedule.forEach(slot => {
-      if (initialTimings[slot.day]) {
-        initialTimings[slot.day] = {
-          enabled: true,
-          start: slot.start,
-          end: slot.end
-        };
-      }
-    });
-  }
-  
-  return initialTimings;
-});
+    const initialTimings = {
+      Mon: { enabled: false, start: '9am', end: '10am' },
+      Tue: { enabled: false, start: '9am', end: '10am' },
+      Wed: { enabled: false, start: '9am', end: '10am' },
+      Thu: { enabled: false, start: '9am', end: '10am' },
+      Fri: { enabled: false, start: '9am', end: '10am' },
+    };
+
+    if (course.schedule && !course.slot) {
+      course.schedule.forEach(slot => {
+        if (initialTimings[slot.day]) {
+          initialTimings[slot.day] = {
+            enabled: true,
+            start: slot.start,
+            end: slot.end
+          };
+        }
+      });
+    }
+
+    return initialTimings;
+  });
 
   // Helper to get time range display
   const getTimeDisplay = () => {
@@ -545,30 +548,30 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
     return `${first.start}-${first.end}`;
   };
 
- const handleSave = () => {
-  const updates = {
-    name,
-    credits,
-    color,
+  const handleSave = () => {
+    const updates = {
+      name,
+      credits,
+      color,
+    };
+
+    if (useSlot) {
+      updates.slot = slot;
+      updates.schedule = slotTiming[slot.toUpperCase()] || [];
+    } else {
+      // Create custom schedule from dayTimings
+      updates.schedule = Object.entries(dayTimings)
+        .filter(([_, timing]) => timing.enabled)
+        .map(([day, timing]) => ({
+          day,
+          start: timing.start,
+          end: timing.end,
+        }));
+      updates.slot = 'Custom';
+    }
+
+    onUpdate(updates);
   };
-
-  if (useSlot) {
-    updates.slot = slot;
-    updates.schedule = slotTiming[slot.toUpperCase()] || [];
-  } else {
-    // Create custom schedule from dayTimings
-    updates.schedule = Object.entries(dayTimings)
-      .filter(([_, timing]) => timing.enabled)
-      .map(([day, timing]) => ({
-        day,
-        start: timing.start,
-        end: timing.end,
-      }));
-    updates.slot = 'Custom';
-  }
-
-  onUpdate(updates);
-};
 
   if (isEditing) {
     return (
@@ -640,76 +643,76 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
               ))}
             </select>
           ) : (
-          <div className="space-y-3">
-  {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
-    <div key={day} className="border border-gray-200 rounded-lg p-3 bg-gray-50">
-      <div className="flex items-center gap-3 mb-2">
-        <input
-          type="checkbox"
-          checked={dayTimings[day].enabled}
-          onChange={(e) => {
-            setDayTimings({
-              ...dayTimings,
-              [day]: {
-                ...dayTimings[day],
-                enabled: e.target.checked
-              }
-            });
-          }}
-          className="w-4 h-4"
-        />
-        <span className="font-semibold text-gray-700 w-12">{day}</span>
-        <div className="flex gap-2 items-center flex-1">
-          <select
-            value={dayTimings[day].start}
-            onChange={(e) => {
-              setDayTimings({
-                ...dayTimings,
-                [day]: {
-                  ...dayTimings[day],
-                  start: e.target.value
-                }
-              });
-            }}
-            disabled={!dayTimings[day].enabled}
-            className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${
-              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
-            }`}
-          >
-            {timeSlots.map(t => (
-              <option key={t} value={t}>
-                {t}
-              </option>
-            ))}
-          </select>
-          <span className="font-bold text-gray-600">to</span>
-          <select
-            value={dayTimings[day].end}
-            onChange={(e) => {
-              setDayTimings({
-                ...dayTimings,
-                [day]: {
-                  ...dayTimings[day],
-                  end: e.target.value
-                }
-              });
-            }}
-            disabled={!dayTimings[day].enabled}
-            className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${
-              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
-            }`}
-          >
-            {timeSlots.map(t => (
-              <option key={t} value={t}>
-                {t}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+            <div className="space-y-3">
+              {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
+                <div key={day} className="border border-gray-200 rounded-lg p-3 bg-gray-50">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                    <div className="flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        checked={dayTimings[day].enabled}
+                        onChange={(e) => {
+                          setDayTimings({
+                            ...dayTimings,
+                            [day]: {
+                              ...dayTimings[day],
+                              enabled: e.target.checked
+                            }
+                          });
+                        }}
+                        className="w-4 h-4"
+                      />
+                      <span className="font-semibold text-gray-700 w-12">{day}</span>
+                    </div>
+                    <div className="flex gap-2 items-center flex-1">
+                      <select
+                        value={dayTimings[day].start}
+                        onChange={(e) => {
+                          setDayTimings({
+                            ...dayTimings,
+                            [day]: {
+                              ...dayTimings[day],
+                              start: e.target.value
+                            }
+                          });
+                        }}
+                        disabled={!dayTimings[day].enabled}
+                        className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                          }`}
+                      >
+                        {timeSlots.map(t => (
+                          <option key={t} value={t}>
+                            {t}
+                          </option>
+                        ))}
+                      </select>
+                      <span className="font-bold text-gray-600 text-sm">to</span>
+                      <select
+                        value={dayTimings[day].end}
+                        onChange={(e) => {
+                          setDayTimings({
+                            ...dayTimings,
+                            [day]: {
+                              ...dayTimings[day],
+                              end: e.target.value
+                            }
+                          });
+                        }}
+                        disabled={!dayTimings[day].enabled}
+                        className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                          }`}
+                      >
+                        {timeSlots.map(t => (
+                          <option key={t} value={t}>
+                            {t}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           )}
         </div>
 
@@ -753,7 +756,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
       <div className="text-left">
         <p className="font-bold text-gray-800">{name}</p>
         <p className="text-sm text-gray-700">
-          {course.code} • { course.slot} {credits && `• ${credits} Credits`}
+          {course.code} • {course.slot} {credits && `• ${credits} Credits`}
         </p>
       </div>
       <div className="flex gap-2">
@@ -778,12 +781,12 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
   const [useSlot, setUseSlot] = useState(true);
   // const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
   const [dayTimings, setDayTimings] = useState({
-  Mon: { enabled: false, start: '9am', end: '10am' },
-  Tue: { enabled: false, start: '9am', end: '10am' },
-  Wed: { enabled: false, start: '9am', end: '10am' },
-  Thu: { enabled: false, start: '9am', end: '10am' },
-  Fri: { enabled: false, start: '9am', end: '10am' },
-});
+    Mon: { enabled: false, start: '9am', end: '10am' },
+    Tue: { enabled: false, start: '9am', end: '10am' },
+    Wed: { enabled: false, start: '9am', end: '10am' },
+    Thu: { enabled: false, start: '9am', end: '10am' },
+    Fri: { enabled: false, start: '9am', end: '10am' },
+  });
   const [formData, setFormData] = useState({
     name: '',
     code: '',
@@ -794,38 +797,38 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
     color: colors[0],
   });
 
-const handleAdd = () => {
-  if (!formData.name || !formData.code) {
-    alert('Please fill in course name and code');
-    return;
-  }
-
-  let schedule;
-  if (useSlot) {
-    schedule = slotTiming[formData.slot.toUpperCase()] || [];
-  } else {
-    // Create custom schedule from dayTimings
-    schedule = Object.entries(dayTimings)
-      .filter(([_, timing]) => timing.enabled)
-      .map(([day, timing]) => ({
-        day,
-        start: timing.start,
-        end: timing.end,
-      }));
-    
-    if (schedule.length === 0) {
-      alert('Please select at least one day for the course');
+  const handleAdd = () => {
+    if (!formData.name || !formData.code) {
+      alert('Please fill in course name and code');
       return;
     }
-  }
 
-  onAdd({
-    ...formData,
-    schedule,
-    slot: useSlot ? formData.slot : 'Custom',
-    id: Date.now() + Math.random(),
-  });
-};
+    let schedule;
+    if (useSlot) {
+      schedule = slotTiming[formData.slot.toUpperCase()] || [];
+    } else {
+      // Create custom schedule from dayTimings
+      schedule = Object.entries(dayTimings)
+        .filter(([_, timing]) => timing.enabled)
+        .map(([day, timing]) => ({
+          day,
+          start: timing.start,
+          end: timing.end,
+        }));
+
+      if (schedule.length === 0) {
+        alert('Please select at least one day for the course');
+        return;
+      }
+    }
+
+    onAdd({
+      ...formData,
+      schedule,
+      slot: useSlot ? formData.slot : 'Custom',
+      id: Date.now() + Math.random(),
+    });
+  };
 
   return (
     <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-6 mt-4">
@@ -891,76 +894,76 @@ const handleAdd = () => {
             ))}
           </select>
         ) : (
-         <div className="space-y-3">
-  {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
-    <div key={day} className="border border-gray-200 rounded-lg p-3 bg-white">
-      <div className="flex items-center gap-3 mb-2">
-        <input
-          type="checkbox"
-          checked={dayTimings[day].enabled}
-          onChange={(e) => {
-            setDayTimings({
-              ...dayTimings,
-              [day]: {
-                ...dayTimings[day],
-                enabled: e.target.checked
-              }
-            });
-          }}
-          className="w-4 h-4"
-        />
-        <span className="font-semibold text-gray-700 w-12">{day}</span>
-        <div className="flex gap-2 items-center flex-1">
-          <select
-            value={dayTimings[day].start}
-            onChange={(e) => {
-              setDayTimings({
-                ...dayTimings,
-                [day]: {
-                  ...dayTimings[day],
-                  start: e.target.value
-                }
-              });
-            }}
-            disabled={!dayTimings[day].enabled}
-            className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${
-              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
-            }`}
-          >
-            {timeSlots.map(t => (
-              <option key={t} value={t}>
-                {t}
-              </option>
+          <div className="space-y-3">
+            {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
+              <div key={day} className="border border-gray-200 rounded-lg p-3 bg-white">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="checkbox"
+                      checked={dayTimings[day].enabled}
+                      onChange={(e) => {
+                        setDayTimings({
+                          ...dayTimings,
+                          [day]: {
+                            ...dayTimings[day],
+                            enabled: e.target.checked
+                          }
+                        });
+                      }}
+                      className="w-4 h-4"
+                    />
+                    <span className="font-semibold text-gray-700 w-12">{day}</span>
+                  </div>
+                  <div className="flex gap-2 items-center flex-1">
+                    <select
+                      value={dayTimings[day].start}
+                      onChange={(e) => {
+                        setDayTimings({
+                          ...dayTimings,
+                          [day]: {
+                            ...dayTimings[day],
+                            start: e.target.value
+                          }
+                        });
+                      }}
+                      disabled={!dayTimings[day].enabled}
+                      className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                        }`}
+                    >
+                      {timeSlots.map(t => (
+                        <option key={t} value={t}>
+                          {t}
+                        </option>
+                      ))}
+                    </select>
+                    <span className="font-bold text-gray-600 text-sm">to</span>
+                    <select
+                      value={dayTimings[day].end}
+                      onChange={(e) => {
+                        setDayTimings({
+                          ...dayTimings,
+                          [day]: {
+                            ...dayTimings[day],
+                            end: e.target.value
+                          }
+                        });
+                      }}
+                      disabled={!dayTimings[day].enabled}
+                      className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                        }`}
+                    >
+                      {timeSlots.map(t => (
+                        <option key={t} value={t}>
+                          {t}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              </div>
             ))}
-          </select>
-          <span className="font-bold text-gray-600">to</span>
-          <select
-            value={dayTimings[day].end}
-            onChange={(e) => {
-              setDayTimings({
-                ...dayTimings,
-                [day]: {
-                  ...dayTimings[day],
-                  end: e.target.value
-                }
-              });
-            }}
-            disabled={!dayTimings[day].enabled}
-            className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${
-              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
-            }`}
-          >
-            {timeSlots.map(t => (
-              <option key={t} value={t}>
-                {t}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+          </div>
         )}
       </div>
 
