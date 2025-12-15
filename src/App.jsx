@@ -64,33 +64,33 @@ const TimetableGenerator = () => {
     return hours * 60 + minutes;
   };
 
-  const checkOverlap = (newCourse, existingCourses) => {
-    if (!newCourse.schedule) return false;
+const checkOverlap = (newCourse, existingCourses) => {
+  if (!newCourse.schedule) return null;
 
-    for (const existing of existingCourses) {
-      if (existing.id === newCourse.id) continue;
-      if (!existing.schedule) continue;
+  for (const existing of existingCourses) {
+    if (existing.id === newCourse.id) continue;
+    if (!existing.schedule) continue;
 
-      // Check each day/time combo in new course against existing
-      for (const newSlot of newCourse.schedule) {
-        for (const existSlot of existing.schedule) {
-          // Only check if same day
-          if (newSlot.day !== existSlot.day) continue;
+    // Check each day/time combo in new course against existing
+    for (const newSlot of newCourse.schedule) {
+      for (const existSlot of existing.schedule) {
+        // Only check if same day
+        if (newSlot.day !== existSlot.day) continue;
 
-          const newStart = timeToMinutes(newSlot.start);
-          const newEnd = timeToMinutes(newSlot.end);
-          const existStart = timeToMinutes(existSlot.start);
-          const existEnd = timeToMinutes(existSlot.end);
+        const newStart = timeToMinutes(newSlot.start);
+        const newEnd = timeToMinutes(newSlot.end);
+        const existStart = timeToMinutes(existSlot.start);
+        const existEnd = timeToMinutes(existSlot.end);
 
-          // Check for time overlap
-          if (!(newEnd <= existStart || existEnd <= newStart)) {
-            return true;
-          }
+        // Check for time overlap
+        if (!(newEnd <= existStart || existEnd <= newStart)) {
+          return existing; // Return the conflicting course
         }
       }
     }
-    return false;
-  };
+  }
+  return null;
+};
 
 useEffect(() => {
   fetch("/courses.json")
@@ -134,13 +134,14 @@ useEffect(() => {
       schedule: schedule,
     };
 
-    if (checkOverlap(newCourse, selectedCourses)) {
-      setClashMessage(`⚠️ Time clash detected for "${newCourse.name}"`);
-      showModalState(true);
-      return;
-    }
-    setSelectedCourses([...selectedCourses, newCourse]);
-    setSearchTerm('');
+     const conflictingCourse = checkOverlap(newCourse, selectedCourses);
+  if (conflictingCourse) {
+    setClashMessage(`⚠️ Time clash detected! "${newCourse.name}" conflicts with "${conflictingCourse.name}"`);
+    showModalState(true);
+    return;
+  }
+  setSelectedCourses([...selectedCourses, newCourse]);
+  setSearchTerm('');
   };
 
   const updateCourse = (id, updates) => {
@@ -160,14 +161,15 @@ useEffect(() => {
 
     const otherCourses = selectedCourses.filter(c => c.id !== id);
 
-    if (checkOverlap(updated, otherCourses)) {
-      setClashMessage(`⚠️ Time clash detected for "${updated.name}"`);
-      showModalState(true);
-      return;
-    }
+   const conflictingCourse = checkOverlap(updated, otherCourses);
+  if (conflictingCourse) {
+    setClashMessage(`⚠️ Time clash detected! "${updated.name}" conflicts with "${conflictingCourse.name}"`);
+    showModalState(true);
+    return;
+  }
 
-    setSelectedCourses(selectedCourses.map(c => (c.id === id ? updated : c)));
-    setEditingId(null);
+  setSelectedCourses(selectedCourses.map(c => (c.id === id ? updated : c)));
+  setEditingId(null);
   };
 
   const removeCourse = (id) => {
@@ -434,7 +436,7 @@ const exportToPNG = async () => {
                     <div>
                       <p className="font-semibold text-gray-800">{course.name}</p>
                       <p className="text-sm text-gray-600">
-                        {course.code} • Slot {course.slot} • {timeDisplay}
+                        {course.code} • {course.slot} {course.credits && `• ${course.credits} Credits`}
                       </p>
                     </div>
                     <Plus className="text-green-500" size={20} />
@@ -507,11 +509,34 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
   const [name, setName] = useState(course.name);
   const [credits, setCredits] = useState(course.credits);
   const [slot, setSlot] = useState(course.slot);
-  const [startTime, setStartTime] = useState(course.schedule?.[0]?.start || '9am');
-  const [endTime, setEndTime] = useState(course.schedule?.[0]?.end || '10am');
+  // const [startTime, setStartTime] = useState(course.schedule?.[0]?.start || '9am');
+  // const [endTime, setEndTime] = useState(course.schedule?.[0]?.end || '10am');
   const [color, setColor] = useState(course.color);
   const [useSlot, setUseSlot] = useState(!!course.slot);
-  const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
+  // const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
+  const [dayTimings, setDayTimings] = useState(() => {
+  const initialTimings = {
+    Mon: { enabled: false, start: '9am', end: '10am' },
+    Tue: { enabled: false, start: '9am', end: '10am' },
+    Wed: { enabled: false, start: '9am', end: '10am' },
+    Thu: { enabled: false, start: '9am', end: '10am' },
+    Fri: { enabled: false, start: '9am', end: '10am' },
+  };
+  
+  if (course.schedule && !course.slot) {
+    course.schedule.forEach(slot => {
+      if (initialTimings[slot.day]) {
+        initialTimings[slot.day] = {
+          enabled: true,
+          start: slot.start,
+          end: slot.end
+        };
+      }
+    });
+  }
+  
+  return initialTimings;
+});
 
   // Helper to get time range display
   const getTimeDisplay = () => {
@@ -520,28 +545,30 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
     return `${first.start}-${first.end}`;
   };
 
-  const handleSave = () => {
-    const updates = {
-      name,
-      credits,
-      color,
-    };
-
-    if (useSlot) {
-      updates.slot = slot;
-      updates.schedule = slotTiming[slot.toUpperCase()] || [];
-    } else {
-      // Create custom schedule with selected days
-      updates.schedule = selectedDays.map(day => ({
-        day,
-        start: startTime,
-        end: endTime,
-      }));
-      updates.slot = 'Custom';
-    }
-
-    onUpdate(updates);
+ const handleSave = () => {
+  const updates = {
+    name,
+    credits,
+    color,
   };
+
+  if (useSlot) {
+    updates.slot = slot;
+    updates.schedule = slotTiming[slot.toUpperCase()] || [];
+  } else {
+    // Create custom schedule from dayTimings
+    updates.schedule = Object.entries(dayTimings)
+      .filter(([_, timing]) => timing.enabled)
+      .map(([day, timing]) => ({
+        day,
+        start: timing.start,
+        end: timing.end,
+      }));
+    updates.slot = 'Custom';
+  }
+
+  onUpdate(updates);
+};
 
   if (isEditing) {
     return (
@@ -613,55 +640,76 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
               ))}
             </select>
           ) : (
-            <div className="space-y-3">
-              <div className="flex gap-2">
-                <select
-                  value={startTime}
-                  onChange={(e) => setStartTime(e.target.value)}
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm"
-                >
-                  {timeSlots.map(t => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-                <span className="flex items-center font-bold">to</span>
-                <select
-                  value={endTime}
-                  onChange={(e) => setEndTime(e.target.value)}
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm"
-                >
-                  {timeSlots.map(t => (
-                    <option key={t} value={t}>
-                      {t}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="text-xs font-semibold text-gray-600 block mb-2">Select Days</label>
-                <div className="flex gap-2 flex-wrap">
-                  {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
-                    <label key={day} className="flex items-center gap-1 cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={selectedDays.includes(day)}
-                        onChange={(e) => {
-                          if (e.target.checked) {
-                            setSelectedDays([...selectedDays, day]);
-                          } else {
-                            setSelectedDays(selectedDays.filter(d => d !== day));
-                          }
-                        }}
-                        className="w-4 h-4"
-                      />
-                      <span className="text-sm">{day}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <div className="space-y-3">
+  {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
+    <div key={day} className="border border-gray-200 rounded-lg p-3 bg-gray-50">
+      <div className="flex items-center gap-3 mb-2">
+        <input
+          type="checkbox"
+          checked={dayTimings[day].enabled}
+          onChange={(e) => {
+            setDayTimings({
+              ...dayTimings,
+              [day]: {
+                ...dayTimings[day],
+                enabled: e.target.checked
+              }
+            });
+          }}
+          className="w-4 h-4"
+        />
+        <span className="font-semibold text-gray-700 w-12">{day}</span>
+        <div className="flex gap-2 items-center flex-1">
+          <select
+            value={dayTimings[day].start}
+            onChange={(e) => {
+              setDayTimings({
+                ...dayTimings,
+                [day]: {
+                  ...dayTimings[day],
+                  start: e.target.value
+                }
+              });
+            }}
+            disabled={!dayTimings[day].enabled}
+            className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${
+              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+            }`}
+          >
+            {timeSlots.map(t => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+          <span className="font-bold text-gray-600">to</span>
+          <select
+            value={dayTimings[day].end}
+            onChange={(e) => {
+              setDayTimings({
+                ...dayTimings,
+                [day]: {
+                  ...dayTimings[day],
+                  end: e.target.value
+                }
+              });
+            }}
+            disabled={!dayTimings[day].enabled}
+            className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${
+              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+            }`}
+          >
+            {timeSlots.map(t => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
           )}
         </div>
 
@@ -705,7 +753,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
       <div className="text-left">
         <p className="font-bold text-gray-800">{name}</p>
         <p className="text-sm text-gray-700">
-          {course.code} • {course.slot} {credits && `• ${credits} Credits`}
+          {course.code} • { course.slot} {credits && `• ${credits} Credits`}
         </p>
       </div>
       <div className="flex gap-2">
@@ -728,7 +776,14 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
 
 function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
   const [useSlot, setUseSlot] = useState(true);
-  const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
+  // const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
+  const [dayTimings, setDayTimings] = useState({
+  Mon: { enabled: false, start: '9am', end: '10am' },
+  Tue: { enabled: false, start: '9am', end: '10am' },
+  Wed: { enabled: false, start: '9am', end: '10am' },
+  Thu: { enabled: false, start: '9am', end: '10am' },
+  Fri: { enabled: false, start: '9am', end: '10am' },
+});
   const [formData, setFormData] = useState({
     name: '',
     code: '',
@@ -739,31 +794,38 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
     color: colors[0],
   });
 
-  const handleAdd = () => {
-    if (!formData.name || !formData.code) {
-      alert('Please fill in course name and code');
+const handleAdd = () => {
+  if (!formData.name || !formData.code) {
+    alert('Please fill in course name and code');
+    return;
+  }
+
+  let schedule;
+  if (useSlot) {
+    schedule = slotTiming[formData.slot.toUpperCase()] || [];
+  } else {
+    // Create custom schedule from dayTimings
+    schedule = Object.entries(dayTimings)
+      .filter(([_, timing]) => timing.enabled)
+      .map(([day, timing]) => ({
+        day,
+        start: timing.start,
+        end: timing.end,
+      }));
+    
+    if (schedule.length === 0) {
+      alert('Please select at least one day for the course');
       return;
     }
+  }
 
-    let schedule;
-    if (useSlot) {
-      schedule = slotTiming[formData.slot.toUpperCase()] || [];
-    } else {
-      // Create custom schedule with selected days
-      schedule = selectedDays.map(day => ({
-        day,
-        start: formData.startTime,
-        end: formData.endTime,
-      }));
-    }
-
-    onAdd({
-      ...formData,
-      schedule,
-      slot: useSlot ? formData.slot : 'Custom',
-      id: Date.now() + Math.random(),
-    });
-  };
+  onAdd({
+    ...formData,
+    schedule,
+    slot: useSlot ? formData.slot : 'Custom',
+    id: Date.now() + Math.random(),
+  });
+};
 
   return (
     <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-200 rounded-xl p-6 mt-4">
@@ -829,55 +891,76 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
             ))}
           </select>
         ) : (
-          <div className="space-y-3">
-            <div className="flex gap-2">
-              <select
-                value={formData.startTime}
-                onChange={(e) => setFormData({ ...formData, startTime: e.target.value })}
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none"
-              >
-                {timeSlots.map(t => (
-                  <option key={t} value={t}>
-                    {t}
-                  </option>
-                ))}
-              </select>
-              <span className="flex items-center font-bold">to</span>
-              <select
-                value={formData.endTime}
-                onChange={(e) => setFormData({ ...formData, endTime: e.target.value })}
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none"
-              >
-                {timeSlots.map(t => (
-                  <option key={t} value={t}>
-                    {t}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="text-xs font-semibold text-gray-600 block mb-2">Select Days</label>
-              <div className="flex gap-2 flex-wrap">
-                {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
-                  <label key={day} className="flex items-center gap-1 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={selectedDays.includes(day)}
-                      onChange={(e) => {
-                        if (e.target.checked) {
-                          setSelectedDays([...selectedDays, day]);
-                        } else {
-                          setSelectedDays(selectedDays.filter(d => d !== day));
-                        }
-                      }}
-                      className="w-4 h-4"
-                    />
-                    <span className="text-sm">{day}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
-          </div>
+         <div className="space-y-3">
+  {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
+    <div key={day} className="border border-gray-200 rounded-lg p-3 bg-white">
+      <div className="flex items-center gap-3 mb-2">
+        <input
+          type="checkbox"
+          checked={dayTimings[day].enabled}
+          onChange={(e) => {
+            setDayTimings({
+              ...dayTimings,
+              [day]: {
+                ...dayTimings[day],
+                enabled: e.target.checked
+              }
+            });
+          }}
+          className="w-4 h-4"
+        />
+        <span className="font-semibold text-gray-700 w-12">{day}</span>
+        <div className="flex gap-2 items-center flex-1">
+          <select
+            value={dayTimings[day].start}
+            onChange={(e) => {
+              setDayTimings({
+                ...dayTimings,
+                [day]: {
+                  ...dayTimings[day],
+                  start: e.target.value
+                }
+              });
+            }}
+            disabled={!dayTimings[day].enabled}
+            className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${
+              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+            }`}
+          >
+            {timeSlots.map(t => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+          <span className="font-bold text-gray-600">to</span>
+          <select
+            value={dayTimings[day].end}
+            onChange={(e) => {
+              setDayTimings({
+                ...dayTimings,
+                [day]: {
+                  ...dayTimings[day],
+                  end: e.target.value
+                }
+              });
+            }}
+            disabled={!dayTimings[day].enabled}
+            className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${
+              !dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+            }`}
+          >
+            {timeSlots.map(t => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
         )}
       </div>
 

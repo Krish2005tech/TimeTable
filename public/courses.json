@@ -791,7 +791,7 @@
             "name": "Engineering Mechanics",
             "code": "MEL1010",
             "Course Type": "IE",
-            "L-T-P (Credits)": "2-1-0 (3)",
+            "L-T-P (credits)": "2-1-0 (3)",
             "Course Coordinator": "Prof. B Ravindra",
             "slot": "K"
         },
@@ -799,7 +799,7 @@
             "name": "Engineering Realization",
             "code": "MEP1020",
             "Course Type": "IE",
-            "L-T-P (Credits)": "0-0-2 (1)",
+            "L-T-P (credits)": "0-0-2 (1)",
             "Course Coordinator": "Dr. Ankur Gupta",
             "slot": "M3"
         },
@@ -807,7 +807,7 @@
             "name": "Fluid Mechanics",
             "code": "MEL2040",
             "Course Type": "PC",
-            "L-T-P (Credits)": "3-1-0 (4)",
+            "L-T-P (credits)": "3-1-0 (4)",
             "Course Coordinator": "Dr. Gagan Kewalramani",
             "slot": "D"
         },
@@ -815,7 +815,7 @@
             "name": "Fluid Mechanics-Lab",
             "code": "MEP2010",
             "Course Type": "PC",
-            "L-T-P (Credits)": "0-0-2 (1)",
+            "L-T-P (credits)": "0-0-2 (1)",
             "Course Coordinator": "Dr. Arun Kumar R",
             "slot": "M3"
         },
@@ -823,7 +823,7 @@
             "name": "Manufacturing Process",
             "code": "MEL2030",
             "Course Type": "PC",
-            "L-T-P (Credits)": "3-0-0 (3)",
+            "L-T-P (credits)": "3-0-0 (3)",
             "Course Coordinator": "Dr Rajit Ranjan",
             "slot": "A"
         },
@@ -831,7 +831,7 @@
             "name": "Thermodynamics",
             "code": "MEL2020",
             "Course Type": "IE",
-            "L-T-P (Credits)": "2000-03-01 00:00:00",
+            "L-T-P (credits)": "2000-03-01 00:00:00",
             "Course Coordinator": "Dr. Ashish Pathak",
             "slot": "A"
         },
@@ -839,7 +839,7 @@
             "name": "Control of Mechanical Systems",
             "code": "MEL3080",
             "Course Type": "PC",
-            "L-T-P (Credits)": "3-0-4 (5)",
+            "L-T-P (credits)": "3-0-4 (5)",
             "Course Coordinator": "Prof. Suril V shah",
             "slot": "A\n"
         },
@@ -847,7 +847,7 @@
             "name": "Smart Manufacturing",
             "code": "MEL3090",
             "Course Type": "PC",
-            "L-T-P (Credits)": "2-0-2 (3)",
+            "L-T-P (credits)": "2-0-2 (3)",
             "Course Coordinator": "Prof. Kaushal A Desai",
             "slot": "B"
         },
@@ -855,7 +855,7 @@
             "name": "Design of Machine elements",
             "code": "MEL3060",
             "Course Type": "PC",
-            "L-T-P (Credits)": "3-0-2 (4)",
+            "L-T-P (credits)": "3-0-2 (4)",
             "Course Coordinator": "Dr. Hirshikesh",
             "slot": "C"
         },
@@ -863,7 +863,7 @@
             "name": "Thermofluids Engineering",
             "code": "MEL3070",
             "Course Type": "PC",
-            "L-T-P (Credits)": "3-1-0 (4)",
+            "L-T-P (credits)": "3-1-0 (4)",
             "Course Coordinator": "Dr. Arun Kumar R",
             "slot": "D"
         },
@@ -871,7 +871,7 @@
             "name": "Machining and Automated Manufacturing Lab",
             "code": "MEP3030",
             "Course Type": "PC",
-            "L-T-P (Credits)": "0-0-2 (1)",
+            "L-T-P (credits)": "0-0-2 (1)",
             "Course Coordinator": "Dr. Gourhari Ghosh",
             "slot": "M3"
         },
@@ -879,7 +879,7 @@
             "name": "Design Lab",
             "code": "MEP7050",
             "Course Type": "SC (Design)",
-            "L-T-P (Credits)": "0-0-2 (1)",
+            "L-T-P (credits)": "0-0-2 (1)",
             "Course Coordinator": "Dr. Hirshikesh",
             "slot": "M6"
         },
@@ -887,7 +887,7 @@
             "name": "Finite Element Methods in Engineering",
             "code": "MEL7540",
             "Course Type": "SC (Design)",
-            "L-T-P (Credits)": "3-0-0 (3)",
+            "L-T-P (credits)": "3-0-0 (3)",
             "Course Coordinator": "Atul Kumar Sharma",
             "slot": "J"
         },
@@ -895,7 +895,7 @@
             "name": "Introduction to Acoustics",
             "code": "MEL7160",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Amrita Puri",
             "slot": "K"
         },
@@ -903,7 +903,7 @@
             "name": "Principles of Biomechanics",
             "code": "MEL4060",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Barun Pratiher",
             "slot": "E"
         },
@@ -911,7 +911,7 @@
             "name": "Introduction to Robotics",
             "code": "RML6010",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Riby A Boby",
             "slot": "N"
         },
@@ -919,7 +919,7 @@
             "name": "Power Plant Engineering",
             "code": "MEL7150",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Hardik Kothadia",
             "slot": "E"
         },
@@ -927,7 +927,7 @@
             "name": "Refrigeration and Air-conditioning",
             "code": "MEL4050",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Prof. Prodyut Chakraborty",
             "slot": "N"
         },
@@ -935,7 +935,7 @@
             "name": "Micro-Nano Manufacturing",
             "code": "MEL4420",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Gourhari Ghosh",
             "slot": "K"
         },
@@ -943,7 +943,7 @@
             "name": "Welding science and Technology",
             "code": "MEL4110",
             "Course Type": "PE",
-            "L-T-P (Credits)": "3-0-2",
+            "L-T-P (credits)": "3-0-2",
             "Course Coordinator": "Dr. Chandan Pandey",
             "slot": "U"
         },
@@ -951,7 +951,7 @@
             "name": "Materials & Manufacturing Processes",
             "code": "MEL7100",
             "Course Type": "MC",
-            "L-T-P (Credits)": "2-0-2 (3)",
+            "L-T-P (credits)": "2-0-2 (3)",
             "Course Coordinator": "Prof. Rahul Chhibber",
             "slot": "F"
         },
@@ -959,7 +959,7 @@
             "name": "Experimental and Computational Techniques",
             "code": "MEL7990",
             "Course Type": "ME",
-            "L-T-P (Credits)": "2-0-2 (3)",
+            "L-T-P (credits)": "2-0-2 (3)",
             "Course Coordinator": "Dr. Pratyaksh Karan and Dr Srijit Biswas",
             "slot": "H, L2"
         },
@@ -967,7 +967,7 @@
             "name": "Principles of Continuum Mechanics",
             "code": "MTL7360",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Nitesh Arora",
             "slot": "I"
         },
@@ -975,7 +975,7 @@
             "name": "Finite Element Methods in Engineering",
             "code": "MEL7540",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Atul Kumar Sharma",
             "slot": "J"
         },
@@ -983,7 +983,7 @@
             "name": "Introduction to Acoustics",
             "code": "MEL7160",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Amrita Puri",
             "slot": "K"
         },
@@ -991,7 +991,7 @@
             "name": "Fracture and Fatigue",
             "code": "MTL7160",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr Babu Ranjan Thakur",
             "slot": "N"
         },
@@ -999,7 +999,7 @@
             "name": "Advanced Robotic Manipulations",
             "code": "RML7120",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Roshan Kumar Hota",
             "slot": "K"
         },
@@ -1007,7 +1007,7 @@
             "name": "Theory of Arc Welding",
             "code": "MEL7490",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Chandan Pandey",
             "slot": "I"
         },
@@ -1015,7 +1015,7 @@
             "name": "Systematic Embodiment Design",
             "code": "MEL7180",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Mrityunjay Doddamani",
             "slot": "J"
         },
@@ -1023,7 +1023,7 @@
             "name": "Mobile Robots",
             "code": "RML7220",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Jayant K Mohanta, Riby Abraham Boby",
             "slot": "G"
         },
@@ -1031,7 +1031,7 @@
             "name": "Experimental and Computational Techniques",
             "code": "MEL7990",
             "Course Type": "MC",
-            "L-T-P (Credits)": "2-0-2 (3)",
+            "L-T-P (credits)": "2-0-2 (3)",
             "Course Coordinator": "Dr. Pratyaksh Karan and\n Dr Srijit Biswas",
             "slot": "H"
         },
@@ -1039,7 +1039,7 @@
             "name": "Conduction and Radiation",
             "code": "MEL7380",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3 - 1 - 0",
+            "L-T-P (credits)": "3 - 1 - 0",
             "Course Coordinator": "Dr. Nipun Arora",
             "slot": "I"
         },
@@ -1047,7 +1047,7 @@
             "name": "Nano Sensors",
             "code": "MEL7420",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Shrutidhara Sarma",
             "slot": "J"
         },
@@ -1055,7 +1055,7 @@
             "name": "Convective Heat and Mass Transfer",
             "code": "MEL7390",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3 - 1 - 0",
+            "L-T-P (credits)": "3 - 1 - 0",
             "Course Coordinator": "Dr. Shobhana Singh",
             "slot": "I"
         },
@@ -1063,7 +1063,7 @@
             "name": "Combustion Technology",
             "code": "MEL7210",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-2",
+            "L-T-P (credits)": "3-0-2",
             "Course Coordinator": "Dr. Sudipto Mukhopadhyay",
             "slot": "J"
         },
@@ -1071,7 +1071,7 @@
             "name": "Turbulent Flows",
             "code": "MEL7550",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Gagan Kewalramani",
             "slot": "K"
         },
@@ -1079,7 +1079,7 @@
             "name": "Machine Learning for ThermoFluids",
             "code": "MEL7690",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Harshal Akolekar",
             "slot": "K"
         },
@@ -1087,7 +1087,7 @@
             "name": "Probabilistic methods in Engineering Design",
             "code": "MEL7940",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Prof. Anand Plappally",
             "slot": "N"
         },
@@ -1095,7 +1095,7 @@
             "name": "Flight Dynamics and Control",
             "code": "MEL7670",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0 (3)",
+            "L-T-P (credits)": "3-0-0 (3)",
             "Course Coordinator": "Dr. Jayant Kumar Mohanta",
             "slot": "F"
         },
@@ -1103,7 +1103,7 @@
             "name": "Foundations of ML",
             "code": "MEL7650",
             "Course Type": "ME",
-            "L-T-P (Credits)": "2-0-2(3)",
+            "L-T-P (credits)": "2-0-2(3)",
             "Course Coordinator": "Dr. Himanshu Dave and Dr. Harshal Akolekar",
             "slot": "I"
         },
@@ -1111,7 +1111,7 @@
             "name": "Advance Mechanics of Solids",
             "code": "MEL7010",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Barun Pratiher",
             "slot": "I"
         },
@@ -1119,7 +1119,7 @@
             "name": "Finite Element Methods in Engineering",
             "code": "MEL7540",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Atul Kumar Sharma",
             "slot": "J"
         },
@@ -1127,7 +1127,7 @@
             "name": "Fracture and Fatigue",
             "code": "MTL7160",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr Abir Bhattacharya ",
             "slot": "G"
         },
@@ -1135,7 +1135,7 @@
             "name": "Propulsion systems for UAV",
             "code": "MEL7630",
             "Course Type": "ME",
-            "L-T-P (Credits)": "3-0-0",
+            "L-T-P (credits)": "3-0-0",
             "Course Coordinator": "Dr. Himanshu Dave",
             "slot": "K"
         },
@@ -2356,1274 +2356,1274 @@
         {
             "code": "MAL1020",
             "name": "Mathematics II",
-            "Credits": "4",
+            "credits": "4",
             "Faculty": "Pradip Sasmal & Abhishek Sarkar",
             "slot": "F"
         },
         {
             "code": "MAL2040",
             "name": "DESIGN OF EXPERIMENTS",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Brahadeesh",
             "slot": "D"
         },
         {
             "code": "MAL7071",
             "name": "Unconstrained Optimization",
-            "Credits": "1",
+            "credits": "1",
             "Faculty": "Md Abu Talhamainuddin Ansary",
             "slot": "I"
         },
         {
             "code": "MAP7020",
             "name": "Applied ML Lab",
-            "Credits": "1",
+            "credits": "1",
             "Faculty": "Gaurav Bhatnagar",
             "slot": "L7"
         },
         {
             "code": "MAL4310",
             "name": "Introduction to game theory",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Puneet Sharma",
             "slot": "N"
         },
         {
             "code": "MAL3010",
             "name": "Maths for Big Data",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Subhas Bhagat",
             "slot": "D"
         },
         {
             "code": "MAL1040",
             "name": "Mathematics II",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Gaurav Bhatnagar",
             "slot": "B"
         },
         {
             "code": "MAL2130",
             "name": "Multivariable Calculus",
-            "Credits": "4",
+            "credits": "4",
             "Faculty": "Tuhina Mukherjee",
             "slot": "A"
         },
         {
             "code": "MAL2140",
             "name": "Differential Equations",
-            "Credits": "4",
+            "credits": "4",
             "Faculty": "Sukhendu ghosh",
             "slot": "E"
         },
         {
             "code": "MAL2150",
             "name": "Groups and Rings",
-            "Credits": "4",
+            "credits": "4",
             "Faculty": "Dilpreet Kaur",
             "slot": "B"
         },
         {
             "code": "MAL6040",
             "name": "Abstract Algebra",
-            "Credits": "4",
+            "credits": "4",
             "Faculty": "Dilpreet Kaur",
             "slot": "G"
         },
         {
             "code": "MAL5030",
             "name": "Complex Analysis",
-            "Credits": "4",
+            "credits": "4",
             "Faculty": "Sahil Gehlawat",
             "slot": "K"
         },
         {
             "code": "MAL6050",
             "name": "Partial Differential Equations",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Kiran Kumar Hiremath",
             "slot": "H"
         },
         {
             "code": "MAL6060",
             "name": "Functional Analysis",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Moumita Mandol",
             "slot": "I"
         },
         {
             "code": "MAP5010",
             "name": "Data Structures and Algorithms",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Shaily Verma",
             "slot": "F"
         },
         {
             "code": "MAL6310",
             "name": "Measure & Integration",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Kuntal Som",
             "slot": "J"
         },
         {
             "code": "MAL7340",
             "name": "Number Theory",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Bimal Mandol",
             "slot": "K"
         },
         {
             "code": "MAL7540",
             "name": "Differential Geometry ",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Kiran Meena",
             "slot": "N"
         },
         {
             "code": "MAL7130",
             "name": "Statistical Inference",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Nil Kamal Hazra",
             "slot": "J"
         },
         {
             "code": "MAL7440",
             "name": "Machine Learning and Pattern R",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Subhas Bhagat",
             "slot": "K"
         },
         {
             "code": "MAL7360",
             "name": "Numerical Analysis",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "VVMS Chandramouli",
             "slot": "I"
         },
         {
             "code": "MAL7500",
             "name": "Multi Objective Optimization",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Md Abu Talhamainuddin Ansary",
             "slot": "F"
         },
         {
             "code": "MAL7550",
             "name": "Differential Equations",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Tuhina Mukhejee",
             "slot": "J"
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "M.Tech DCS Executive 1st year Courses",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "MAL7XX0",
             "name": "Data Analytics",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Sukhendu Ghosh",
             "slot": "YQ"
         },
         {
             "code": "CSL7590",
             "name": "Deep Learning",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Bikash Santra",
             "slot": "YR"
         },
         {
             "code": "CSL7320",
             "name": "Digital Image Analysis ",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Anil Kumar Tiwari",
             "slot": "YP"
         },
         {
             "code": "CSL7630",
             "name": "Algorithms for Big Data",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Subhash Bhagat",
             "slot": "YO"
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "HSN7020",
             "name": "Ethics and Professional Life",
-            "Credits": "1",
+            "credits": "1",
             "Faculty": "Dinesh Mohan Joshi",
             "slot": "YS"
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "M.Tech DCS Executive 2nd year Courses",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "HSN7020",
             "name": "Ethics and Professional Life",
-            "Credits": "1",
+            "credits": "1",
             "Faculty": "Dinesh Mohan Joshi",
             "slot": "YS"
         },
         {
             "code": "MAD7071",
             "name": "M.Tech Project",
-            "Credits": "5",
+            "credits": "5",
             "Faculty": "Bimal Mandal",
             "slot": "YT"
         },
         {
             "code": "CSL7320",
             "name": "Digital Image Analysis ",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Anil Kumar Tiwari",
             "slot": "YP"
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "CSL7630",
             "name": "Algorithms for Big Data",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Subhash Bhagat",
             "slot": "YO"
         },
         {
             "code": "MAL7011",
             "name": "Introduction to Data Science",
-            "Credits": "1",
+            "credits": "1",
             "Faculty": "Sukhendu Ghosh",
             "slot": "YQ"
         },
         {
             "code": "MAP7010",
             "name": "Data Analytics Lab",
-            "Credits": "1",
+            "credits": "1",
             "Faculty": "Sukhendu Ghosh",
             "slot": "YQ"
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "",
             "name": "",
-            "Credits": "",
+            "credits": "",
             "Faculty": "",
             "slot": ""
         },
         {
             "code": "MAL7350",
             "name": "Financial Engineering",
-            "Credits": "3",
+            "credits": "3",
             "Faculty": "Vivek Vijay",
             "slot": "I"
         },
@@ -4014,7 +4014,7 @@
             "Instructor": "Suchetana Chakraborty",
             "slot": "G ",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4023,7 +4023,7 @@
             "Instructor": "Debasis Das",
             "slot": "B ",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4032,7 +4032,7 @@
             "Instructor": "Avinash Sharma",
             "slot": "B ",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4041,7 +4041,7 @@
             "Instructor": "Suman Kundu",
             "slot": "D",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4050,7 +4050,7 @@
             "Instructor": "Angshuman Paul",
             "slot": "D",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4059,7 +4059,7 @@
             "Instructor": "Sidharth Sharma",
             "slot": "E",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4068,7 +4068,7 @@
             "Instructor": "Shiv Kumar Verma",
             "slot": "M10",
             "L-T-P": "0-0-4",
-            "Credits": "2",
+            "credits": "2",
             "Unnamed: 6": ""
         },
         {
@@ -4077,7 +4077,7 @@
             "Instructor": "Yashaswi Verma",
             "slot": "NG1",
             "L-T-P": "1-0-0",
-            "Credits": "1",
+            "credits": "1",
             "Unnamed: 6": ""
         },
         {
@@ -4086,7 +4086,7 @@
             "Instructor": "Pratik Mazumder",
             "slot": "B",
             "L-T-P": "3-0-3",
-            "Credits": "4.5",
+            "credits": "4.5",
             "Unnamed: 6": ""
         },
         {
@@ -4095,7 +4095,7 @@
             "Instructor": "Hardik Jain",
             "slot": "C",
             "L-T-P": "3-0-3",
-            "Credits": "4.5",
+            "credits": "4.5",
             "Unnamed: 6": ""
         },
         {
@@ -4104,7 +4104,7 @@
             "Instructor": "Subhas Bhagat",
             "slot": "D",
             "L-T-P": "2-1- 0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4113,7 +4113,7 @@
             "Instructor": "Yashaswi Verma",
             "slot": "E",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4122,7 +4122,7 @@
             "Instructor": "Nitin Awathare",
             "slot": "C",
             "L-T-P": "3-0-3",
-            "Credits": "4.5",
+            "credits": "4.5",
             "Unnamed: 6": ""
         },
         {
@@ -4131,7 +4131,7 @@
             "Instructor": "Mohit Kumar Jangid",
             "slot": "F",
             "L-T-P": "3-0-2",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4140,7 +4140,7 @@
             "Instructor": "Vimal Raj Sharma",
             "slot": "E",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4149,7 +4149,7 @@
             "Instructor": "Tanmay Inamdar",
             "slot": "H",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4158,7 +4158,7 @@
             "Instructor": "Pallavi Jain",
             "slot": "J",
             "L-T-P": "3-1- 0",
-            "Credits": "4",
+            "credits": "4",
             "Unnamed: 6": ""
         },
         {
@@ -4167,7 +4167,7 @@
             "Instructor": "Gaurav Harit/Abhijit Karmakar",
             "slot": "G",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4176,7 +4176,7 @@
             "Instructor": "Palash Das",
             "slot": "F",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": "Subject to approval"
         },
         {
@@ -4185,7 +4185,7 @@
             "Instructor": "Angshuman Paul",
             "slot": "G",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4194,7 +4194,7 @@
             "Instructor": "Hardik Jain",
             "slot": "H",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4203,7 +4203,7 @@
             "Instructor": "Anand Mishra",
             "slot": "K",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4212,7 +4212,7 @@
             "Instructor": "Dip Sankar Banerjee",
             "slot": "R",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4221,7 +4221,7 @@
             "Instructor": "Deepak Mishra",
             "slot": "I",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4230,7 +4230,7 @@
             "Instructor": "Gaurav Harit",
             "slot": "U",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4239,7 +4239,7 @@
             "Instructor": "Richa Singh",
             "slot": "O",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": ""
         },
         {
@@ -4248,7 +4248,7 @@
             "Instructor": "Mayank Vatsa",
             "slot": "P",
             "L-T-P": "2-0-2",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": "Subject to approval"
         },
         {
@@ -4257,196 +4257,196 @@
             "Instructor": "Romi Banerjee",
             "slot": "N",
             "L-T-P": "3-0-0",
-            "Credits": "3",
+            "credits": "3",
             "Unnamed: 6": "Subject to approval"
         },
         {
             "code": "MEL2040",
             "name": "Fluid Mechanics",
             "Course Instructor(s)": "Deepak Swami / Saran Aadhar",
-            "Credits (L-T-P)": "4 (3-1-0)",
+            "credits (L-T-P)": "4 (3-1-0)",
             "slot": "D"
         },
         {
             "code": "MEP2010",
             "name": "Fluid Mechanics Lab",
             "Course Instructor(s)": "Deepak Swami / Saran Aadhar",
-            "Credits (L-T-P)": "1 (0-0-2)",
+            "credits (L-T-P)": "1 (0-0-2)",
             "slot": ""
         },
         {
             "code": "CIP3040",
             "name": "Geotechnical Engineering Lab",
             "Course Instructor(s)": "Pradeep Kumar Dammala",
-            "Credits (L-T-P)": "1 (0-0-2)",
+            "credits (L-T-P)": "1 (0-0-2)",
             "slot": ""
         },
         {
             "code": "CIL3080",
             "name": "Reinforced Concrete Design",
             "Course Instructor(s)": "Amit Kumar Rathi",
-            "Credits (L-T-P)": "4 (3-0-2)",
+            "credits (L-T-P)": "4 (3-0-2)",
             "slot": "D"
         },
         {
             "code": "CIL3090",
             "name": "Smart infrastructure Engineering",
             "Course Instructor(s)": "Ravi Prakash",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "A"
         },
         {
             "code": "CIL3070",
             "name": "Water Resources Engineering",
             "Course Instructor(s)": "Saran Aadhar",
-            "Credits (L-T-P)": "4 (3-0-2)",
+            "credits (L-T-P)": "4 (3-0-2)",
             "slot": "C"
         },
         {
             "code": "CIL3060",
             "name": "Advanced Structural Analysis",
             "Course Instructor(s)": "P Ravi Prakash",
-            "Credits (L-T-P)": "4 (3-0-2)",
+            "credits (L-T-P)": "4 (3-0-2)",
             "slot": "E"
         },
         {
             "code": "MEL2010",
             "name": "Mechanics of Solids",
             "Course Instructor(s)": "Sanhita Das",
-            "Credits (L-T-P)": "4 (3-1-0)",
+            "credits (L-T-P)": "4 (3-1-0)",
             "slot": "A"
         },
         {
             "code": "CIL7530",
             "name": "AI/ML in Infrastructure Engineering",
             "Course Instructor(s)": "Mayank Suman",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "I"
         },
         {
             "code": "CIL4010",
             "name": "Environmental Science",
             "Course Instructor(s)": "Amit Sharma",
-            "Credits (L-T-P)": "2 (2-0-0)",
+            "credits (L-T-P)": "2 (2-0-0)",
             "slot": ""
         },
         {
             "code": "CIL4340",
             "name": "Steel Structure Design",
             "Course Instructor(s)": "Tekcham Gishan Singh",
-            "Credits (L-T-P)": "4 (3-1-0)",
+            "credits (L-T-P)": "4 (3-1-0)",
             "slot": "I"
         },
         {
             "code": "CIL7390",
             "name": "Climate Change and Impact",
             "Course Instructor(s)": "Amit Sharma",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "H"
         },
         {
             "code": "CIL7630",
             "name": "Finite Element Method",
             "Course Instructor(s)": "Sanhita Das / Shuvajit Mukherjee",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "I"
         },
         {
             "code": "CIL4380",
             "name": "Ground Improvement Techniques",
             "Course Instructor(s)": "Aali Pant",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "G"
         },
         {
             "code": "CIL7460",
             "name": "Structural Dynamics",
             "Course Instructor(s)": "Shuvajit Mukherjee",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "G"
         },
         {
             "code": "CIL7320",
             "name": "Air Pollution and Control",
             "Course Instructor(s)": "Deepika Bhattu",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "J"
         },
         {
             "code": "CIL7880",
             "name": "Design of Bridge Structures",
             "Course Instructor(s)": "Tekcham Gishan Singh",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "F"
         },
         {
             "code": "CIL7040",
             "name": "Energy Geomechanics ",
             "Course Instructor(s)": "Debanjan Guha Roy",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "J"
         },
         {
             "code": "CIL7080",
             "name": "Pollutant Transport Through Subsurface and In-situ Remediations",
             "Course Instructor(s)": "Trishikhi Raychoudhury",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "H"
         },
         {
             "code": "CIL7090",
             "name": "Wastewater Engineering",
             "Course Instructor(s)": "Monika Dubey",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "F"
         },
         {
             "code": "CIL7070",
             "name": "Environmental Chemistry",
             "Course Instructor(s)": "Monika Dubey",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "G"
         },
         {
             "code": "CIL7470",
             "name": "Foundation Engineering",
             "Course Instructor(s)": "Pradeep Kumar Dammala",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "H"
         },
         {
             "code": "CIL7400",
             "name": "Traffic System and Management",
             "Course Instructor(s)": "Ranju Mohan",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "I"
         },
         {
             "code": "CIL7950",
             "name": "Bridge Material, Construction and Evaluation",
             "Course Instructor(s)": "Yogiraj Sangam",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "H"
         },
         {
             "code": "CIL4390",
             "name": "Highway Geometric Design ",
             "Course Instructor(s)": "Subham Jain",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "H"
         },
         {
             "code": "CIL4400",
             "name": "Pavement Enginerring",
             "Course Instructor(s)": "Bhupendra Singh",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "J"
         },
         {
             "code": "CIL7440",
             "name": "Green Buildings and Sustainable Materials",
             "Course Instructor(s)": "-",
-            "Credits (L-T-P)": "3 (3-0-0)",
+            "credits (L-T-P)": "3 (3-0-0)",
             "slot": "F"
         },
         {
