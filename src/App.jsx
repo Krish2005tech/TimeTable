@@ -13,7 +13,19 @@ const TimetableGenerator = () => {
   const [editingId, setEditingId] = useState(null);
   const [showAddManual, setShowAddManual] = useState(false);
 
-  const colors = ['#FFE5E5', '#FFE5F0', '#F0E5FF', '#E5F0FF', '#E5F5FF', '#E5FFE5', '#F5FFE5', '#FFE5CC'];
+  // const colors = ['#FFE5E5', '#FFE5F0', '#F0E5FF', '#E5F0FF', '#E5F5FF', '#E5FFE5', '#F5FFE5', '#FFE5CC'];
+  const colors = [
+  '#E3F2FD', // Soft Blue
+  '#E8F5E9', // Mint Cream
+  '#F3E5F5', // Lavender Mist
+  '#FFF9C4', // Lemon Chiffon
+  '#FFECB3', // Peach Puff
+  '#FFCDD2', // Light Red
+  '#F0F4C3', // Honeydew
+  '#FFF3E0', // Seashell
+  '#E0E0E0' , // Platinum,
+  '#FFEBEE', // Misty Rose
+];
   const timeSlots = ['8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
   const slotTiming = {
@@ -109,7 +121,7 @@ const TimetableGenerator = () => {
           return {
             ...c,
             schedule,
-            color: c.color || colors[Math.floor(Math.random() * colors.length)],
+            // color: c.color || colors[Math.floor(Math.random() * colors.length)],
           };
         });
 
@@ -122,6 +134,18 @@ const TimetableGenerator = () => {
 
 
   const addCourseToTimetable = (course) => {
+    // 1. Find which colors are currently used in the schedule
+  const usedColors = new Set(selectedCourses.map(c => c.color));
+
+  // 2. Find the first color in our palette that isn't used yet
+  let nextColor = colors.find(c => !usedColors.has(c));
+
+  // 3. Fallback: If all colors are used, cycle through them using modulus
+  if (!nextColor) {
+    nextColor = colors[selectedCourses.length % colors.length];
+  }
+
+
     // Get schedule from slot or use provided schedule
     let schedule = course.schedule;
     if (!schedule && course.slot) {
@@ -132,6 +156,7 @@ const TimetableGenerator = () => {
       ...course,
       id: Date.now() + Math.random(),
       schedule: schedule,
+      color: nextColor,
     };
 
     const conflictingCourse = checkOverlap(newCourse, selectedCourses);
@@ -326,6 +351,10 @@ const TimetableGenerator = () => {
     // || c.code.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // Calculate the next available color for the Manual Form to use as default
+const usedColors = new Set(selectedCourses.map(c => c.color));
+const nextAvailableColor = colors.find(c => !usedColors.has(c)) || colors[0];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-8">
       <div className="max-w-7xl mx-auto">
@@ -389,6 +418,7 @@ const TimetableGenerator = () => {
             <ManualAddForm
               slotTiming={slotTiming}
               colors={colors}
+              defaultColor={nextAvailableColor}
               timeSlots={timeSlots}
               onAdd={(course) => {
                 addCourseToTimetable(course);
@@ -719,7 +749,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
 
         <div className="mb-4">
           <label className="text-xs font-semibold text-gray-600 block mb-2">Color</label>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {colors.map(c => (
               <button
                 key={c}
@@ -778,7 +808,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
   );
 }
 
-function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
+function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel, defaultColor }) {
   const [useSlot, setUseSlot] = useState(true);
   // const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
   const [dayTimings, setDayTimings] = useState({
@@ -795,7 +825,8 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
     startTime: '9am',
     endTime: '10am',
     credits: '',
-    color: colors[0],
+    // color: colors[0],
+    color: defaultColor || colors[0],
   });
 
   const handleAdd = () => {
@@ -970,7 +1001,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
 
       <div className="mb-4">
         <label className="text-xs font-semibold text-gray-600 block mb-2">Color</label>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
           {colors.map(c => (
             <button
               key={c}
