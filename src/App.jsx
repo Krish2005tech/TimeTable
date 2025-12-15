@@ -224,7 +224,8 @@ const TimetableGenerator = () => {
       { label: '2-3pm', start: '2pm', end: '3pm' },
       { label: '3-4pm', start: '3pm', end: '4pm' },
       { label: '4-5pm', start: '4pm', end: '5pm' },
-      { label: '5-6pm', start: '5pm', end: '6pm' }
+      { label: '5-6pm', start: '5pm', end: '6pm' },
+      { label: '6-7pm', start: '6pm', end: '7pm' }
     ];
 
     const timetable = {};
