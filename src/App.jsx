@@ -422,68 +422,68 @@ const TimetableGenerator = () => {
           </div>
         )}
 
-    {/* Timetable Section */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 overflow-x-auto">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold text-gray-800">Weekly Timetable</h2>
-              {selectedCourses.length > 0 && (
-                <button
-                  onClick={exportToPNG}
-                  className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
-                >
-                  <Download size={20} /> Export as PNG
-                </button>
-              )}
-            </div>
-            <div ref={timetableRef} className="bg-white">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-indigo-100">
-                    <th className="border border-gray-300 p-3 text-gray-800 font-semibold text-center w-24">Time</th>
-                    {days.map(day => (
-                      <th key={day} className="border border-gray-300 p-3 text-gray-800 font-semibold text-center">
-                        {day}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {times.map(time => (
-                    <tr key={time}>
-                      <td className="border border-gray-300 p-3 text-gray-700 font-semibold text-center bg-gray-50">
-                        {time}
-                      </td>
-                      {days.map(day => {
-                        const cellCourses = timetable[`${day}-${time}`] || [];
-  
-                        if (cellCourses.length === 0) {
-                          return (
-                            <td key={`${day}-${time}`} className="border border-gray-300 p-2 text-center min-h-16 bg-white">
-                              <div className="text-gray-300">-</div>
-                            </td>
-                          );
-                        }
-  
+        {/* Timetable Section */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 overflow-x-auto">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-800">Weekly Timetable</h2>
+            {selectedCourses.length > 0 && (
+              <button
+                onClick={exportToPNG}
+                className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
+              >
+                <Download size={20} /> Export as PNG
+              </button>
+            )}
+          </div>
+          <div ref={timetableRef} className="bg-white">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-indigo-100">
+                  <th className="border border-gray-300 p-3 text-gray-800 font-semibold text-center w-24">Time</th>
+                  {days.map(day => (
+                    <th key={day} className="border border-gray-300 p-3 text-gray-800 font-semibold text-center">
+                      {day}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {times.map(time => (
+                  <tr key={time}>
+                    <td className="border border-gray-300 p-3 text-gray-700 font-semibold text-center bg-gray-50">
+                      {time}
+                    </td>
+                    {days.map(day => {
+                      const cellCourses = timetable[`${day}-${time}`] || [];
+
+                      if (cellCourses.length === 0) {
                         return (
-                          <td key={`${day}-${time}`} className="border border-gray-300 p-0 text-center">
-                            {cellCourses.map(c => (
-                              <div
-                                key={c.id}
-                                className="text-sm font-bold w-full h-16 flex items-center justify-center p-1"
-                                style={{ backgroundColor: c.color }}
-                              >
-                                <span className="text-gray-800">{c.name}</span>
-                              </div>
-                            ))}
+                          <td key={`${day}-${time}`} className="border border-gray-300 p-2 text-center min-h-16 bg-white">
+                            <div className="text-gray-300">-</div>
                           </td>
                         );
-                      })}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                      }
+
+                      return (
+                        <td key={`${day}-${time}`} className="border border-gray-300 p-0 text-center">
+                          {cellCourses.map(c => (
+                            <div
+                              key={c.id}
+                              className="text-sm font-bold w-full h-16 flex items-center justify-center p-1"
+                              style={{ backgroundColor: c.color }}
+                            >
+                              <span className="text-gray-800">{c.name}</span>
+                            </div>
+                          ))}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
+        </div>
 
 
       </div>
@@ -665,7 +665,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
                       />
                       <span className="font-semibold text-gray-700 w-12">{day}</span>
                     </div>
-                    <div className="flex gap-2 items-center flex-1">
+                    <div className="flex gap-1 items-center flex-1">
                       <select
                         value={dayTimings[day].start}
                         onChange={(e) => {
@@ -678,7 +678,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
                           });
                         }}
                         disabled={!dayTimings[day].enabled}
-                        className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                        className={`flex-1 px-2 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
                           }`}
                       >
                         {timeSlots.map(t => (
@@ -687,7 +687,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
                           </option>
                         ))}
                       </select>
-                      <span className="font-bold text-gray-600 text-sm">to</span>
+                      <span className="font-bold text-gray-600 text-xs">to</span>
                       <select
                         value={dayTimings[day].end}
                         onChange={(e) => {
@@ -700,7 +700,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
                           });
                         }}
                         disabled={!dayTimings[day].enabled}
-                        className={`flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                        className={`flex-1 px-2 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
                           }`}
                       >
                         {timeSlots.map(t => (
@@ -916,7 +916,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
                     />
                     <span className="font-semibold text-gray-700 w-12">{day}</span>
                   </div>
-                  <div className="flex gap-2 items-center flex-1">
+                  <div className="flex gap-1 items-center flex-1">
                     <select
                       value={dayTimings[day].start}
                       onChange={(e) => {
@@ -929,7 +929,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
                         });
                       }}
                       disabled={!dayTimings[day].enabled}
-                      className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                      className={`flex-1 px-2 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
                         }`}
                     >
                       {timeSlots.map(t => (
@@ -938,7 +938,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
                         </option>
                       ))}
                     </select>
-                    <span className="font-bold text-gray-600 text-sm">to</span>
+                    <span className="font-bold text-gray-600 text-xs">to</span>
                     <select
                       value={dayTimings[day].end}
                       onChange={(e) => {
@@ -951,7 +951,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel }) {
                         });
                       }}
                       disabled={!dayTimings[day].enabled}
-                      className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
+                      className={`flex-1 px-2 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none text-sm ${!dayTimings[day].enabled ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : ''
                         }`}
                     >
                       {timeSlots.map(t => (
