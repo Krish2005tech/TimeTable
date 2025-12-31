@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Plus, Edit2, Check, AlertCircle, Download } from 'lucide-react';
+import { X, Plus, Edit2, Check, AlertCircle, Download ,Eye,EyeOff} from 'lucide-react';
 import domtoimage from "dom-to-image-more";
 import * as htmlToImage from "html-to-image";
 const TimetableGenerator = () => {
@@ -12,6 +12,7 @@ const TimetableGenerator = () => {
   const [clashMessage, setClashMessage] = useState('');
   const [editingId, setEditingId] = useState(null);
   const [showAddManual, setShowAddManual] = useState(false);
+  const [showClassrooms, setShowClassrooms] = useState(true);
 
   // const colors = ['#FFE5E5', '#FFE5F0', '#F0E5FF', '#E5F0FF', '#E5F5FF', '#E5FFE5', '#F5FFE5', '#FFE5CC'];
   const colors = [
@@ -410,7 +411,7 @@ const nextAvailableColor = colors.find(c => !usedColors.has(c)) || colors[0];
                     <div>
                       <p className="font-semibold text-gray-800">{course.name}</p>
                       <p className="text-sm text-gray-600">
-                        {course.code} • {course.slot} {course.credits && `• ${course.credits} Credits`}
+                        {course.code} • {course.slot} {course.credits && `• ${course.credits} Credits`} {course.Instructor && `• ${course.Instructor}`}
                       </p>
                     </div>
                     <Plus className="text-green-500" size={20} />
@@ -463,12 +464,28 @@ const nextAvailableColor = colors.find(c => !usedColors.has(c)) || colors[0];
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-bold text-gray-800">Weekly Timetable</h2>
             {selectedCourses.length > 0 && (
+              <div className="flex justify-center items-center gap-x-2">
+             <button
+  onClick={() => setShowClassrooms(!showClassrooms)}
+  className={`flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition
+    ${
+      !showClassrooms
+        ? "bg-gradient-to-r from-blue-500 to-cyan-600 text-white hover:shadow-lg"
+        : "bg-gradient-to-r from-gray-400 to-gray-600 text-white hover:shadow"
+    }
+  `}
+>
+  {showClassrooms ? <EyeOff size={20} /> : <Eye size={20} />}
+  {showClassrooms ? "Hide Classrooms" : "Show Classrooms"}
+</button>
+
               <button
                 onClick={exportToPNG}
                 className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition"
-              >
+                >
                 <Download size={20} /> Export as PNG
               </button>
+                </div>
             )}
           </div>
           <div ref={timetableRef} className="bg-white">
@@ -505,10 +522,13 @@ const nextAvailableColor = colors.find(c => !usedColors.has(c)) || colors[0];
                           {cellCourses.map(c => (
                             <div
                               key={c.id}
-                              className="text-sm font-bold w-full h-16 flex items-center justify-center p-1"
+                              className="text-sm font-bold w-full h-20 flex flex-col items-center justify-center p-1"
                               style={{ backgroundColor: c.color }}
                             >
                               <span className="text-gray-800">{c.name}</span>
+                              {showClassrooms && c.Classroom && (
+                                <span className="text-gray-600 text-sm ml-2">({c.Classroom})</span>
+                              )}
                             </div>
                           ))}
                         </td>
@@ -553,6 +573,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
   // const [endTime, setEndTime] = useState(course.schedule?.[0]?.end || '10am');
   const [color, setColor] = useState(course.color);
   const [useSlot, setUseSlot] = useState(!!course.slot);
+  const [Classroom, setClassroom] = useState(course.Classroom || 'N/A');
   // const [selectedDays, setSelectedDays] = useState(['Mon', 'Tue', 'Wed', 'Thu', 'Fri']);
   const [dayTimings, setDayTimings] = useState(() => {
     const initialTimings = {
@@ -590,6 +611,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
       name,
       credits,
       color,
+      Classroom,
     };
 
     if (useSlot) {
@@ -635,6 +657,14 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
             <input
               value={credits}
               onChange={(e) => setCredits(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm"
+            />
+          </div>
+          <div>
+            <label className="text-xs font-semibold text-gray-600 block mb-2">Classroom</label>
+            <input
+              value={Classroom}
+              onChange={(e) => setClassroom(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-indigo-500 focus:outline-none text-sm"
             />
           </div>
@@ -793,7 +823,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
       <div className="text-left">
         <p className="font-bold text-gray-800">{name}</p>
         <p className="text-sm text-gray-700">
-          {course.code} • {course.slot} {credits && `• ${credits} Credits`}
+          {course.code} • {course.slot} {credits && `• ${credits} Credits`} {course.Instructor && `• ${course.Instructor}`}
         </p>
       </div>
       <div className="flex gap-2">
@@ -830,9 +860,10 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel, default
     slot: 'A',
     startTime: '9am',
     endTime: '10am',
-    credits: '',
+    credits: '',  
     // color: colors[0],
     color: defaultColor || colors[0],
+    Classroom: '',
   });
 
   const handleAdd = () => {
@@ -888,6 +919,12 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel, default
           placeholder="Credits"
           value={formData.credits}
           onChange={(e) => setFormData({ ...formData, credits: e.target.value })}
+          className="px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none"
+        />
+        <input
+          placeholder="Classroom"
+          value={formData.Classroom}
+          onChange={(e) => setFormData({ ...formData, Classroom: e.target.value })}
           className="px-4 py-2 border border-gray-300 rounded-lg focus:border-green-500 focus:outline-none"
         />
         <div>

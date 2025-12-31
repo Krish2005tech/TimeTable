@@ -1,14 +1,13 @@
 import pandas as pd
 import json
 
-excel_file = "courses.xlsx"
-output_file = "courses.json"
+excel_file = "classroom.xlsx"
+output_file = "./public/courses.json"
 
 def clean_value(value):
     if isinstance(value, str):
         value = value.replace("\n", " ").replace("\t", " ")
-        value = value.rstrip()   # remove trailing spaces
-        # use .strip() instead if you want to remove leading spaces too
+        value = value.rstrip().strip()   # remove trailing spaces
     return value
 
 # Read all sheets

@@ -1,0 +1,3496 @@
+{
+    "courses": [
+        {
+            "code": "OAL7010",
+            "name": "Innovation and IP",
+            "slot": "NG1",
+            "Credit": "1",
+            "Instructor": "Manu Kanchan",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "MSL73130",
+            "name": "Marketing Frameworks and Practice",
+            "slot": "B",
+            "Credit": "3",
+            "Instructor": "Anuj Pal Kapoor",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73140",
+            "name": "Business Economics-II",
+            "slot": "C",
+            "Credit": "3",
+            "Instructor": "Devi Prasad Dash",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73150",
+            "name": "Strategic Management",
+            "slot": "I",
+            "Credit": "3",
+            "Instructor": "Jitesh Mohnot",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73160",
+            "name": "New Venture Planning",
+            "slot": "H",
+            "Credit": "3",
+            "Instructor": "Krishna Kumar Balaraman",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73170",
+            "name": "Introduction to Operations Management",
+            "slot": "A",
+            "Credit": "3",
+            "Instructor": "Monika Tanwar",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73180",
+            "name": "Digital Enterprise Management",
+            "slot": "E",
+            "Credit": "3",
+            "Instructor": "Deepak Saxena",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73190",
+            "name": "Legal and Taxation Aspects of Business",
+            "slot": "D",
+            "Credit": "3",
+            "Instructor": "Manu Kanchan (2) & Jitesh Mohnot (1)",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSN7060",
+            "name": "Corporate Communication",
+            "slot": "U",
+            "Credit": "1",
+            "Instructor": "Deepak Saxena",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "MSP7090",
+            "name": "MBA Project Tech solution",
+            "slot": "M",
+            "Credit": "3",
+            "Instructor": "Jitesh Mohnot",
+            "L-T-P": "0-0-6"
+        },
+        {
+            "code": "MSL71070",
+            "name": "Public Policy and Strategy",
+            "slot": "E",
+            "Credit": "2",
+            "Instructor": "Krishna Kumar Balaraman",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL71490",
+            "name": "Design Thinking",
+            "slot": "J",
+            "Credit": "2",
+            "Instructor": "Neha (Manu Kanchan on ERP)",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL71530",
+            "name": "Project Management",
+            "slot": "F",
+            "Credit": "2",
+            "Instructor": "Monika Tanwar",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL72100",
+            "name": "Business Continuity",
+            "slot": "E",
+            "Credit": "2",
+            "Instructor": "Magesh Nagarajan",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL72140",
+            "name": "International Business",
+            "slot": "G",
+            "Credit": "2",
+            "Instructor": "Bhushan Praveen Jangam",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7350",
+            "name": "Business Models for Digital Economy",
+            "slot": "J",
+            "Credit": "2",
+            "Instructor": "Krishna Kumar Balaraman",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7360",
+            "name": "Industry 4.0 Applications and Future of Business",
+            "slot": "I",
+            "Credit": "2",
+            "Instructor": "Vinod Vijay Kumar (CTFP)",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7370",
+            "name": "Deep Learning Applications for Business",
+            "slot": "H",
+            "Credit": "2",
+            "Instructor": "Deepak (on ERP), Later Aman Pathak",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7410",
+            "name": "Social Media Analytics",
+            "slot": "G",
+            "Credit": "2",
+            "Instructor": "Manu (on ERP), Later Deepak Shrivastav",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL74290",
+            "name": "Neuromarketing",
+            "slot": "A",
+            "Credit": "3",
+            "Instructor": "Anuj Pal Kapoor",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL7460",
+            "name": "Financial Analytics",
+            "slot": "H",
+            "Credit": "2",
+            "Instructor": "Seema",
+            "L-T-P": "1-0-2"
+        },
+        {
+            "code": "MSL7500",
+            "name": "Ethical Issues with AI",
+            "slot": "N",
+            "Credit": "2",
+            "Instructor": "Venkat Ram Reddy",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7550",
+            "name": "Supply Chain Analytics",
+            "slot": "D",
+            "Credit": "2",
+            "Instructor": "Magesh Nagarajan",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7570",
+            "name": "Game Theory for Business Decisions",
+            "slot": "C",
+            "Credit": "2",
+            "Instructor": "Srivatsa Srinivas S",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7780",
+            "name": "Strategic Marketing",
+            "slot": "G",
+            "Credit": "2",
+            "Instructor": "Neha (Anuj Pal Kapoor on ERP)",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7800",
+            "name": "Integrated Marketing Communications",
+            "slot": "",
+            "Credit": "2",
+            "Instructor": "Manu Kanchan",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL71570",
+            "name": "FinTech in Banking",
+            "slot": "",
+            "Credit": "2",
+            "Instructor": "Deepak Saxena",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL72050",
+            "name": "Cyber Threats and Defense",
+            "slot": "F",
+            "Credit": "2",
+            "Instructor": "Deepak Saxena",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL71580",
+            "name": "Equity and Derivatives",
+            "slot": "A",
+            "Credit": "2",
+            "Instructor": "Bhushan (for ERP), Later Manisha Yadav",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSP7110",
+            "name": "MBA Project Fintech",
+            "slot": "M",
+            "Credit": "2",
+            "Instructor": "Deepak Kumar Saxena",
+            "L-T-P": "0-0-2"
+        },
+        {
+            "code": "MSL7210",
+            "name": "Corporate Finance-II",
+            "slot": "I",
+            "Credit": "1",
+            "Instructor": "Bhushan (for ERP), Later Manisha Yadav",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "OAL7020",
+            "name": "Foundation in IPR",
+            "slot": "U",
+            "Credit": "1",
+            "Instructor": "Manu Kanchan & Deepak Saxena",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "MSL73230",
+            "name": "Foundations of Economic Research",
+            "slot": "K",
+            "Credit": "3",
+            "Instructor": "Devi Prasad Dash",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73270",
+            "name": "Foundations of Strategy and Entrepreneurship Research",
+            "slot": "K",
+            "Credit": "3",
+            "Instructor": "Jitesh Mohnot",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL73280",
+            "name": "Foundations of Research in Operations",
+            "slot": "K",
+            "Credit": "3",
+            "Instructor": "Magesh Nagarajan & Monika Tanwar",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "MSL71150",
+            "name": "Development Economics",
+            "slot": "A",
+            "Credit": "2",
+            "Instructor": "Devi Prasad Dash",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSP7040",
+            "name": "Business Plan Phase II",
+            "slot": "U",
+            "Credit": "4",
+            "Instructor": "Venkat Ram Reddy",
+            "L-T-P": "0-0-4"
+        },
+        {
+            "code": "MSP7060",
+            "name": "Data Management and Analysis",
+            "slot": "U",
+            "Credit": "2",
+            "Instructor": "Bhargab (for ERP), Later Aman and Deepak",
+            "L-T-P": "0-0-4"
+        },
+        {
+            "code": "MSL4020",
+            "name": "Introduction to Entrepreneurship",
+            "slot": "I",
+            "Credit": "3",
+            "Instructor": "Venkat Ram Reddy",
+            "L-T-P": "2-0-2"
+        },
+        {
+            "code": "MSL7070",
+            "name": "Macroeconomic Environment of Business",
+            "slot": "F",
+            "Credit": "2",
+            "Instructor": "Seema",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7100",
+            "name": "Marketing Management (II)",
+            "slot": "E",
+            "Credit": "1",
+            "Instructor": "Neha (Manu Kanchan on ERP)",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "MSL7110",
+            "name": "Global Economy",
+            "slot": "B",
+            "Credit": "1",
+            "Instructor": "Devi Prasad Dash",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "MSP7070",
+            "name": "Business Analytics Lab-1",
+            "slot": "G",
+            "Credit": "1",
+            "Instructor": "Bhargab Chattopadhyay",
+            "L-T-P": "0-0-2"
+        },
+        {
+            "code": "MSL7140",
+            "name": "Managing Digital Enterprises",
+            "slot": "E",
+            "Credit": "2",
+            "Instructor": "Deepak Kumar Saxena",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "MSL7190",
+            "name": "Entrepreneurial Experiences",
+            "slot": "K",
+            "Credit": "2",
+            "Instructor": "Deepak Kumar Saxena",
+            "L-T-P": "2-0-0"
+        },
+        {
+            "code": "BBL1020",
+            "name": "Introduction to Bioengineering Theory ",
+            "slot": "N",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Surajit Ghosh"
+        },
+        {
+            "code": "BBP1010",
+            "name": "Introduction to Bioengineering Lab ",
+            "slot": "M",
+            "L-T-P": "0-0-2",
+            "Course Instructor": "Raviraj Vankayala"
+        },
+        {
+            "code": "MTL2012",
+            "name": "Structure of Materials",
+            "slot": "C",
+            "L-T-P": "1-0-0",
+            "Course Instructor": "Appala Naidu Gandi"
+        },
+        {
+            "code": "MTL2013",
+            "name": "Materials Selection",
+            "slot": "C",
+            "L-T-P": "1-0-0",
+            "Course Instructor": "Sumeet Khanna"
+        },
+        {
+            "code": "CHL2023",
+            "name": "Polymers",
+            "slot": "",
+            "L-T-P": "1-0-0",
+            "Course Instructor": ""
+        },
+        {
+            "code": "MEL2020",
+            "name": "Thermodynamics",
+            "slot": "A",
+            "L-T-P": "3-1-0",
+            "Course Instructor": "Ashish Pathak"
+        },
+        {
+            "code": "CSL2020",
+            "name": "Data Structure and Algorithm",
+            "slot": "B",
+            "L-T-P": "3-0-2",
+            "Course Instructor": "Debasis Das"
+        },
+        {
+            "code": "BBL2100",
+            "name": "Concepts & Dynamics: Molecular Cell Biology",
+            "slot": "E",
+            "L-T-P": "2-0-2",
+            "Course Instructor": "Dinesh Kumar Ahirwar"
+        },
+        {
+            "code": "BBL2200",
+            "name": "The Human Immune System: Mechanisms to Detect, Defend and Attack ",
+            "slot": "D",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Sushmita Jha"
+        },
+        {
+            "code": "BBP2010",
+            "name": "Biochemistry laboratory",
+            "slot": "L6",
+            "L-T-P": "0-0-2",
+            "Course Instructor": "Priyanka Singh"
+        },
+        {
+            "code": "BBL3010",
+            "name": "Introductory Omics ",
+            "slot": "E",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Shankar Manoharan"
+        },
+        {
+            "code": "BBL3020",
+            "name": "Biomaterials engineering",
+            "slot": "C",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Indranil Banerjee"
+        },
+        {
+            "code": "BBL3030",
+            "name": "Biophysics and Structural Biology ",
+            "slot": "U",
+            "L-T-P": "3-0-0.5",
+            "Course Instructor": "Sudipta Bhattacharya"
+        },
+        {
+            "code": "CSL4020",
+            "name": "Deep Learning ",
+            "slot": "B",
+            "L-T-P": "3-0-3",
+            "Course Instructor": "Pratik Mazumder"
+        },
+        {
+            "code": "EEL3100",
+            "name": "Bioimaging ",
+            "slot": "D",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Dipanjan Roy"
+        },
+        {
+            "code": "BBL4020",
+            "name": "Agricultural Biotechnology",
+            "slot": "J",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Ayan Sadhukhan"
+        },
+        {
+            "code": "BBL4060",
+            "name": "Introduction to precision medicine",
+            "slot": "A",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Siddharth Srivastava"
+        },
+        {
+            "code": "BBL4040",
+            "name": "Anticancer Drug Discovery and Development",
+            "slot": "F",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Dinesh Kumar Ahirwar"
+        },
+        {
+            "code": "BBL7380",
+            "name": "Immunotechnology",
+            "slot": "U",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Indranil Banerjee"
+        },
+        {
+            "code": "BBL7600",
+            "name": "Computational Structural Bioinformatics",
+            "slot": "H",
+            "L-T-P": "2-0-2",
+            "Course Instructor": "Sucharita Dey"
+        },
+        {
+            "code": "BBL7390",
+            "name": "Introductory Chemical Biology",
+            "slot": "E",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Sudipta Bhattacharya"
+        },
+        {
+            "code": "BBL7470",
+            "name": "Theranostic Systems ",
+            "slot": "J",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Raviraj Vankayala"
+        },
+        {
+            "code": "BBL7450",
+            "name": "Fundamentals of Neuroscience",
+            "slot": "I",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Amit Kumar Mishra"
+        },
+        {
+            "code": "BBL7570",
+            "name": "Biofilms - Bacterial Communities",
+            "slot": "I",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Neha Jain"
+        },
+        {
+            "code": "BBL7580",
+            "name": "Computational Genomics",
+            "slot": "F",
+            "L-T-P": "2-0-2",
+            "Course Instructor": "Pankaj Yadav"
+        },
+        {
+            "code": "BBL7380",
+            "name": "Immunotechnology",
+            "slot": "U",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Indranil Banerjee"
+        },
+        {
+            "code": "BBL7600",
+            "name": "Computational Structural Bioinformatics",
+            "slot": "H",
+            "L-T-P": "2-0-2",
+            "Course Instructor": "Sucharita Dey"
+        },
+        {
+            "code": "BBL7390",
+            "name": "Introductory Chemical Biology",
+            "slot": "E",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Sudipta Bhattacharya"
+        },
+        {
+            "code": "BBL7470",
+            "name": "Theranostic Systems ",
+            "slot": "J",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Raviraj Vankayala"
+        },
+        {
+            "code": "BBL7450",
+            "name": "Fundamentals of Neuroscience",
+            "slot": "I",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Amit Kumar Mishra"
+        },
+        {
+            "code": "BBL7570",
+            "name": "Biofilms - Bacterial Communities",
+            "slot": "I",
+            "L-T-P": "3-0-0",
+            "Course Instructor": "Neha Jain"
+        },
+        {
+            "code": "BBL7580",
+            "name": "Computational Genomics",
+            "slot": "F",
+            "L-T-P": "2-0-2",
+            "Course Instructor": "Pankaj Yadav"
+        },
+        {
+            "code": "BBN2010",
+            "name": "Introduction to Profession",
+            "slot": "",
+            "L-T-P": "",
+            "Course Instructor": "Dinesh"
+        },
+        {
+            "code": "MTL2012",
+            "name": "Structure of Materials",
+            "[L-T-P]": "[1-0-0]",
+            "Instructor": "Dr. Appala Naidu Gandi",
+            "slot": "C"
+        },
+        {
+            "code": "MTL2013",
+            "name": "Materials Selection",
+            "[L-T-P]": "[1-0-0]",
+            "Instructor": "Dr. Sumeet Khanna",
+            "slot": "C"
+        },
+        {
+            "code": "MTL2015",
+            "name": "Physical Metallurgy",
+            "[L-T-P]": "[1-0-0]",
+            "Instructor": "Dr. Abir Bhattacharyya",
+            "slot": "U"
+        },
+        {
+            "code": "MTL2016",
+            "name": "Corrosion",
+            "[L-T-P]": "[1-0-0]",
+            "Instructor": "Dr. Srijan Sengupta",
+            "slot": "C"
+        },
+        {
+            "code": "MTL2020",
+            "name": "Materials for Energy Conversion and Storage",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Srijan Sengupta",
+            "slot": ""
+        },
+        {
+            "code": "MTL2040",
+            "name": "Materials at Equilibrium",
+            "[L-T-P]": "[3-1-0]",
+            "Instructor": "Dr. Saurabh Nene",
+            "slot": "D"
+        },
+        {
+            "code": "MTL3050",
+            "name": "Computational Modelling of Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Amitava Banerjee",
+            "slot": "D"
+        },
+        {
+            "code": "MTL3060",
+            "name": "Materials Processing and Manufacturing",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Jaiveer Singh",
+            "slot": "C"
+        },
+        {
+            "code": "MTL3070",
+            "name": "Extraction of Non-Ferrous Metals",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Sumeet Khanna",
+            "slot": "B"
+        },
+        {
+            "code": "MTL3080",
+            "name": "Iron and Steel Making",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Ravi K R",
+            "slot": "A"
+        },
+        {
+            "code": "MTL3090",
+            "name": "Smart Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Raviprakash Srivastava",
+            "slot": "E"
+        },
+        {
+            "code": "MTP3040",
+            "name": "Computational Modelling of Materials Lab",
+            "[L-T-P]": "[0-0-2]",
+            "Instructor": "Dr. Appala Naidu Gandi",
+            "slot": "M7"
+        },
+        {
+            "code": "MTP3060",
+            "name": "Materials Processing and Manufacturing Lab",
+            "[L-T-P]": "[0-0-3]",
+            "Instructor": "Dr. Jaiveer Singh",
+            "slot": "M8"
+        },
+        {
+            "code": "MTL4310",
+            "name": "Processing-Microstructure and Properties of Steels",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Nitin Kumar Sharma",
+            "slot": "K"
+        },
+        {
+            "code": "MTL4320",
+            "name": "Magnetism and Magnetic Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Devendra Singh Negi",
+            "slot": "N"
+        },
+        {
+            "code": "MTL7440",
+            "name": "High Temperature Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Koundinya NTBN",
+            "slot": "J"
+        },
+        {
+            "code": "MTL7060",
+            "name": "Advanced Phase transformations",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Sk Md Hasan",
+            "slot": "F"
+        },
+        {
+            "code": "MTL7150",
+            "name": "Functional Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Pranay Ranjan",
+            "slot": "H"
+        },
+        {
+            "code": "MTP7020",
+            "name": "Functional Materials Lab",
+            "[L-T-P]": "[0-0-2]",
+            "Instructor": "Dr. Pranay Ranjan",
+            "slot": "M7"
+        },
+        {
+            "code": "MTL7440",
+            "name": "High Temperature Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Koundinya NTBN",
+            "slot": "J"
+        },
+        {
+            "code": "MTL7460",
+            "name": "Crystal Plasticity and its Applications",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Lalit",
+            "slot": "I"
+        },
+        {
+            "code": "MTL7110",
+            "name": "Solidification of Metals and Alloys",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Sk Md Hasan",
+            "slot": "N"
+        },
+        {
+            "code": "MTL7160",
+            "name": "Fracture and Fatigue",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Abir Bhattacharyya",
+            "slot": "G"
+        },
+        {
+            "code": "MTL7340",
+            "name": "Thermo Mechanical Processing",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Nitin Kumar Sharma",
+            "slot": "I"
+        },
+        {
+            "code": "MTL7490",
+            "name": "Processing and Engineering Application of Magnetic Materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Devendra Singh Negi",
+            "slot": "I"
+        },
+        {
+            "code": "MTL7280",
+            "name": "Fundamentals and applications of battery materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Srijan Sengupta",
+            "slot": "J"
+        },
+        {
+            "code": "MTL7680",
+            "name": "Advanced Transmission Electron Microscopy",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Devendra Singh Negi",
+            "slot": "K"
+        },
+        {
+            "code": "MTL40XX",
+            "name": "Synthesis and Processing of Semiconductors and 2D materials",
+            "[L-T-P]": "[3-0-0]",
+            "Instructor": "Dr. Raviprakash Srivastava",
+            "slot": "N"
+        },
+        {
+            "name": "Engineering Mechanics",
+            "code": "MEL1010",
+            "Course Type": "IE",
+            "L-T-P (credits)": "2-1-0 (3)",
+            "Course Coordinator": "Prof. B Ravindra",
+            "slot": "K"
+        },
+        {
+            "name": "Engineering Realization",
+            "code": "MEP1020",
+            "Course Type": "IE",
+            "L-T-P (credits)": "0-0-2 (1)",
+            "Course Coordinator": "Dr. Ankur Gupta",
+            "slot": "M3"
+        },
+        {
+            "name": "Fluid Mechanics",
+            "code": "MEL2040",
+            "Course Type": "PC",
+            "L-T-P (credits)": "3-1-0 (4)",
+            "Course Coordinator": "Dr. Gagan Kewalramani",
+            "slot": "D"
+        },
+        {
+            "name": "Fluid Mechanics-Lab",
+            "code": "MEP2010",
+            "Course Type": "PC",
+            "L-T-P (credits)": "0-0-2 (1)",
+            "Course Coordinator": "Dr. Arun Kumar R",
+            "slot": "M3"
+        },
+        {
+            "name": "Manufacturing Process",
+            "code": "MEL2030",
+            "Course Type": "PC",
+            "L-T-P (credits)": "3-0-0 (3)",
+            "Course Coordinator": "Dr Rajit Ranjan",
+            "slot": "A"
+        },
+        {
+            "name": "Thermodynamics",
+            "code": "MEL2020",
+            "Course Type": "IE",
+            "L-T-P (credits)": "2000-03-01 00:00:00",
+            "Course Coordinator": "Dr. Ashish Pathak",
+            "slot": "A"
+        },
+        {
+            "name": "Control of Mechanical Systems",
+            "code": "MEL3080",
+            "Course Type": "PC",
+            "L-T-P (credits)": "3-0-4 (5)",
+            "Course Coordinator": "Prof. Suril V shah",
+            "slot": "A"
+        },
+        {
+            "name": "Smart Manufacturing",
+            "code": "MEL3090",
+            "Course Type": "PC",
+            "L-T-P (credits)": "2-0-2 (3)",
+            "Course Coordinator": "Prof. Kaushal A Desai",
+            "slot": "B"
+        },
+        {
+            "name": "Design of Machine elements",
+            "code": "MEL3060",
+            "Course Type": "PC",
+            "L-T-P (credits)": "3-0-2 (4)",
+            "Course Coordinator": "Dr. Hirshikesh",
+            "slot": "C"
+        },
+        {
+            "name": "Thermofluids Engineering",
+            "code": "MEL3070",
+            "Course Type": "PC",
+            "L-T-P (credits)": "3-1-0 (4)",
+            "Course Coordinator": "Dr. Arun Kumar R",
+            "slot": "D"
+        },
+        {
+            "name": "Machining and Automated Manufacturing Lab",
+            "code": "MEP3030",
+            "Course Type": "PC",
+            "L-T-P (credits)": "0-0-2 (1)",
+            "Course Coordinator": "Dr. Gourhari Ghosh",
+            "slot": "M3"
+        },
+        {
+            "name": "Design Lab",
+            "code": "MEP7050",
+            "Course Type": "SC (Design)",
+            "L-T-P (credits)": "0-0-2 (1)",
+            "Course Coordinator": "Dr. Hirshikesh",
+            "slot": "M6"
+        },
+        {
+            "name": "Finite Element Methods in Engineering",
+            "code": "MEL7540",
+            "Course Type": "SC (Design)",
+            "L-T-P (credits)": "3-0-0 (3)",
+            "Course Coordinator": "Atul Kumar Sharma",
+            "slot": "J"
+        },
+        {
+            "name": "Introduction to Acoustics",
+            "code": "MEL7160",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Amrita Puri",
+            "slot": "K"
+        },
+        {
+            "name": "Principles of Biomechanics",
+            "code": "MEL4060",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Barun Pratiher",
+            "slot": "E"
+        },
+        {
+            "name": "Introduction to Robotics",
+            "code": "RML6010",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Riby A Boby",
+            "slot": "N"
+        },
+        {
+            "name": "Power Plant Engineering",
+            "code": "MEL7150",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Hardik Kothadia",
+            "slot": "E"
+        },
+        {
+            "name": "Refrigeration and Air-conditioning",
+            "code": "MEL4050",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Prof. Prodyut Chakraborty",
+            "slot": "N"
+        },
+        {
+            "name": "Micro-Nano Manufacturing",
+            "code": "MEL4420",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Gourhari Ghosh",
+            "slot": "K"
+        },
+        {
+            "name": "Welding science and Technology",
+            "code": "MEL4110",
+            "Course Type": "PE",
+            "L-T-P (credits)": "3-0-2",
+            "Course Coordinator": "Dr. Chandan Pandey",
+            "slot": "U"
+        },
+        {
+            "name": "Materials & Manufacturing Processes",
+            "code": "MEL7100",
+            "Course Type": "MC",
+            "L-T-P (credits)": "2-0-2 (3)",
+            "Course Coordinator": "Prof. Rahul Chhibber",
+            "slot": "F"
+        },
+        {
+            "name": "Experimental and Computational Techniques",
+            "code": "MEL7990",
+            "Course Type": "ME",
+            "L-T-P (credits)": "2-0-2 (3)",
+            "Course Coordinator": "Dr. Pratyaksh Karan and Dr Srijit Biswas",
+            "slot": "H, L2"
+        },
+        {
+            "name": "Principles of Continuum Mechanics",
+            "code": "MTL7360",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Nitesh Arora",
+            "slot": "I"
+        },
+        {
+            "name": "Finite Element Methods in Engineering",
+            "code": "MEL7540",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Atul Kumar Sharma",
+            "slot": "J"
+        },
+        {
+            "name": "Introduction to Acoustics",
+            "code": "MEL7160",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Amrita Puri",
+            "slot": "K"
+        },
+        {
+            "name": "Fracture and Fatigue",
+            "code": "MTL7160",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr Babu Ranjan Thakur",
+            "slot": "N"
+        },
+        {
+            "name": "Advanced Robotic Manipulations",
+            "code": "RML7120",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Roshan Kumar Hota",
+            "slot": "K"
+        },
+        {
+            "name": "Theory of Arc Welding",
+            "code": "MEL7490",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Chandan Pandey",
+            "slot": "I"
+        },
+        {
+            "name": "Systematic Embodiment Design",
+            "code": "MEL7180",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Mrityunjay Doddamani",
+            "slot": "J"
+        },
+        {
+            "name": "Mobile Robots",
+            "code": "RML7220",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Jayant K Mohanta, Riby Abraham Boby",
+            "slot": "G"
+        },
+        {
+            "name": "Experimental and Computational Techniques",
+            "code": "MEL7990",
+            "Course Type": "MC",
+            "L-T-P (credits)": "2-0-2 (3)",
+            "Course Coordinator": "Dr. Pratyaksh Karan and Dr Srijit Biswas",
+            "slot": "H"
+        },
+        {
+            "name": "Conduction and Radiation",
+            "code": "MEL7380",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3 - 1 - 0",
+            "Course Coordinator": "Dr. Nipun Arora",
+            "slot": "I"
+        },
+        {
+            "name": "Nano Sensors",
+            "code": "MEL7420",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Shrutidhara Sarma",
+            "slot": "J"
+        },
+        {
+            "name": "Convective Heat and Mass Transfer",
+            "code": "MEL7390",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3 - 1 - 0",
+            "Course Coordinator": "Dr. Shobhana Singh",
+            "slot": "I"
+        },
+        {
+            "name": "Combustion Technology",
+            "code": "MEL7210",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-2",
+            "Course Coordinator": "Dr. Sudipto Mukhopadhyay",
+            "slot": "J"
+        },
+        {
+            "name": "Turbulent Flows",
+            "code": "MEL7550",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Gagan Kewalramani",
+            "slot": "K"
+        },
+        {
+            "name": "Machine Learning for ThermoFluids",
+            "code": "MEL7690",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Harshal Akolekar",
+            "slot": "K"
+        },
+        {
+            "name": "Probabilistic methods in Engineering Design",
+            "code": "MEL7940",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Prof. Anand Plappally",
+            "slot": "N"
+        },
+        {
+            "name": "Flight Dynamics and Control",
+            "code": "MEL7670",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0 (3)",
+            "Course Coordinator": "Dr. Jayant Kumar Mohanta",
+            "slot": "F"
+        },
+        {
+            "name": "Foundations of ML",
+            "code": "MEL7650",
+            "Course Type": "ME",
+            "L-T-P (credits)": "2-0-2(3)",
+            "Course Coordinator": "Dr. Himanshu Dave and Dr. Harshal Akolekar",
+            "slot": "I"
+        },
+        {
+            "name": "Advance Mechanics of Solids",
+            "code": "MEL7010",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Barun Pratiher",
+            "slot": "I"
+        },
+        {
+            "name": "Finite Element Methods in Engineering",
+            "code": "MEL7540",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Atul Kumar Sharma",
+            "slot": "J"
+        },
+        {
+            "name": "Fracture and Fatigue",
+            "code": "MTL7160",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr Abir Bhattacharya ",
+            "slot": "G"
+        },
+        {
+            "name": "Propulsion systems for UAV",
+            "code": "MEL7630",
+            "Course Type": "ME",
+            "L-T-P (credits)": "3-0-0",
+            "Course Coordinator": "Dr. Himanshu Dave",
+            "slot": "K"
+        },
+        {
+            "code": "ETL7140",
+            "name": "Resource Sustainability",
+            "slot": "F",
+            "L-T-P": "3-0-0",
+            "Name of the faculty (Instructor and co-instructor)": "Kirti Sankhala"
+        },
+        {
+            "code": "ETL7020",
+            "name": "Climate change risk, adaptation and mitigation",
+            "slot": "I",
+            "L-T-P": "3-0-0",
+            "Name of the faculty (Instructor and co-instructor)": "Rajyalakshmi Garaga"
+        },
+        {
+            "code": "ETL7030",
+            "name": "Introduction to ESG regulation, reporting, and accounting",
+            "slot": "E",
+            "L-T-P": "3-0-0",
+            "Name of the faculty (Instructor and co-instructor)": "Chandana N"
+        },
+        {
+            "code": "ETL7130",
+            "name": "Sustainability Assessment Techniques",
+            "slot": "G",
+            "L-T-P": "3-0-0",
+            "Name of the faculty (Instructor and co-instructor)": "Shreya Banerjee"
+        },
+        {
+            "code": "TFP7010",
+            "name": "Foresight with Simulation Modeling and Analysis",
+            "L-T-P": "2-0-0",
+            "Name of the instructor": "Vinod Vijay Kumar",
+            "slot": "S"
+        },
+        {
+            "code": "PHL1030",
+            "Course Type": "PC",
+            "LTP": "2–0–2 ",
+            "Credit": "3",
+            "name": "Physics II",
+            "Instructor(s)Read ** as coordinator": "Chandan Datta** + Sagar Kumar Verma",
+            "slot": "N"
+        },
+        {
+            "code": "PHL1010",
+            "Course Type": "IS",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Electromagnetism & Optics (Theory)",
+            "Instructor(s)Read ** as coordinator": "Sunil Kumar Khijwania",
+            "slot": "K"
+        },
+        {
+            "code": "PHP1010",
+            "Course Type": "IS",
+            "LTP": "0-0-2",
+            "Credit": "1",
+            "name": "Electromagnetism & Optics (Lab)",
+            "Instructor(s)Read ** as coordinator": "Monika Sinha",
+            "slot": "M1"
+        },
+        {
+            "code": "PHL2021",
+            "Course Type": "PL",
+            "LTP": "1-0-0",
+            "Credit": "1",
+            "name": "Electronic Materials",
+            "Instructor(s)Read ** as coordinator": "Durgamadhab Mishra",
+            "slot": "C"
+        },
+        {
+            "code": "PHL2110",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Mathematical Methods for Physicists",
+            "Instructor(s)Read ** as coordinator": "Ambesh Dixit",
+            "slot": "D"
+        },
+        {
+            "code": "PHL2120",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Modern Optics",
+            "Instructor(s)Read ** as coordinator": "Sagar Kumar Verma** + Yogeshwar Nath Mishra",
+            "slot": "A"
+        },
+        {
+            "code": "PHL2130",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "EM Waves and fields",
+            "Instructor(s)Read ** as coordinator": "Sunita",
+            "slot": "C"
+        },
+        {
+            "code": "PHP2020",
+            "Course Type": "PC",
+            "LTP": "0-0-3",
+            "Credit": "1.5",
+            "name": "EM Lab",
+            "Instructor(s)Read ** as coordinator": "V. Narayanan",
+            "slot": "M1"
+        },
+        {
+            "code": "PHL3040",
+            "Course Type": "PC",
+            "LTP": "2-0-0",
+            "Credit": "2",
+            "name": "Medical Physics",
+            "Instructor(s)Read ** as coordinator": "Durgamadhab Mishra",
+            "slot": "K"
+        },
+        {
+            "code": "PHL3050",
+            "Course Type": "PC",
+            "LTP": "2-0-0",
+            "Credit": "2",
+            "name": "Nuclear Radiation and Energy",
+            "Instructor(s)Read ** as coordinator": "V. Narayanan",
+            "slot": "B"
+        },
+        {
+            "code": "PHL3060",
+            "Course Type": "PC",
+            "LTP": "2-0-2",
+            "Credit": "3",
+            "name": "Interaction of Radiation with matter",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (HEP) + V. Narayanan (Lab)",
+            "slot": "C"
+        },
+        {
+            "code": "PHL3070",
+            "Course Type": "PC",
+            "LTP": "3-0-2",
+            "Credit": "4",
+            "name": "Semiconducting and Optoelectronic Devices",
+            "Instructor(s)Read ** as coordinator": "Satyajit Sahu",
+            "slot": "D"
+        },
+        {
+            "code": "PHL3080",
+            "Course Type": "PC",
+            "LTP": "2-0-0",
+            "Credit": "2",
+            "name": "Entrepreneurship for Physicists",
+            "Instructor(s)Read ** as coordinator": "Ram Prakash",
+            "slot": "E"
+        },
+        {
+            "code": "PHP3040",
+            "Course Type": "PC",
+            "LTP": "0-0-3",
+            "Credit": "1.5",
+            "name": "Applied Optics Lab",
+            "Instructor(s)Read ** as coordinator": "Shahab Ahmad** + BM Krishna",
+            "slot": "M2"
+        },
+        {
+            "code": "PHP3050",
+            "Course Type": "PC",
+            "LTP": "0-0-2",
+            "Credit": "1",
+            "name": "Modern physics Lab",
+            "Instructor(s)Read ** as coordinator": "Ambesh Dixit",
+            "slot": "M3"
+        },
+        {
+            "code": "PHP3060",
+            "Course Type": "PC",
+            "LTP": "0-0-2",
+            "Credit": "1",
+            "name": "Radiation and Particle Detection Lab",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (HEP)** + Lata Panwar",
+            "slot": "M4"
+        },
+        {
+            "code": "Energy",
+            "Course Type": "SC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Electrical Energy Storage Materials and Devices",
+            "Instructor(s)Read ** as coordinator": "Due (if floatted)",
+            "slot": ""
+        },
+        {
+            "code": "Plasma",
+            "Course Type": "SC",
+            "LTP": "2-0-0",
+            "Credit": "2",
+            "name": "Fundamentals of plasma physics and controlled fusion ",
+            "Instructor(s)Read ** as coordinator": "Due (if floatted)",
+            "slot": ""
+        },
+        {
+            "code": "Quantum",
+            "Course Type": "SC",
+            "LTP": "3-1-0",
+            "Credit": "4",
+            "name": "Quantum Computing",
+            "Instructor(s)Read ** as coordinator": "Chandan Datta",
+            "slot": "A"
+        },
+        {
+            "code": "Phtonics",
+            "Course Type": "SC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Fundamentals of Photonics",
+            "Instructor(s)Read ** as coordinator": "Due (if floatted)",
+            "slot": ""
+        },
+        {
+            "code": "PHL4050",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "EM and Neutrino Astronomy",
+            "Instructor(s)Read ** as coordinator": "Reetanjali Moharana** + Lata Panwar",
+            "slot": "A"
+        },
+        {
+            "code": "PHL6060",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Electrodynamics",
+            "Instructor(s)Read ** as coordinator": "Sunita** + Amit Mukherjee ",
+            "slot": "F"
+        },
+        {
+            "code": "PHL6070",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Condensed Matter Physics (as Open Elective)",
+            "Instructor(s)Read ** as coordinator": "Dushyant Kumar** + BM Krishna",
+            "slot": "N"
+        },
+        {
+            "code": "PHL6080",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Physics of Atoms and Molecules",
+            "Instructor(s)Read ** as coordinator": "Naveen Tailor",
+            "slot": "G"
+        },
+        {
+            "code": "PHL6090",
+            "Course Type": "PC",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Nuclear and Particle Physics",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (HEP)",
+            "slot": "I"
+        },
+        {
+            "code": "PHP6040",
+            "Course Type": "PC",
+            "LTP": "0-0-3",
+            "Credit": "1.5",
+            "name": "Atomic and Nuclear Physics Laboratory",
+            "Instructor(s)Read ** as coordinator": "V. Narayanan",
+            "slot": "L1"
+        },
+        {
+            "code": "PHP6050",
+            "Course Type": "PC",
+            "LTP": "0-0-3",
+            "Credit": "1.5",
+            "name": "Optics and Lasers Laboratory",
+            "Instructor(s)Read ** as coordinator": "BM Krishna** + Shahab Ahmad",
+            "slot": "L2"
+        },
+        {
+            "code": "PHP6060",
+            "Course Type": "PC",
+            "LTP": "0-0-3",
+            "Credit": "1.5",
+            "name": "Hands-On II",
+            "Instructor(s)Read ** as coordinator": "Reetanjali Moharana** + Dushyant Kumar",
+            "slot": "L3"
+        },
+        {
+            "code": "PHL6320",
+            "Course Type": "PE-1",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Relativistic Quantum Mechanics",
+            "Instructor(s)Read ** as coordinator": "Lata Panwar",
+            "slot": "J"
+        },
+        {
+            "code": "PHL6110",
+            "Course Type": "PE-1",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Introduction to Soft Matter Physics",
+            "Instructor(s)Read ** as coordinator": "Prabhat Jaiswal",
+            "slot": "J"
+        },
+        {
+            "code": "PHL7430",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Computational Materials Science",
+            "Instructor(s)Read ** as coordinator": "Ambesh Dixit",
+            "slot": "I"
+        },
+        {
+            "code": "PHL7350",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Magnetism and Superconductivity ",
+            "Instructor(s)Read ** as coordinator": "Dushyant Kumar** + Durgamadhab Mishra",
+            "slot": "J"
+        },
+        {
+            "code": "PHL7390",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Physics of Solar Cells",
+            "Instructor(s)Read ** as coordinator": "Jitendra Kumar (CMP) + Naveen Tailor",
+            "slot": "N"
+        },
+        {
+            "code": "PHL7480",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Open Quantum Systems",
+            "Instructor(s)Read ** as coordinator": "Subhashish Banerjee",
+            "slot": "G"
+        },
+        {
+            "code": "QCL7330",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Device Independent Quantum Technologies",
+            "Instructor(s)Read ** as coordinator": "Amit Mukherjee",
+            "slot": "H"
+        },
+        {
+            "code": "PHL7340",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Quantum Field Theory",
+            "Instructor(s)Read ** as coordinator": "Monika Sinha",
+            "slot": "I"
+        },
+        {
+            "code": "PHL7450",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "General Theory of Relativity",
+            "Instructor(s)Read ** as coordinator": "Reetanjali Moharana",
+            "slot": "J"
+        },
+        {
+            "code": "PHL7550",
+            "Course Type": "",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Advanced Condensed Matter Physics",
+            "Instructor(s)Read ** as coordinator": "V Naryanan",
+            "slot": "J"
+        },
+        {
+            "code": "PHL7330",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Laser Technologies",
+            "Instructor(s)Read ** as coordinator": "Yogeshwar Nath Mishra** + Sagar Verma",
+            "slot": "K"
+        },
+        {
+            "code": "PHL7510",
+            "Course Type": "PE",
+            "LTP": "3-0-0",
+            "Credit": "3",
+            "name": "Energy Harvesting",
+            "Instructor(s)Read ** as coordinator": "Shahab Ahmad",
+            "slot": "G"
+        },
+        {
+            "name": "Product Visualisation and Ideation ",
+            "code": "DSL7540",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Gaurav Vaidya",
+            "slot": ""
+        },
+        {
+            "name": "Nature-inspired Design",
+            "code": "DSL7580",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Shiv Kumar Verma",
+            "slot": ""
+        },
+        {
+            "name": "Computer-Aided Design",
+            "code": "DSL7560",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Gaurav Vaidya",
+            "slot": ""
+        },
+        {
+            "name": "Designing Data Visualizations",
+            "code": "DSL7550",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Sajan Pillai",
+            "slot": ""
+        },
+        {
+            "name": "AI & ML for Smart Product Design",
+            "code": "DSL7630",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Pranjal Borah",
+            "slot": ""
+        },
+        {
+            "name": "Product Semantics",
+            "code": "DSL7570",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Shiv Kumar Verma",
+            "slot": ""
+        },
+        {
+            "name": "Usability Engineering",
+            "code": "DSL7200",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Pranjal Borah",
+            "slot": ""
+        },
+        {
+            "name": "Principles of Game Design",
+            "code": "DSL7220",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Pranjal Borah",
+            "slot": ""
+        },
+        {
+            "name": "Character Design",
+            "code": "DSL7130",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Sumana Som",
+            "slot": ""
+        },
+        {
+            "name": "Special Topics in XR 1 ",
+            "code": "DSL7230",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Pankaj Chavan",
+            "slot": ""
+        },
+        {
+            "name": "Interaction Design",
+            "code": "DSL7360",
+            "Credit (L-T-P)": "2-0-2",
+            "Name of Faculty": "Sajan Pillai",
+            "slot": ""
+        },
+        {
+            "name": "Product Ergonomics",
+            "code": "DSL7590",
+            "Credit (L-T-P)": "2-0-2 [3]",
+            "Name of Faculty": "Priyabrata Rautray",
+            "slot": ""
+        },
+        {
+            "code": "EEL1010",
+            "name": "Introduction to EE [3-0-2]",
+            "Course Instructor": "Rajlaxmi Chouhan",
+            "slot": "K",
+            "t": ""
+        },
+        {
+            "code": "EEL2030",
+            "name": "Circuit Theory [3-0-0]",
+            "Course Instructor": "Rajendra Nagar",
+            "slot": "C",
+            "t": ""
+        },
+        {
+            "code": "EEL2020",
+            "name": "Digital Design [2-0-2]",
+            "Course Instructor": "Jai Narayan Tripathi",
+            "slot": "E",
+            "t": ""
+        },
+        {
+            "code": "EEL2050",
+            "name": "Physical Electronics [3-0-0]",
+            "Course Instructor": "Lavi Tyagi",
+            "slot": "A",
+            "t": ""
+        },
+        {
+            "code": "EEL2040",
+            "name": "Engineering Electromagnetics [3-0-0]",
+            "Course Instructor": "Nitin Bhatia",
+            "slot": "D",
+            "t": ""
+        },
+        {
+            "code": "EEL2010",
+            "name": "Signals and Systems [3-1-0]",
+            "Course Instructor": "Manish Narwaria",
+            "slot": "E",
+            "t": ""
+        },
+        {
+            "code": "EEL2060",
+            "name": "Embedded Systems and IoT [3-0-2]",
+            "Course Instructor": "Arpit Arvind Khandelwal",
+            "slot": "E",
+            "t": ""
+        },
+        {
+            "code": "EEL2070",
+            "name": "Modelling and Simulation [3-0-2] (1 fractal)",
+            "Course Instructor": "Bharat Singh Rajpurohit",
+            "slot": "U",
+            "t": ""
+        },
+        {
+            "code": "EEL3060",
+            "name": "Power Engineering [3-0-3]",
+            "Course Instructor": "Ravi Yadav",
+            "slot": "A",
+            "t": ""
+        },
+        {
+            "code": "EEL3070",
+            "name": "Digital Signal Processing [3-0-0]",
+            "Course Instructor": "Amit Bhardwaj",
+            "slot": "C",
+            "t": ""
+        },
+        {
+            "code": "EEL3080",
+            "name": "Data Communication Networks [3-0-0]",
+            "Course Instructor": "Vishwanth",
+            "slot": "E",
+            "t": ""
+        },
+        {
+            "code": "EEL3090",
+            "name": "Embedded Systems [3-0-0]",
+            "Course Instructor": "Binod Kumar",
+            "slot": "D",
+            "t": ""
+        },
+        {
+            "code": "EEP3010",
+            "name": "Communication Systems Lab [0-0-3]",
+            "Course Instructor": "Suraj Srivastava",
+            "slot": "M1",
+            "t": ""
+        },
+        {
+            "code": "EEP3020",
+            "name": "Digital Systems Lab [0-0-3]",
+            "Course Instructor": "Binod Kumar, Bhupendra Singh Reniwal, Amandeep , Harshit",
+            "slot": "M2",
+            "t": ""
+        },
+        {
+            "code": "EEP3030",
+            "name": "Electrical Machines Lab [0-0-3]",
+            "Course Instructor": "Kunwar Aditya",
+            "slot": "M3",
+            "t": ""
+        },
+        {
+            "code": "EEL3100",
+            "name": "Bioimaging [3-0-0]",
+            "Course Instructor": "Dipanjan Roy",
+            "slot": "D",
+            "t": "to be confirmed"
+        },
+        {
+            "code": "EEL7200",
+            "name": "Data Communication and Networking [2-0-2]",
+            "Course Instructor": "Pradyumna Kumar Bishoyi",
+            "slot": "G",
+            "t": ""
+        },
+        {
+            "code": "EEL7140",
+            "name": "Advanced Control System [3-0-0]",
+            "Course Instructor": "Bijnan bandyopadhyay",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7020",
+            "name": "Wireless Communications [3-0-0]",
+            "Course Instructor": "Arun Kumar Singh",
+            "slot": "K",
+            "t": ""
+        },
+        {
+            "code": "EEL7500",
+            "name": "IC Technology ",
+            "Course Instructor": "Saakshi Dhanekar",
+            "slot": "H",
+            "t": ""
+        },
+        {
+            "code": "EEL7920",
+            "name": "Automotive Electronic Design [3-0-2]",
+            "Course Instructor": "Bharat Singh Rajpurohit",
+            "slot": "O",
+            "t": ""
+        },
+        {
+            "code": "EEL7520",
+            "name": "Micro-fabrication Technologies,Sensor Signals, Interfacing andRead-out Electronics [2-0-0]",
+            "Course Instructor": "Mahesh Kumar",
+            "slot": "G",
+            "t": ""
+        },
+        {
+            "code": "EEL7790",
+            "name": "Plugin Electric Vehicles [3-0-2]",
+            "Course Instructor": "Kunwar Aditya",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7740",
+            "name": "Smart Grid [3-0-2]",
+            "Course Instructor": "Nishant Kumar",
+            "slot": "O",
+            "t": ""
+        },
+        {
+            "code": "EEL71640",
+            "name": "Microwave and optical measurements",
+            "Course Instructor": "Nitin and Abhishek",
+            "slot": "G",
+            "t": ""
+        },
+        {
+            "code": "EEL7240",
+            "name": "Cellular Communication Networks [3-0-0]",
+            "Course Instructor": "Arun Kumar Singh",
+            "slot": "F",
+            "t": ""
+        },
+        {
+            "code": "EEL7480",
+            "name": "Machine Learning for Communications [3-0-0]",
+            "Course Instructor": "Suraj Srivastava",
+            "slot": "N",
+            "t": ""
+        },
+        {
+            "code": "EEL71020",
+            "name": "Hardware Design for Artificial Intelligence [3-0-0]",
+            "Course Instructor": "Binod Kumar",
+            "slot": "O",
+            "t": ""
+        },
+        {
+            "code": "EEL71030",
+            "name": "Mixed Signal Circuit Design [3-0-0]",
+            "Course Instructor": "Amandeep Kaur",
+            "slot": "Q",
+            "t": ""
+        },
+        {
+            "code": "EEL71040",
+            "name": "SoC Testing and Verification [3-0-0]",
+            "Course Instructor": "Bhupendra Singh Reniwal",
+            "slot": "R",
+            "t": ""
+        },
+        {
+            "code": "EEL7450",
+            "name": "Nanosensors [3-0-0] ",
+            "Course Instructor": "Ajay Agarwal",
+            "slot": "J",
+            "t": ""
+        },
+        {
+            "code": "EEL4320",
+            "name": "Sensors and Actuators [3-0-0] ",
+            "Course Instructor": "Akshay Moudgil",
+            "slot": "E",
+            "t": ""
+        },
+        {
+            "code": "EEL7390",
+            "name": "Radio Frequency Integrated Circuit Design [3-0-0]",
+            "Course Instructor": "Soumava mukherjee and Arani ali khan",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7990",
+            "name": "Rf system design for communication",
+            "Course Instructor": "Soumava Mukherjee",
+            "slot": "J",
+            "t": ""
+        },
+        {
+            "code": "EEL4370",
+            "name": "Power System Operation and Control [3-0-0] ",
+            "Course Instructor": "Vineeth Vijayan",
+            "slot": "K",
+            "t": ""
+        },
+        {
+            "code": "EE4330",
+            "name": "Speech Processing",
+            "Course Instructor": "Himanshu Kumar",
+            "slot": "E",
+            "t": ""
+        },
+        {
+            "code": "EEL7460",
+            "name": "Adaptive Signal Processing",
+            "Course Instructor": "Sandeep Yadav",
+            "slot": "J",
+            "t": ""
+        },
+        {
+            "code": "EEL7220",
+            "name": "Renewable Energy Systems [3-0-0]",
+            "Course Instructor": "Abdul Gafoor",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7130",
+            "name": "Security in Cyber Physical Systems [2- 0-0]",
+            "Course Instructor": "Niladri Sekhar Tripathy",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7930",
+            "name": "Optical Communication Systems [3-0-0]",
+            "Course Instructor": "Manoj Gupta",
+            "slot": "J",
+            "t": ""
+        },
+        {
+            "code": "EEL71240",
+            "name": "Non-Volatile Memory Technologies [2-0-0]",
+            "Course Instructor": "Harshit Agarwal",
+            "slot": "K",
+            "t": ""
+        },
+        {
+            "code": "EEL7950",
+            "name": "In-Memory Computing [2-0-0]",
+            "Course Instructor": "Bhupendra Singh Reniwal",
+            "slot": "K",
+            "t": ""
+        },
+        {
+            "code": "EEL71090",
+            "name": "ML in VLSI CAD",
+            "Course Instructor": "Binod Kumar",
+            "slot": "P",
+            "t": ""
+        },
+        {
+            "code": "",
+            "name": "Semiconductor Device Characterization [3-0-0]",
+            "Course Instructor": "Akshay Moudgil",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7840",
+            "name": "Point of Care Devices and Diagnostics",
+            "Course Instructor": "Saakshi Dhanekar",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            "code": "EEL7630",
+            "name": "Coding Theory",
+            "Course Instructor": "Aashish Mathur",
+            "slot": "I",
+            "t": ""
+        },
+        {
+            " code": "SHL7420",
+            "name": "Surgical device development",
+            "Instructor/Coordinator": "Dr Siddharth Srivastava",
+            "Credit": "3",
+            "slot": "J",
+            "L-T-P": "2-0-2"
+        },
+        {
+            " code": "SHL7160",
+            "name": "Introduction to medical robotics",
+            "Instructor/Coordinator": "Dr. Jayant Kumar Mohanta",
+            "Credit": "3",
+            "slot": "D",
+            "L-T-P": "3-0-0"
+        },
+        {
+            " code": "SHL7350",
+            "name": "Wearable Devices",
+            "Instructor/Coordinator": "Dr. Bhivraj Suthar",
+            "Credit": "2",
+            "slot": "C",
+            "L-T-P": "2-0-0"
+        },
+        {
+            " code": "SHL7150",
+            "name": "Biomedical Nanomaterials",
+            "Instructor/Coordinator": "Dr. Raviraj Vankayala",
+            "Credit": "3",
+            "slot": "A",
+            "L-T-P": "2-0-2"
+        },
+        {
+            " code": "SHL7360",
+            "name": "Personalized medicine/ Molecular techniques for precision medicine",
+            "Instructor/Coordinator": "Dr Siddharth Srivastava",
+            "Credit": "3",
+            "slot": "E",
+            "L-T-P": "2-0-2"
+        },
+        {
+            " code": "SHL7490",
+            "name": "Plasma Medicine",
+            "Instructor/Coordinator": "Dr. Ram Prakash",
+            "Credit": "2",
+            "slot": "B",
+            "L-T-P": "2-0-0"
+        },
+        {
+            " code": "SHN7010",
+            "name": "Bioethics and Regulatory Practices",
+            "Instructor/Coordinator": "Dr. Jaiveer Singh",
+            "Credit": "1",
+            "slot": "NG1",
+            "L-T-P": "1-0-0"
+        },
+        {
+            "code": "CHL2023",
+            "name": "Materials Fractals: Polymer, Corrosion, Colloids & suspensions",
+            "Credit(l-t-p)": "",
+            "Instructor": "",
+            "slot": ""
+        },
+        {
+            "code": "CHL2020",
+            "name": "Molecular Engineering",
+            "Credit(l-t-p)": "3 (3-0-0)",
+            "Instructor": "Dr. Manoj Kumar Jena",
+            "slot": "A"
+        },
+        {
+            "code": "CHL2030",
+            "name": "Material and Energy Balance",
+            "Credit(l-t-p)": "3 (3-0-0)",
+            "Instructor": "Dr. Vikky Anand",
+            "slot": "D"
+        },
+        {
+            "code": "EEL2070",
+            "name": "Modelling and Simulation",
+            "Credit(l-t-p)": "4 (3-0-2)",
+            "Instructor": "Dr. Krunal Gangawane",
+            "slot": "U"
+        },
+        {
+            "code": "CHL3070",
+            "name": "Mass Transfer II",
+            "Credit(l-t-p)": "4.5 (3-0-3)",
+            "Instructor": "Dr. Praveen K Sappidi",
+            "slot": "A"
+        },
+        {
+            "code": "CHL4010",
+            "name": "Transport Phenomena",
+            "Credit(l-t-p)": "4 (3-1-0)",
+            "Instructor": "Dr. Tara Chand Kumawat",
+            "slot": "C"
+        },
+        {
+            "code": "CHL4020",
+            "name": "Process Control and AI Applications",
+            "Credit(l-t-p)": "4 (3-0-2)",
+            "Instructor": "Dr. Santhosh Kumar Varanasi",
+            "slot": "B"
+        },
+        {
+            "code": "CHL4030",
+            "name": "Process Plant Design & Economics",
+            "Credit(l-t-p)": "4.5 (3-0-3)",
+            "Instructor": "Dr. Sumit Kamal + Cr. Manoj Kumar Jena",
+            "slot": "D"
+        },
+        {
+            "code": "MEP3990",
+            "name": "Fluid Mechanics Lab",
+            "Credit(l-t-p)": "1 (0-0-2)",
+            "Instructor": "Dr. Praveen K Sappidi",
+            "slot": "M5"
+        },
+        {
+            "code": "CHL7090",
+            "name": "Advanced Thermodynamics",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Prof. Parag Deshpande",
+            "slot": "H"
+        },
+        {
+            "code": "CHL 7040",
+            "name": "Advanced Chemical Engineering Thermodynamics",
+            "Credit(l-t-p)": "2-0-0",
+            "Instructor": "Prof. Parag Deshpande",
+            "slot": "H"
+        },
+        {
+            "code": "CHL7800",
+            "name": "Novel separation processes",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Dr. Krunal Gangawane",
+            "slot": "J"
+        },
+        {
+            "code": "CHL7450",
+            "name": "Principles of Electrochemical Engineering",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Dr. Prashant K Gupta",
+            "slot": "G"
+        },
+        {
+            "code": "CHL7530",
+            "name": "Heterogeneous Catalysis and Catalytic Reactors",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Dr. Sumit Kamal",
+            "slot": "I"
+        },
+        {
+            "code": "CHL7730",
+            "name": "Advanced Wastewater Treatment",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Prof. Pradip K Tewari",
+            "slot": "F"
+        },
+        {
+            "code": "CHL7380",
+            "name": "Modelling of Atoms, Molecules and Surfaces",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Dr. Angan Sengupta",
+            "slot": "J"
+        },
+        {
+            "code": "CHL4420",
+            "name": "Membrane Technology",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Dr. Vikky Anand",
+            "slot": "I"
+        },
+        {
+            "code": "CHL4330",
+            "name": "Unit Operations",
+            "Credit(l-t-p)": "3-0-0",
+            "Instructor": "Dr. Tara Chand Kumawat",
+            "slot": "E"
+        },
+        {
+            "code": "CHL7320",
+            "name": "Microfluidic Fuel Cells",
+            "Credit(l-t-p)": "1-0-0",
+            "Instructor": "Dr. Prashant Kumar Gupta",
+            "slot": ""
+        },
+        {
+            "name": "Introduction to Film Studies",
+            "code": "LAL2010",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Parichay Patra",
+            "slot": "K"
+        },
+        {
+            "name": "Indian Childhoods in Popular Culture",
+            "code": "LAL2170",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Soni",
+            "slot": "N"
+        },
+        {
+            "name": "Introduction to Comics Studies",
+            "code": "LAL2160",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Natasa Thoudam",
+            "slot": "K"
+        },
+        {
+            "name": "Short stories from around the world",
+            "code": "LAL2040",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Vidya Sarveswaran",
+            "slot": "K"
+        },
+        {
+            "name": "Aesthetics ",
+            "code": "LAL2120",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Sunil Lohar",
+            "slot": "N"
+        },
+        {
+            "name": "Culture, Art and Heritage",
+            "code": "LAL2130",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Bhaswati Sarma",
+            "slot": "N"
+        },
+        {
+            "name": "Short Fiction from India",
+            "code": "LAL2020",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Kanak Yadav",
+            "slot": "K"
+        },
+        {
+            "name": "Science Fiction ",
+            "code": "LAL2080",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Tonisha Guin",
+            "slot": "N"
+        },
+        {
+            "name": "Basics of Leadership ",
+            "code": "LAL 4110",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Gurujegan Murugesan ",
+            "slot": "D"
+        },
+        {
+            "name": "Introduction to Indian Philosophy ",
+            "code": "LAL4680",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Dinesh Mohan Joshi",
+            "slot": "D"
+        },
+        {
+            "name": "Disaster risk reduction and management",
+            "code": "LAL4030",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Chandana N",
+            "slot": "D"
+        },
+        {
+            "name": " Critical Thinking",
+            "code": "LAL4050",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Sreedevi D",
+            "slot": "C"
+        },
+        {
+            "name": "Foundations of sustainability",
+            "code": "LAL4040",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Kirti Sankhala",
+            "slot": "C"
+        },
+        {
+            "name": "Cognitive Semantics",
+            "code": "LAL4370",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Sidharth Ranjan",
+            "slot": "D"
+        },
+        {
+            "name": "Role of Technology in Development",
+            "code": "LAL4380",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Rachel Philip",
+            "slot": "C"
+        },
+        {
+            "name": "Gandhian Thought",
+            "code": "LAL4350",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "George K.J.",
+            "slot": "C"
+        },
+        {
+            "name": "Engineering Psychology",
+            "code": "LAL4400",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Suman Dhaka",
+            "slot": "D"
+        },
+        {
+            "name": "Peer Learning: Preparation for Project",
+            "code": "LAL6330",
+            "L-T-P": "0-0-2",
+            "Name of Faculty": "Akanksha",
+            "slot": "H"
+        },
+        {
+            "name": "Individual and  Strategic Decision Making:  Theory and Applications",
+            "code": "AIL6020",
+            "L-T-P": "2-0-0",
+            "Name of Faculty": "Srivatsa Srinivas",
+            "slot": "I"
+        },
+        {
+            "name": "Introduction to Policy Analysis",
+            "code": "LAL6130",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Bhaskar",
+            "slot": "J"
+        },
+        {
+            "name": "Introduction to Computational Methods for CSS",
+            "code": "LAL6090",
+            "L-T-P": "3-0-2",
+            "Name of Faculty": "Ravi Yadav/Gopa",
+            "slot": "F"
+        },
+        {
+            "name": "Social Science Research Methods II",
+            "code": "LAL6120",
+            "L-T-P": "3-0-2",
+            "Name of Faculty": "Prasenjeet Tribhuvan",
+            "slot": "A"
+        },
+        {
+            "name": "Sociology of Science and Technology",
+            "code": "LAL7310",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Rachel Philip",
+            "slot": "J"
+        },
+        {
+            "name": "Language-2-English",
+            "code": "LAL1040",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Anupama Mohan",
+            "slot": "C"
+        },
+        {
+            "name": "Understanding India-Indian Knowledge Systems and Ethos-2",
+            "code": "LAL1XXX",
+            "L-T-P": "2-0-0",
+            "Name of Faculty": "Dinesh Mohan Joshi",
+            "slot": "B"
+        },
+        {
+            "name": "Philosophical and Sociological Perspectives on Education-1",
+            "code": "LAL2XXX",
+            "L-T-P": "3-0-2",
+            "Name of Faculty": "Hari Narayanan V",
+            "slot": "U"
+        },
+        {
+            "name": "Vocal Music",
+            "code": "LAP4120",
+            "L-T-P": "0-0-6",
+            "Name of Faculty": "Bhaswati Sarma",
+            "slot": "G"
+        },
+        {
+            "name": "Environmental Economics and Management",
+            "code": "LAL7530",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Souryabrata Mohapatra",
+            "slot": "K"
+        },
+        {
+            "name": "Histories, Philosophies, and Critical Approaches in the Liberal Arts",
+            "code": "LAL7870",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "George K.J. & Anupama",
+            "slot": "H"
+        },
+        {
+            "name": "Research Methodologies for the Liberal Arts",
+            "code": "LAL7860",
+            "L-T-P": "3-0-0",
+            "Name of Faculty": "Sherin",
+            "slot": ""
+        },
+        {
+            "name": "Ethics and Professional Life",
+            "code": "LAN7020",
+            "L-T-P": "1-0-0",
+            "Name of Faculty": "George K.J.",
+            "slot": "NG3"
+        },
+        {
+            "name": "Professional Ethics 2",
+            "code": "LAN3020",
+            "L-T-P": "1-0-0",
+            "Name of Faculty": "Dinesh Mohan Joshi",
+            "slot": "NG2"
+        },
+        {
+            "code": "MAL1020",
+            "name": "Mathematics II",
+            "credits": "4",
+            "Faculty": "Pradip Sasmal & Abhishek Sarkar",
+            "slot": "F"
+        },
+        {
+            "code": "MAL2040",
+            "name": "DESIGN OF EXPERIMENTS",
+            "credits": "3",
+            "Faculty": "Brahadeesh",
+            "slot": "D"
+        },
+        {
+            "code": "MAL7071",
+            "name": "Unconstrained Optimization",
+            "credits": "1",
+            "Faculty": "Md Abu Talhamainuddin Ansary",
+            "slot": "I"
+        },
+        {
+            "code": "MAP7020",
+            "name": "Applied ML Lab",
+            "credits": "1",
+            "Faculty": "Gaurav Bhatnagar",
+            "slot": "L7"
+        },
+        {
+            "code": "MAL4310",
+            "name": "Introduction to game theory",
+            "credits": "3",
+            "Faculty": "Puneet Sharma",
+            "slot": "N"
+        },
+        {
+            "code": "MAL3010",
+            "name": "Maths for Big Data",
+            "credits": "3",
+            "Faculty": "Subhas Bhagat",
+            "slot": "D"
+        },
+        {
+            "code": "MAL1040",
+            "name": "Mathematics II",
+            "credits": "3",
+            "Faculty": "Gaurav Bhatnagar",
+            "slot": "B"
+        },
+        {
+            "code": "MAL2130",
+            "name": "Multivariable Calculus",
+            "credits": "4",
+            "Faculty": "Tuhina Mukherjee",
+            "slot": "A"
+        },
+        {
+            "code": "MAL2140",
+            "name": "Differential Equations",
+            "credits": "4",
+            "Faculty": "Sukhendu ghosh",
+            "slot": "E"
+        },
+        {
+            "code": "MAL2150",
+            "name": "Groups and Rings",
+            "credits": "4",
+            "Faculty": "Dilpreet Kaur",
+            "slot": "B"
+        },
+        {
+            "code": "MAL6040",
+            "name": "Abstract Algebra",
+            "credits": "4",
+            "Faculty": "Dilpreet Kaur",
+            "slot": "G"
+        },
+        {
+            "code": "MAL5030",
+            "name": "Complex Analysis",
+            "credits": "4",
+            "Faculty": "Sahil Gehlawat",
+            "slot": "K"
+        },
+        {
+            "code": "MAL6050",
+            "name": "Partial Differential Equations",
+            "credits": "3",
+            "Faculty": "Kiran Kumar Hiremath",
+            "slot": "H"
+        },
+        {
+            "code": "MAL6060",
+            "name": "Functional Analysis",
+            "credits": "3",
+            "Faculty": "Moumita Mandol",
+            "slot": "I"
+        },
+        {
+            "code": "MAP5010",
+            "name": "Data Structures and Algorithms",
+            "credits": "3",
+            "Faculty": "Shaily Verma",
+            "slot": "F"
+        },
+        {
+            "code": "MAL6310",
+            "name": "Measure & Integration",
+            "credits": "3",
+            "Faculty": "Kuntal Som",
+            "slot": "J"
+        },
+        {
+            "code": "MAL7340",
+            "name": "Number Theory",
+            "credits": "3",
+            "Faculty": "Bimal Mandol",
+            "slot": "K"
+        },
+        {
+            "code": "MAL7540",
+            "name": "Differential Geometry ",
+            "credits": "3",
+            "Faculty": "Kiran Meena",
+            "slot": "N"
+        },
+        {
+            "code": "MAL7130",
+            "name": "Statistical Inference",
+            "credits": "3",
+            "Faculty": "Nil Kamal Hazra",
+            "slot": "J"
+        },
+        {
+            "code": "MAL7440",
+            "name": "Machine Learning and Pattern R",
+            "credits": "3",
+            "Faculty": "Subhas Bhagat",
+            "slot": "K"
+        },
+        {
+            "code": "MAL7360",
+            "name": "Numerical Analysis",
+            "credits": "3",
+            "Faculty": "VVMS Chandramouli",
+            "slot": "I"
+        },
+        {
+            "code": "MAL7500",
+            "name": "Multi Objective Optimization",
+            "credits": "3",
+            "Faculty": "Md Abu Talhamainuddin Ansary",
+            "slot": "F"
+        },
+        {
+            "code": "MAL7550",
+            "name": "Differential Equations",
+            "credits": "3",
+            "Faculty": "Tuhina Mukhejee",
+            "slot": "J"
+        },
+
+        {
+            "code": "MAL7XX0",
+            "name": "Data Analytics",
+            "credits": "3",
+            "Faculty": "Sukhendu Ghosh",
+            "slot": "YQ"
+        },
+        {
+            "code": "CSL7590",
+            "name": "Deep Learning",
+            "credits": "3",
+            "Faculty": "Bikash Santra",
+            "slot": "YR"
+        },
+        {
+            "code": "CSL7320",
+            "name": "Digital Image Analysis ",
+            "credits": "3",
+            "Faculty": "Anil Kumar Tiwari",
+            "slot": "YP"
+        },
+        {
+            "code": "CSL7630",
+            "name": "Algorithms for Big Data",
+            "credits": "3",
+            "Faculty": "Subhash Bhagat",
+            "slot": "YO"
+        },
+
+        {
+            "code": "HSN7020",
+            "name": "Ethics and Professional Life",
+            "credits": "1",
+            "Faculty": "Dinesh Mohan Joshi",
+            "slot": "YS"
+        },
+
+        {
+            "code": "HSN7020",
+            "name": "Ethics and Professional Life",
+            "credits": "1",
+            "Faculty": "Dinesh Mohan Joshi",
+            "slot": "YS"
+        },
+        {
+            "code": "MAD7071",
+            "name": "M.Tech Project",
+            "credits": "5",
+            "Faculty": "Bimal Mandal",
+            "slot": "YT"
+        },
+        {
+            "code": "CSL7320",
+            "name": "Digital Image Analysis ",
+            "credits": "3",
+            "Faculty": "Anil Kumar Tiwari",
+            "slot": "YP"
+        },
+        {
+            "code": "CSL7630",
+            "name": "Algorithms for Big Data",
+            "credits": "3",
+            "Faculty": "Subhash Bhagat",
+            "slot": "YO"
+        },
+        {
+            "code": "MAL7011",
+            "name": "Introduction to Data Science",
+            "credits": "1",
+            "Faculty": "Sukhendu Ghosh",
+            "slot": "YQ"
+        },
+        {
+            "code": "MAP7010",
+            "name": "Data Analytics Lab",
+            "credits": "1",
+            "Faculty": "Sukhendu Ghosh",
+            "slot": "YQ"
+        },
+ 
+        {
+            "code": "MAL7350",
+            "name": "Financial Engineering",
+            "credits": "3",
+            "Faculty": "Vivek Vijay",
+            "slot": "I"
+        },
+        {
+            "code": "CYL6060",
+            "name": "Organic Synthesis",
+            "L-T-P": "3-0-0",
+            "slot": "K",
+            "Instructor": "Swati Jindal"
+        },
+        {
+            "code": "CYL6070",
+            "name": "Solid State and Material Chemistry",
+            "L-T-P": "3-0-0",
+            "slot": "F",
+            "Instructor": "Suresh Sarkar"
+        },
+        {
+            "code": "CYL6080",
+            "name": "Molecular Thermodynamics and Chemical Kinetics",
+            "L-T-P": "3-0-0",
+            "slot": "G",
+            "Instructor": "Dibyendu Kumar Sasmal"
+        },
+        {
+            "code": "CYL6090",
+            "name": "Theory and Applications of Spectroscopic Techniques",
+            "L-T-P": "3-0-0",
+            "slot": "H",
+            "Instructor": "Dibyendu Kumar Sasmal"
+        },
+        {
+            "code": "CYL6330",
+            "name": "Numerical methods and group theory",
+            "L-T-P": "3-0-0",
+            "slot": "J",
+            "Instructor": "Atul Kumar"
+        },
+        {
+            "code": "CYP6040",
+            "name": "Physical Chemistry Laboratory",
+            "L-T-P": "0-0-3",
+            "slot": "L",
+            "Instructor": "Samanwita Pal"
+        },
+        {
+            "code": "CYP6070",
+            "name": "Computational Chemistry Lab",
+            "L-T-P": "2-0-2",
+            "slot": "I",
+            "Instructor": "Manikandan Paranjothy"
+        },
+        {
+            "code": "CYL7400",
+            "name": "Polymer Dynamics",
+            "L-T-P": "3-0-0",
+            "slot": "N",
+            "Instructor": "Milan Hazra"
+        },
+        {
+            "code": "QCL7010",
+            "name": "Seminal Features of Qunatum Information Processing",
+            "L-T-P": "3-0-0",
+            "slot": "K",
+            "Instructor": "Atul Kumar"
+        },
+        {
+            "code": "CYL7440",
+            "name": "Stereochemistry of Organic Compounds",
+            "L-T-P": "3-0-0",
+            "slot": "I",
+            "Instructor": "Nirmal Kumar Rana"
+        },
+        {
+            "code": "CYLXXX",
+            "name": "Functional Organic Material",
+            "L-T-P": "3-0-0",
+            "slot": "J",
+            "Instructor": "Monika Gupta"
+        },
+        {
+            "code": "CYD6050",
+            "name": "Major Project II",
+            "L-T-P": "0-0-10",
+            "slot": "L",
+            "Instructor": "Nirmal Kumar Rana"
+        },
+        {
+            "code": "CYL1010",
+            "name": "Chemistry Theory",
+            "L-T-P": "3-0-0",
+            "slot": "N",
+            "Instructor": "Samanwita Pal"
+        },
+        {
+            "code": "CYP1010",
+            "name": "Chemistry Lab",
+            "L-T-P": "0-0-2",
+            "slot": "M",
+            "Instructor": "Rohan Erande"
+        },
+        {
+            "code": "CYL2021",
+            "name": "Colloids and Suspension",
+            "L-T-P": "1-0-0",
+            "slot": "C",
+            "Instructor": "Ananya Debnath"
+        },
+        {
+            "code": "CYL2050",
+            "name": "Thermodynamics, Chemical Equilibrium and Electrochemistry",
+            "L-T-P": "3-0-0",
+            "slot": "C",
+            "Instructor": "Milan Hazra"
+        },
+        {
+            "code": "CYL2040",
+            "name": "Chemistry of Elements",
+            "L-T-P": "3-0-0",
+            "slot": "A",
+            "Instructor": "Ramesh K Metre"
+        },
+        {
+            "code": "CYP2040",
+            "name": "Inorganic Chemistry Lab 1",
+            "L-T-P": "0-0-3",
+            "slot": "M",
+            "Instructor": "Ramesh K Metre"
+        },
+        {
+            "code": "CYP2050",
+            "name": "Physical chemistry Lab 1",
+            "L-T-P": "0-0-3",
+            "slot": "M",
+            "Instructor": "Atul Kumar"
+        },
+        {
+            "code": "CYL3040",
+            "name": "Fundamental of Molecular Spectroscopy",
+            "L-T-P": "3-0-0",
+            "slot": "B",
+            "Instructor": "Rahul Gera"
+        },
+        {
+            "code": "CYL3050",
+            "name": "Organometallics",
+            "L-T-P": "3-0-0",
+            "slot": "E",
+            "Instructor": "Subrata Chakraborty"
+        },
+        {
+            "code": "CYL3060",
+            "name": "Purification and Characterization of Organic Molecules",
+            "L-T-P": "3-0-0",
+            "slot": "K",
+            "Instructor": "Rohan D Erande"
+        },
+        {
+            "code": "CYL3070",
+            "name": "Chemical Kinetics, Photochemistry, and Theory of Solutions",
+            "L-T-P": "3-0-0",
+            "slot": "A",
+            "Instructor": "Milan Hazra"
+        },
+        {
+            "code": "CYL3080",
+            "name": "Entrepreneurship for Chemists",
+            "L-T-P": "2-0-0",
+            "slot": "C",
+            "Instructor": "Sandip Murarka"
+        },
+        {
+            "code": "CYP3050",
+            "name": "Inorganic Chemistry Lab 2",
+            "L-T-P": "0-0-3",
+            "slot": "M",
+            "Instructor": "Rakesh Kumar Sharma"
+        },
+        {
+            "code": "CYP3070",
+            "name": "Physical Chemistry Lab 2",
+            "L-T-P": "0-0-3",
+            "slot": "M",
+            "Instructor": "Rahul Gera"
+        },
+        {
+            "code": "CYL1030",
+            "name": "Chemistry II",
+            "L-T-P": "3-0-2",
+            "slot": "U",
+            "Instructor": "Monika Gupta"
+        },
+        {
+            "code": "CYLXX",
+            "name": "Chemistry V (Inorganic Chemistry of Elements)",
+            "L-T-P": "3-0-2",
+            "slot": "A",
+            "Instructor": "Ramesh K Metre"
+        },
+        {
+            "code": "CYLXX",
+            "name": "Chemistry VI (Thermo, Chem Equilm and Electrochemistry",
+            "L-T-P": "3-0-2",
+            "slot": "C",
+            "Instructor": "Milan Hazra"
+        },
+        {
+            "code": "CYLXX",
+            "name": "Chemistry VII (Purification and Characterization of Organic Molecules",
+            "L-T-P": "3-0-2",
+            "slot": "K",
+            "Instructor": "Rohan Erande"
+        },
+        {
+            "code": "CYL7010",
+            "name": "Chemistry 1",
+            "L-T-P": "3-0-0",
+            "slot": "C",
+            "Instructor": "Samanwita Pal"
+        },
+        {
+            "code": "CYL7020",
+            "name": "Chemistry 2",
+            "L-T-P": "3-0-0",
+            "slot": "D",
+            "Instructor": "Ananya Debnath"
+        },
+        {
+            "code": "DHL5060",
+            "name": "Methods and Methodologies in Digital Humanities",
+            "Credit structure": "3-0-2",
+            "slot": "J"
+        },
+        {
+            "code": "DHL5040",
+            "name": "Archiving and Databases",
+            "Credit structure": "3-0-2",
+            "slot": "E"
+        },
+        {
+            "code": "DHL5050",
+            "name": "Machine Learning for Digital Humanities",
+            "Credit structure": "3-0-0",
+            "slot": "N"
+        },
+        {
+            "code": "DHL5030",
+            "name": "Place and Identity in the Digital Age",
+            "Credit structure": "3-0-0",
+            "slot": "D"
+        },
+        {
+            "code": "RML7220",
+            "name": "Mobile Robots",
+            "Course Instructor": "Jayant K Mohanta, Riby Abraham Boby",
+            "slot": "J",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "RML7120",
+            "name": "Advanced Robotic Manipulation",
+            "Course Instructor": "Roshan K. Hota",
+            "slot": "N",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "code": "RML7230",
+            "name": "Aerial Robots",
+            "Course Instructor": "Anoop Jain",
+            "slot": "K",
+            "L-T-P": "3-0-0"
+        },
+        {
+            "name": "Principles of Neural Design",
+            "code": "AIL4130",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Vignesh Muralidharan and Sidharth Ranjan",
+            "slot": "I"
+        },
+        {
+            "name": "Connectomics",
+            "code": "AIL7150",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Dipanjan Roy",
+            "slot": "J"
+        },
+        {
+            "name": "EEG Signal Analysis",
+            "code": "AIL7220",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Dipanjan Roy",
+            "slot": "H"
+        },
+        {
+            "name": "Computational Cognitive Neuroscience",
+            "code": "AIL7250",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Shilpa Dang",
+            "slot": "I"
+        },
+        {
+            "name": "Theories of Intelligence",
+            "code": "AIL4260",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Sidharth Ranjan",
+            "slot": "F"
+        },
+        {
+            "name": "Introduction to Brain Computer Interfaces",
+            "code": "AIL7130",
+            "Credit (L-T-P)": "4 (3-0-2)",
+            "Faculty instructor": "Vignesh Muralidharan",
+            "slot": "F"
+        },
+        {
+            "name": "Econometrics Lab",
+            "code": "AIL4110",
+            "Credit (L-T-P)": "2 (1-0-2)",
+            "Faculty instructor": "Bhargab Chattopadhyay",
+            "slot": "I"
+        },
+        {
+            "name": "Games and Economic Behaviour",
+            "code": "AIL4090",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Abhinaba Lahiri",
+            "slot": "N"
+        },
+        {
+            "name": "Causal Econometrics",
+            "code": "AIL7170",
+            "Credit (L-T-P)": "3 (2-0-2)",
+            "Faculty instructor": "Dweepobotee Brahma",
+            "slot": "J"
+        },
+        {
+            "name": "Advanced Macroeconomics",
+            "code": "AIL7180",
+            "Credit (L-T-P)": "4 (3-0-2)",
+            "Faculty instructor": "Ganesh Manjhi",
+            "slot": "I"
+        },
+        {
+            "name": "Microeconomics I",
+            "code": "AIL6010",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Abhinaba Lahiri",
+            "slot": "G"
+        },
+        {
+            "name": "Individual and Strategic Decision Making: Theory and Applications",
+            "code": "AIL6020",
+            "Credit (L-T-P)": "2 (2-0-0)",
+            "Faculty instructor": "S. Srivatsa Srinivas",
+            "slot": "I"
+        },
+        {
+            "name": "Deep Learning for Computer Vision",
+            "code": "AIL7370",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Bikash Santra",
+            "slot": "I"
+        },
+        {
+            "name": "Multimodal Learning with Vision and Language",
+            "code": "AIL7490",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Divya Saxena",
+            "slot": "J"
+        },
+        {
+            "name": "AI and Cybersecurity",
+            "code": "AIL7550",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Manish Aggarwal",
+            "slot": "F"
+        },
+        {
+            "name": "Deep Learning for Natural Language Processing",
+            "code": "AIL7390",
+            "Credit (L-T-P)": "3 (3-0-0)",
+            "Faculty instructor": "Deeksha Varshney",
+            "slot": "H"
+        },
+        {
+            "code": "CSL1010",
+            "name": "Introduction to Computer Science ",
+            "Instructor": "Suchetana Chakraborty",
+            "slot": "G ",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL2020",
+            "name": "Data Structure and Algorithm",
+            "Instructor": "Debasis Das",
+            "slot": "B ",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL2050",
+            "name": "Pattern Recognition and Machine Learning",
+            "Instructor": "Avinash Sharma",
+            "slot": "B ",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL2060",
+            "name": "Software Engineering ",
+            "Instructor": "Suman Kundu",
+            "slot": "D",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL2110",
+            "name": "Principles of Computer Systems - I",
+            "Instructor": "Angshuman Paul",
+            "slot": "D",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL2090",
+            "name": "Principles of Computer Systems - II",
+            "Instructor": "Sidharth Sharma",
+            "slot": "E",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSP2020",
+            "name": "Human-Machine Interaction ",
+            "Instructor": "Shiv Kumar Verma",
+            "slot": "M10",
+            "L-T-P": "0-0-4",
+            "credits": "2",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSN3010",
+            "name": "Ethics, Policy, Law and Regulations in AI",
+            "Instructor": "Yashaswi Verma",
+            "slot": "NG1",
+            "L-T-P": "1-0-0",
+            "credits": "1",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL4020",
+            "name": "Deep Learning ",
+            "Instructor": "Pratik Mazumder",
+            "slot": "B",
+            "L-T-P": "3-0-3",
+            "credits": "4.5",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL4050",
+            "name": "Data Visualization   ",
+            "Instructor": "Hardik Jain",
+            "slot": "C",
+            "L-T-P": "3-0-3",
+            "credits": "4.5",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "MAL3010",
+            "name": "Maths for Big Data",
+            "Instructor": "Subhas Bhagat",
+            "slot": "D",
+            "L-T-P": "2-1- 0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7370",
+            "name": "Dependable AI",
+            "Instructor": "Yashaswi Verma",
+            "slot": "E",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL3080",
+            "name": "Computer Networks",
+            "Instructor": "Nitin Awathare",
+            "slot": "C",
+            "L-T-P": "3-0-3",
+            "credits": "4.5",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL6010",
+            "name": "Cyber Security",
+            "Instructor": "Mohit Kumar Jangid",
+            "slot": "F",
+            "L-T-P": "3-0-2",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7140",
+            "name": "Complexity Theory",
+            "Instructor": "Vimal Raj Sharma",
+            "slot": "E",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7410",
+            "name": "Graph Theory and Applications",
+            "Instructor": "Tanmay Inamdar",
+            "slot": "H",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7500",
+            "name": "Advanced Algorithms",
+            "Instructor": "Pallavi Jain",
+            "slot": "J",
+            "L-T-P": "3-1- 0",
+            "credits": "4",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7820",
+            "name": "High Level Synthesis",
+            "Instructor": "Gaurav Harit/Abhijit Karmakar",
+            "slot": "G",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7XXX",
+            "name": "Advanced Architecture and OS",
+            "Instructor": "Palash Das",
+            "slot": "F",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": "Subject to approval"
+        },
+        {
+            "code": "CSL7590",
+            "name": "Deep Learning ",
+            "Instructor": "Angshuman Paul",
+            "slot": "G",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7450",
+            "name": "Computer Graphics",
+            "Instructor": "Hardik Jain",
+            "slot": "H",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7640",
+            "name": "Natural Language Understanding",
+            "Instructor": "Anand Mishra",
+            "slot": "K",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7110",
+            "name": "Machine Learning with Big Data",
+            "Instructor": "Dip Sankar Banerjee",
+            "slot": "R",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7360",
+            "name": "Computer Vision",
+            "Instructor": "Deepak Mishra",
+            "slot": "I",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7530",
+            "name": "Advanced Machine Learning",
+            "Instructor": "Gaurav Harit",
+            "slot": "U",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7770",
+            "name": "Speech Understanding",
+            "Instructor": "Richa Singh",
+            "slot": "O",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": ""
+        },
+        {
+            "code": "CSL7XXX",
+            "name": "ML-Ops and DL-Ops",
+            "Instructor": "Mayank Vatsa",
+            "slot": "P",
+            "L-T-P": "2-0-2",
+            "credits": "3",
+            "Unnamed: 6": "Subject to approval"
+        },
+        {
+            "code": "CSL7350",
+            "name": "Selected Topics in AI",
+            "Instructor": "Romi Banerjee",
+            "slot": "N",
+            "L-T-P": "3-0-0",
+            "credits": "3",
+            "Unnamed: 6": "Subject to approval"
+        },
+        {
+            "code": "MEL2040",
+            "name": "Fluid Mechanics",
+            "Course Instructor(s)": "Deepak Swami / Saran Aadhar",
+            "credits (L-T-P)": "4 (3-1-0)",
+            "slot": "D"
+        },
+        {
+            "code": "MEP2010",
+            "name": "Fluid Mechanics Lab",
+            "Course Instructor(s)": "Deepak Swami / Saran Aadhar",
+            "credits (L-T-P)": "1 (0-0-2)",
+            "slot": ""
+        },
+        {
+            "code": "CIP3040",
+            "name": "Geotechnical Engineering Lab",
+            "Course Instructor(s)": "Pradeep Kumar Dammala",
+            "credits (L-T-P)": "1 (0-0-2)",
+            "slot": ""
+        },
+        {
+            "code": "CIL3080",
+            "name": "Reinforced Concrete Design",
+            "Course Instructor(s)": "Amit Kumar Rathi",
+            "credits (L-T-P)": "4 (3-0-2)",
+            "slot": "D"
+        },
+        {
+            "code": "CIL3090",
+            "name": "Smart infrastructure Engineering",
+            "Course Instructor(s)": "Ravi Prakash",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "A"
+        },
+        {
+            "code": "CIL3070",
+            "name": "Water Resources Engineering",
+            "Course Instructor(s)": "Saran Aadhar",
+            "credits (L-T-P)": "4 (3-0-2)",
+            "slot": "C"
+        },
+        {
+            "code": "CIL3060",
+            "name": "Advanced Structural Analysis",
+            "Course Instructor(s)": "P Ravi Prakash",
+            "credits (L-T-P)": "4 (3-0-2)",
+            "slot": "E"
+        },
+        {
+            "code": "MEL2010",
+            "name": "Mechanics of Solids",
+            "Course Instructor(s)": "Sanhita Das",
+            "credits (L-T-P)": "4 (3-1-0)",
+            "slot": "A"
+        },
+        {
+            "code": "CIL7530",
+            "name": "AI/ML in Infrastructure Engineering",
+            "Course Instructor(s)": "Mayank Suman",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "I"
+        },
+        {
+            "code": "CIL4010",
+            "name": "Environmental Science",
+            "Course Instructor(s)": "Amit Sharma",
+            "credits (L-T-P)": "2 (2-0-0)",
+            "slot": ""
+        },
+        {
+            "code": "CIL4340",
+            "name": "Steel Structure Design",
+            "Course Instructor(s)": "Tekcham Gishan Singh",
+            "credits (L-T-P)": "4 (3-1-0)",
+            "slot": "I"
+        },
+        {
+            "code": "CIL7390",
+            "name": "Climate Change and Impact",
+            "Course Instructor(s)": "Amit Sharma",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "H"
+        },
+        {
+            "code": "CIL7630",
+            "name": "Finite Element Method",
+            "Course Instructor(s)": "Sanhita Das / Shuvajit Mukherjee",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "I"
+        },
+        {
+            "code": "CIL4380",
+            "name": "Ground Improvement Techniques",
+            "Course Instructor(s)": "Aali Pant",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "G"
+        },
+        {
+            "code": "CIL7460",
+            "name": "Structural Dynamics",
+            "Course Instructor(s)": "Shuvajit Mukherjee",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "G"
+        },
+        {
+            "code": "CIL7320",
+            "name": "Air Pollution and Control",
+            "Course Instructor(s)": "Deepika Bhattu",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "J"
+        },
+        {
+            "code": "CIL7880",
+            "name": "Design of Bridge Structures",
+            "Course Instructor(s)": "Tekcham Gishan Singh",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "F"
+        },
+        {
+            "code": "CIL7040",
+            "name": "Energy Geomechanics ",
+            "Course Instructor(s)": "Debanjan Guha Roy",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "J"
+        },
+        {
+            "code": "CIL7080",
+            "name": "Pollutant Transport Through Subsurface and In-situ Remediations",
+            "Course Instructor(s)": "Trishikhi Raychoudhury",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "H"
+        },
+        {
+            "code": "CIL7090",
+            "name": "Wastewater Engineering",
+            "Course Instructor(s)": "Monika Dubey",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "F"
+        },
+        {
+            "code": "CIL7070",
+            "name": "Environmental Chemistry",
+            "Course Instructor(s)": "Monika Dubey",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "G"
+        },
+        {
+            "code": "CIL7470",
+            "name": "Foundation Engineering",
+            "Course Instructor(s)": "Pradeep Kumar Dammala",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "H"
+        },
+        {
+            "code": "CIL7400",
+            "name": "Traffic System and Management",
+            "Course Instructor(s)": "Ranju Mohan",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "I"
+        },
+        {
+            "code": "CIL7950",
+            "name": "Bridge Material, Construction and Evaluation",
+            "Course Instructor(s)": "Yogiraj Sangam",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "H"
+        },
+        {
+            "code": "CIL4390",
+            "name": "Highway Geometric Design ",
+            "Course Instructor(s)": "Subham Jain",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "H"
+        },
+        {
+            "code": "CIL4400",
+            "name": "Pavement Enginerring",
+            "Course Instructor(s)": "Bhupendra Singh",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "J"
+        },
+        {
+            "code": "CIL7440",
+            "name": "Green Buildings and Sustainable Materials",
+            "Course Instructor(s)": "-",
+            "credits (L-T-P)": "3 (3-0-0)",
+            "slot": "F"
+        },
+        {
+            "code": "EDL1020",
+            "name": "Teacher and Society",
+            "code.1": "PC",
+            "Credit (L-T-P)": "2-0-0",
+            "Name of Faculty": "Devi Prasad Dash",
+            "slot": "E"
+        },
+        {
+            "code": "EDL1XXX",
+            "name": "Computational and Design Thinking",
+            "code.1": "PC",
+            "Credit (L-T-P)": "1-0-4",
+            "Name of Faculty": "Romi Banerjee, Shiv Kumar Verma",
+            "slot": "F"
+        },
+        {
+            "code": "EDL2XXX",
+            "name": "Content-cum-Pedagogy of the Physcial Sciences",
+            "code.1": "PC",
+            "Credit (L-T-P)": "1-0-2",
+            "Name of Faculty": "Rajlaxmi Chouhan",
+            "slot": "D"
+        },
+        {
+            "code": "EDL2XXX",
+            "name": "Content-cum-Pedagogy of the Mathematical Sciences",
+            "code.1": "PC",
+            "Credit (L-T-P)": "1-0-2",
+            "Name of Faculty": "Pankaj Chavan",
+            "slot": "P"
+        },
+        {
+            "code": "QCL7330",
+            "name": "Device Independent Quantum Technologies",
+            "  Faculty       ": "Amit Mukherjee",
+            " slot": "H"
+        },
+        {
+            "code": "PHL7480",
+            "name": "Open Quantum Systems",
+            "  Faculty       ": "Subhashish Banerjee",
+            " slot": "G"
+        },
+        {
+            "code": "QCL7010",
+            "name": "Seminal features of quantum Information processing",
+            "  Faculty       ": "Atul Kumar",
+            " slot": "K"
+        },
+        {
+            "code": "QCL7380",
+            "name": "Continuous Variable Quantum Information",
+            "  Faculty       ": "V Narayanan",
+            " slot": "E"
+        },
+        {
+            "code": "QCL7020",
+            "name": "Quantum Machine Learning",
+            "  Faculty       ": "Kirankumar R. Hiremath",
+            " slot": "J"
+        },
+        {
+            "code": "QCL7390",
+            "name": "Magnetism and Superconductivity",
+            "  Faculty       ": "Dushyant Kumar",
+            " slot": "F"
+        }
+    ]
+}
