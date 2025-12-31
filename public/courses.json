@@ -4242,6 +4242,7 @@
             "LTP": "0-0-3",
             "credits": "1.5",
             "slot": "M2",
+            "schedule": [{ "day": "Tue", "start": "3pm", "end": "5pm" }],
             "Department": "Electrical Engineering",
             "Instructor": "Binod Kumar",
             "Student Registered*": "200",

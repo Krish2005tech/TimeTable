@@ -121,9 +121,15 @@ const TimetableGenerator = () => {
       })
       .then((sampleCourses) => {
         const processedCourses = sampleCourses.courses.map((c) => {
-          const schedule = c.slot
-            ? slotTiming[c.slot.toUpperCase()] || []
-            : [];
+          let schedule = [];
+          
+          // Handle specific custom schedules
+          if (c.schedule) {
+            schedule = c.schedule;
+            schedule = [{ day: 'Tue', start: '3pm', end: '5pm' }];
+          } else if (c.slot && slotTiming[c.slot.toUpperCase()]) {
+            schedule = slotTiming[c.slot.toUpperCase()];
+          }
 
           return {
             ...c,
