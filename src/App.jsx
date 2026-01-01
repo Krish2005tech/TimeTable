@@ -63,7 +63,7 @@ const TimetableGenerator = () => {
     L8: [{ day: 'Wed', start: '11am', end: '1pm' }],
     L9: [{ day: 'Thu', start: '11am', end: '1pm' }],
     L10: [{ day: 'Fri', start: '11am', end: '1pm' }],
-    NG1: [{ day: 'Mon', start: '5pm', end: '6pm' }],
+    NG1: [{ day: 'Thu', start: '5pm', end: '6pm' }],
     NG2: [{ day: 'Tue', start: '5pm', end: '6pm' }],
     NG3: [{ day: 'Wed', start: '5pm', end: '6pm' }],
     O:[{ day: 'Mon', start: '6pm', end: '7pm' }],
