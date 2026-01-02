@@ -528,7 +528,7 @@ const nextAvailableColor = colors.find(c => !usedColors.has(c)) || colors[0];
                           {cellCourses.map(c => (
                             <div
                               key={c.id}
-                              className="text-sm font-bold w-full h-20 flex flex-col items-center justify-center p-1"
+                              className="text-sm font-bold w-full min-h-16 flex flex-col items-center justify-center p-1"
                               style={{ backgroundColor: c.color }}
                             >
                               <span className="text-gray-800">{c.name}</span>
