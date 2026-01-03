@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { X, Plus, Edit2, Check, AlertCircle, Download ,Eye,EyeOff} from 'lucide-react';
 import domtoimage from "dom-to-image-more";
 import * as htmlToImage from "html-to-image";
+import d from 'dom-to-image-more';
 const TimetableGenerator = () => {
   const fileInputRef = useRef(null);
   const timetableRef = useRef(null);
@@ -66,11 +67,11 @@ const TimetableGenerator = () => {
     NG1: [{ day: 'Thu', start: '5pm', end: '6pm' }],
     NG2: [{ day: 'Tue', start: '5pm', end: '6pm' }],
     NG3: [{ day: 'Wed', start: '5pm', end: '6pm' }],
-    O:[{ day: 'Mon', start: '6pm', end: '7pm' }],
-    P:[{ day: 'Tue', start: '6pm', end: '7pm' }],
-    Q:[{ day: 'Wed', start: '6pm', end: '7pm' }],
-    R:[{ day: 'Thu', start: '6pm', end: '7pm' }],
-    S:[{ day: 'Fri', start: '6pm', end: '7pm' }],
+    O:[{ day: 'Mon', start: '6pm', end: '7pm' },{day: 'Sat', start: '12pm', end: '1pm'}],
+    P:[{ day: 'Tue', start: '6pm', end: '7pm' },{day: 'Sat', start: '2pm', end: '3pm'}],
+    Q:[{ day: 'Wed', start: '6pm', end: '7pm' },{day: 'Sat', start: '3pm', end: '4pm'}],
+    R:[{ day: 'Thu', start: '6pm', end: '7pm' },{day: 'Sat', start: '4pm', end: '5pm'}],
+    S:[{ day: 'Fri', start: '6pm', end: '7pm' },{day: 'Sat', start: '5pm', end: '6pm'}],
   };
 
   const timeToMinutes = (time) => {
@@ -249,7 +250,14 @@ const TimetableGenerator = () => {
   //   return { days, times, timetable };
   // };
   const generateTimetable = () => {
-    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+    // Check if any selected course uses Saturday slots (O, P, Q, R, S)
+    const hasSaturdayCourse = selectedCourses.some(course =>
+      ['O', 'P', 'Q', 'R', 'S'].includes(course.slot?.toUpperCase())
+    );
+
+    const days = hasSaturdayCourse
+      ? ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+      : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 
     // Define slots with real times
     const times = [
@@ -588,6 +596,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
       Wed: { enabled: false, start: '9am', end: '10am' },
       Thu: { enabled: false, start: '9am', end: '10am' },
       Fri: { enabled: false, start: '9am', end: '10am' },
+      Sat: { enabled: false, start: '9am', end: '10am' },
     };
 
     if (course.schedule && !course.slot) {
@@ -717,7 +726,7 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
             </select>
           ) : (
             <div className="space-y-3">
-              {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
+              {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
                 <div key={day} className="border border-gray-200 rounded-lg p-3 bg-gray-50">
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                     <div className="flex items-center gap-2">
@@ -859,6 +868,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel, default
     Wed: { enabled: false, start: '9am', end: '10am' },
     Thu: { enabled: false, start: '9am', end: '10am' },
     Fri: { enabled: false, start: '9am', end: '10am' },
+    Sat: { enabled: false, start: '12pm', end: '1pm' },
   });
   const [formData, setFormData] = useState({
     name: '',
@@ -976,7 +986,7 @@ function ManualAddForm({ slotTiming, colors, timeSlots, onAdd, onCancel, default
           </select>
         ) : (
           <div className="space-y-3">
-            {['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].map(day => (
+            {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
               <div key={day} className="border border-gray-200 rounded-lg p-3 bg-white">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                   <div className="flex items-center gap-2">
