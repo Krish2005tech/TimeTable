@@ -598,8 +598,11 @@ function CourseRow({ course, colors, slotTiming, timeSlots, isEditing, onEdit, o
       Fri: { enabled: false, start: '9am', end: '10am' },
       Sat: { enabled: false, start: '9am', end: '10am' },
     };
+    if(!course.schedule && course.slot){
+      course.schedule = slotTiming[course.slot.toUpperCase()] || [];
+    }
 
-    if (course.schedule && !course.slot) {
+    if (course.schedule) {
       course.schedule.forEach(slot => {
         if (initialTimings[slot.day]) {
           initialTimings[slot.day] = {
