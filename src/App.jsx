@@ -253,6 +253,7 @@ const TimetableGenerator = () => {
     // Check if any selected course uses Saturday slots (O, P, Q, R, S)
     const hasSaturdayCourse = selectedCourses.some(course =>
       ['O', 'P', 'Q', 'R', 'S'].includes(course.slot?.toUpperCase())
+      || course.schedule?.some(s => s.day === 'Sat')
     );
 
     const days = hasSaturdayCourse
@@ -274,7 +275,7 @@ const TimetableGenerator = () => {
       { label: '6-7pm', start: '6pm', end: '7pm' }
     ];
 
-    const timetable = {};
+    let timetable = {};
     days.forEach(day => {
       times.forEach(t => {
         timetable[`${day}-${t.label}`] = [];
