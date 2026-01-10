@@ -127,7 +127,7 @@ const TimetableGenerator = () => {
           // Handle specific custom schedules
           if (c.schedule) {
             schedule = c.schedule;
-            schedule = [{ day: 'Tue', start: '3pm', end: '5pm' }];
+            // schedule = [{ day: 'Tue', start: '3pm', end: '5pm' }];
           } else if (c.slot && slotTiming[c.slot.toUpperCase()]) {
             schedule = slotTiming[c.slot.toUpperCase()];
           }

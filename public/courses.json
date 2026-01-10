@@ -445,6 +445,18 @@
             "Unnamed: 9": ""
         },
         {
+            "code": "CSL3080",
+            "name": "Computer Networks Lab",
+            "LTP": "3-0-3",
+            "credits": "4.5",
+            "slot": "M5",
+            "Department": "Computer Science and Engineering",
+            "Instructor": "Awathare Nitin Niranjan",
+            "Student Registered*": "136",
+            "Classroom": "CC LAB",
+            "Unnamed: 9": ""
+        },
+        {
             "code": "EEL3070",
             "name": "Digital Signal Processing",
             "LTP": "3-0-0",
@@ -2123,6 +2135,18 @@
             "Student Registered*": "230",
             "Classroom": "LHC 308",
             "Unnamed: 9": ""
+        },    {
+            "code": "CSL7590",
+            "name": "Deep Learning Lab",
+            "LTP": "3-0-0",
+            "credits": "3",
+            "slot": "M6",
+            "schedule": [{"day": "Mon", "start": "4pm", "end": "7pm"}],
+            "Department": "Computer Science and Engineering",
+            "Instructor": "Angshuman Paul",
+            "Student Registered*": "230",
+            "Classroom": "CC LAB",
+            "Unnamed: 9": ""
         },
         {
             "code": "MSL72140",
@@ -2646,10 +2670,11 @@
             "LTP": "3-0-0",
             "credits": "3",
             "slot": "I",
+            "schedule": [{"day": "Fri", "start": "3pm", "end": "4pm"}, {"day": "Wed", "start": "4pm", "end": "5pm"}, {"day": "Sat", "start": "11am", "end": "12pm"}],
             "Department": "Computer Science and Engineering",
             "Instructor": "Deepak Mishra",
             "Student Registered*": "245",
-            "Classroom": "LHC 110/308",
+            "Classroom": "LHC 308",
             "Unnamed: 9": "LHC 110/308 AVAILABLE EXCEPT ON MONDAY"
         },
         {
