@@ -72,6 +72,7 @@ const TimetableGenerator = () => {
     Q:[{ day: 'Wed', start: '6pm', end: '7pm' },{day: 'Sat', start: '3pm', end: '4pm'}],
     R:[{ day: 'Thu', start: '6pm', end: '7pm' },{day: 'Sat', start: '4pm', end: '5pm'}],
     S:[{ day: 'Fri', start: '6pm', end: '7pm' },{day: 'Sat', start: '5pm', end: '6pm'}],
+V:[{day:'Tue', start: '12pm', end:'1pm' }, {day: 'Thu', start: '12pm', end: '1pm'} ], 
   };
 
   const timeToMinutes = (time) => {
