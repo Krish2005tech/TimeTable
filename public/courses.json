@@ -2147,17 +2147,17 @@
             "Student Registered*": "230",
             "Classroom": "LHC 308",
             "Unnamed: 9": ""
-        },    {
-            "code": "CSL7590",
+        },    
+         {
+            "code": "CSL4020",
             "name": "Deep Learning Lab",
-            "LTP": "3-0-0",
-            "credits": "3",
-            "slot": "M6",
-            "schedule": [{"day": "Mon", "start": "5pm", "end": "8pm"}],
+            "LTP": "3-0-3",
+            "credits": "4.5",
+            "slot": "B",
             "Department": "Computer Science and Engineering",
-            "Instructor": "Angshuman Paul",
-            "Student Registered*": "230",
-            "Classroom": "CC LAB",
+            "Instructor": "Pratik Mazumder",
+            "Student Registered*": "176",
+            "Classroom": "CC Lab",
             "Unnamed: 9": ""
         },
         {
