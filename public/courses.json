@@ -1765,6 +1765,18 @@
             "Unnamed: 9": ""
         },
         {
+            "code": "CSL6010",
+            "name": "Cyber Security Lab",
+            "LTP": "3-0-2",
+            "credits": "4",
+            "slot": "L9",
+            "Department": "Computer Science and Engineering",
+            "Instructor": "Mohit Kumar Jangid",
+            "Student Registered*": "124",
+            "Classroom": "LHC 105",
+            "Unnamed: 9": ""
+        },
+        {
             "code": "CYL6070",
             "name": "Solid State and Material Chemistry",
             "LTP": "3-0-0-0",
@@ -2141,7 +2153,7 @@
             "LTP": "3-0-0",
             "credits": "3",
             "slot": "M6",
-            "schedule": [{"day": "Mon", "start": "4pm", "end": "7pm"}],
+            "schedule": [{"day": "Mon", "start": "5pm", "end": "8pm"}],
             "Department": "Computer Science and Engineering",
             "Instructor": "Angshuman Paul",
             "Student Registered*": "230",
@@ -4266,8 +4278,8 @@
             "name": "Digital Systems Lab",
             "LTP": "0-0-3",
             "credits": "1.5",
-            "slot": "M2",
-            "schedule": [{ "day": "Tue", "start": "3pm", "end": "5pm" }],
+            "slot": "M3",
+            "schedules": [{ "day": "Tue", "start": "3pm", "end": "5pm" }],
             "Department": "Electrical Engineering",
             "Instructor": "Binod Kumar",
             "Student Registered*": "200",
