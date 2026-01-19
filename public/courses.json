@@ -2154,7 +2154,7 @@
             "name": "Deep Learning Lab",
             "LTP": "3-0-3",
             "credits": "4.5",
-             "schedule":[{"day": "Mon", "start": "5pm", "end": "7pm"}],
+             "schedule":[{"day": "Mon", "start": "5pm", "end": "8pm"}],
             "slot": "M6",
             "Department": "Computer Science and Engineering",
             "Instructor": "Pratik Mazumder",
