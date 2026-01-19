@@ -450,6 +450,7 @@
             "LTP": "3-0-3",
             "credits": "4.5",
             "slot": "M5",
+            "schedule":[{"day":"Wed","start":"6pm","end":"8pm"}],
             "Department": "Computer Science and Engineering",
             "Instructor": "Awathare Nitin Niranjan",
             "Student Registered*": "136",

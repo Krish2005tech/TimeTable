@@ -28,7 +28,7 @@ const TimetableGenerator = () => {
   '#E0E0E0' , // Platinum,
   '#FFEBEE', // Misty Rose
 ];
-  const timeSlots = ['8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+  const timeSlots = ['8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
   const slotTiming = {
     A: [{ day: 'Mon', start: '9am', end: '10am' }, { day: 'Tue', start: '9am', end: '10am' }, { day: 'Thu', start: '9am', end: '10am' }],
@@ -273,7 +273,8 @@ V:[{day:'Tue', start: '12pm', end:'1pm' }, {day: 'Thu', start: '12pm', end: '1pm
       { label: '3-4pm', start: '3pm', end: '4pm' },
       { label: '4-5pm', start: '4pm', end: '5pm' },
       { label: '5-6pm', start: '5pm', end: '6pm' },
-      { label: '6-7pm', start: '6pm', end: '7pm' }
+      { label: '6-7pm', start: '6pm', end: '7pm' },
+      { label: '7-8pm', start: '7pm', end: '8pm' },
     ];
 
     let timetable = {};
